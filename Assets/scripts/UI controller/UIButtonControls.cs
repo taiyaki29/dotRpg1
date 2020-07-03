@@ -8,12 +8,16 @@ public class UIButtonControls : MonoBehaviour
     public GameObject mainRpgControl;
     MainRpgController mainRpgController;
 
+    public GameObject battleControl;
+    BattleControl battleController;
+
     public GameObject BButton;
     Text bButtonText;
 
     void Start()
     {
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
+        battleController = battleControl.GetComponent<BattleControl>();
         bButtonText = BButton.GetComponent<Text>();
     }
 
@@ -45,7 +49,9 @@ public class UIButtonControls : MonoBehaviour
 
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
+            if(battleController.battleStatus == BattleStatus.PLAYERTURN){
 
+            }
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
             
@@ -59,24 +65,6 @@ public class UIButtonControls : MonoBehaviour
     }
 
     public void B_Button(){
-        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
-
-        }
-        else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
-
-        }
-        else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
-            
-        }
-        else if(mainRpgController.mainRpgStatus == MainRpgStatus.SHOP){
-            
-        }
-        else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
-            
-        }
-    }
-
-    public void menuButton(){
         if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
 
         }

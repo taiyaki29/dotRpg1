@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject mainRpgControl;
     MainRpgController mainRpgController;
 
+    public GameObject battleControl;
+    BattleControl battleController;
+
     public float movementSpeed = 0.1f;
 
     bool playerMovingUp =false;
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start(){
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
+        battleController = battleControl.GetComponent<BattleControl>();
     }
 
     void Update(){
@@ -148,28 +152,52 @@ public class PlayerMovement : MonoBehaviour
 
     //button functions
     public void MoveUpPointerDown(){
-        holdMoveUp = true;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveUp = true;
+        }
+        else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
+            if(battleController.actionNumber > 0)battleController.actionNumber--;
+            else if(battleController.actionNumber == 0)battleController.actionNumber = 3;
+        }
     }
     public void MoveUpPointerUp(){
-        holdMoveUp = false;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveUp = false;
+        }
     }
     public void MoveDownPointerDown(){
-        holdMoveDown = true;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveDown = true;
+        }
+        else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
+            if(battleController.actionNumber < 3)battleController.actionNumber++;
+            else if(battleController.actionNumber == 3)battleController.actionNumber = 0;
+        }
     }
     public void MoveDownPointerUp(){
-        holdMoveDown = false;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveDown = false;
+        }
     }
     public void MoveLeftPointerDown(){
-        holdMoveLeft = true;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveLeft = true;
+        }
     }
     public void MoveLeftPointerUp(){
-        holdMoveLeft = false;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveLeft = false;
+        }
     }
     public void MoveRightPointerDown(){
-        holdMoveRight = true;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveRight = true;
+        }
     }
     public void MoveRightPointerUp(){
-        holdMoveRight = false;
+        if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
+            holdMoveRight = false;
+        }
     }
 
     public bool isPointerDown(){
@@ -187,7 +215,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
-
+            
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
             

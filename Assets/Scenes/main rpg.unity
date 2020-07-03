@@ -15810,11 +15810,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: "\u30C6\u30B9\u30C8\u6575"
+  enemyImage: {fileID: 0}
+  enemySprite: {fileID: 0}
   enemyLevel: 1
-  enemyMaxHp: 20
   enemyCurrentHp: 20
-  enemyMaxMp: 20
+  enemyMaxHp: 20
   enemyCurrentMp: 20
+  enemyMaxMp: 20
   enemyPhysicalDefense: 10
   enemyMagicalDefense: 10
   enemyPhysicalAttack: 10
@@ -16662,6 +16664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainRpgControl: {fileID: 1179888419}
+  battleControl: {fileID: 1714904972}
   BButton: {fileID: 623111210}
 --- !u!1 &794954236
 GameObject:
@@ -17143,7 +17146,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1002
-  m_Sprite: {fileID: 21300000, guid: 79fbae2f03a844bdb8187641459ad16b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7367005718a8e4490af2e1d4089ccb4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17167,11 +17170,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: "\u30C6\u30B9\u30C8\u6575"
+  enemyImage: {fileID: 0}
+  enemySprite: {fileID: 0}
   enemyLevel: 1
-  enemyMaxHp: 20
   enemyCurrentHp: 20
-  enemyMaxMp: 20
+  enemyMaxHp: 20
   enemyCurrentMp: 20
+  enemyMaxMp: 20
   enemyPhysicalDefense: 10
   enemyMagicalDefense: 10
   enemyPhysicalAttack: 10
@@ -17265,9 +17270,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1028102688}
   - component: {fileID: 1028102687}
-  - component: {fileID: 1028102686}
   - component: {fileID: 1028102685}
   - component: {fileID: 1028102689}
+  - component: {fileID: 1028102686}
   - component: {fileID: 1028102690}
   m_Layer: 0
   m_Name: Player
@@ -17343,6 +17348,7 @@ MonoBehaviour:
   nextPosition: {x: 0, y: 0, z: 0}
   walkingAnimator: {fileID: 1028102689}
   mainRpgControl: {fileID: 1179888419}
+  battleControl: {fileID: 1714904972}
   movementSpeed: 0.1
   playerStepsLimit: 200
 --- !u!50 &1028102687
@@ -17646,6 +17652,7 @@ MonoBehaviour:
   battleController: {fileID: 1714904972}
   player: {fileID: 1028102684}
   enemyEncounterSteps: 9
+  stageNumber: 1
 --- !u!1 &1184713700
 GameObject:
   m_ObjectHideFlags: 0
@@ -18738,11 +18745,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: "\u30C6\u30B9\u30C8\u65752"
+  enemyImage: {fileID: 0}
+  enemySprite: {fileID: 0}
   enemyLevel: 1
-  enemyMaxHp: 20
   enemyCurrentHp: 20
-  enemyMaxMp: 20
+  enemyMaxHp: 20
   enemyCurrentMp: 20
+  enemyMaxMp: 20
   enemyPhysicalDefense: 10
   enemyMagicalDefense: 10
   enemyPhysicalAttack: 10
@@ -19258,6 +19267,16 @@ MonoBehaviour:
   enemy1: {fileID: 1020285090}
   enemy2: {fileID: 1564746713}
   enemy3: {fileID: 335881790}
+  actionAttack: "<color=#ffffffff>\u25B6\uFE0E\u3000\u653B\u6483\n\u30B9\u30AD\u30EB\n\u9632\u5FA1\n\u9003\u3052\u308B</color>"
+  actionSkill: "<color=#ffffffff>\u653B\u6483\n\u25B6\uFE0E\u3000\u30B9\u30AD\u30EB\n\u9632\u5FA1\n\u9003\u3052\u308B</color>"
+  actionDefend: "<color=#ffffffff>\u653B\u6483\n\u30B9\u30AD\u30EB\n\u25B6\uFE0E\u3000\u9632\u5FA1\n\u9003\u3052\u308B</color>"
+  actionFlee: "<color=#ffffffff>\u653B\u6483\n\u30B9\u30AD\u30EB\n\u9632\u5FA1\n\u25B6\uFE0E\u3000\u9003\u3052\u308B</color>"
+  playerActions:
+  - 
+  - 
+  - 
+  - 
+  actionNumber: 0
 --- !u!4 &1714904974
 Transform:
   m_ObjectHideFlags: 0

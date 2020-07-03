@@ -36,24 +36,25 @@ public class EnemyStatus : MonoBehaviour
     }
 
     public void spawnEnemy(int stageNumber){
-        int randomSpawnNumber = UnityEngine.Random.Range(1,2);
+        int randomSpawnNumber = UnityEngine.Random.Range(1,3);
         if(stageNumber == 1){
             if(randomSpawnNumber == 1){
                 spawnSlime();
+            }
+            else if(randomSpawnNumber == 2){
+                spawnJumpingSlime();
             }
         }
     }
 
     public void spawnSlime(){
-        enemyName = "スライム製造";
+        enemyName = "スライム";
         enemyImage = this.GetComponent<SpriteRenderer>();
         enemySprite = Resources.Load<Sprite>("sprites/enemy/mon1/mon_002");
         enemyImage.sprite = enemySprite;
         
-        enemyCurrentHp = 10;
-        enemyMaxHp = 10;
-        enemyCurrentMp = 10;
-        enemyMaxMp = 10;
+        enemyCurrentHp = enemyMaxHp = 10;
+        enemyCurrentMp = enemyMaxMp = 10;
 
         enemyPhysicalDefense = 5;
         enemyMagicalDefense = 5;
@@ -63,4 +64,23 @@ public class EnemyStatus : MonoBehaviour
 
         enemySpeed = 1;
     }
+
+    public void spawnJumpingSlime(){
+        enemyName = "ジャンピングスライム";
+        enemyImage = this.GetComponent<SpriteRenderer>();
+        enemySprite = Resources.Load<Sprite>("sprites/enemy/mon1/mon_025");
+        enemyImage.sprite = enemySprite;
+        
+        enemyCurrentHp = enemyMaxHp = 15;
+        enemyCurrentMp = enemyMaxMp = 15;
+
+        enemyPhysicalDefense = 7;
+        enemyMagicalDefense = 7;
+
+        enemyPhysicalAttack = 5;
+        enemyMagicalAttack = 5;
+
+        enemySpeed = 5;
+    }
+
 }

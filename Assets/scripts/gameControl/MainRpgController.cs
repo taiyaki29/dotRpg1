@@ -19,7 +19,7 @@ public class MainRpgController : MonoBehaviour
     int playerStepsLimit = 0;
     public int enemyEncounterSteps = 9;
 
-    public int stageNumber =1;
+    public int stageNumber = 1;
 
     void Start(){
         mainRpgStatus = MainRpgStatus.WALK;
@@ -43,11 +43,8 @@ public class MainRpgController : MonoBehaviour
 
     public void startBattle(){
         // playerMovement.setPlayerStepCountToZero();
-        Debug.Log("start battle");
-        Debug.Log(playerStepsLimit);
-        Debug.Log(enemyEncounterSteps);
         mainRpgStatus = MainRpgStatus.BATTLE;
-        battleControl.setUpBattle();
         battleScreen.SetActive(true);
+        battleControl.startBattle();
     }
 }
