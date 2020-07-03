@@ -24,7 +24,7 @@ public class UIButtonControls : MonoBehaviour
     void FixedUpdate()
     {
         if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
-            bButtonText.text = "<b>メニュー</b>";
+            bButtonText.text = "<b>m</b>";
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
             bButtonText.text = "<b>戻る</b>";
