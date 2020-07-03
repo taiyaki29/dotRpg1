@@ -19,7 +19,7 @@ public class MainPlayerStatus : MonoBehaviour
 
     public int playerGold = 0;
 
-    public int playerStepsLimit = 0;
+    public int playerStepsLimit = 200;
 
     public int playerMaxHp = 20;
     public int playerCurrentHp = 20;

@@ -27,6 +27,8 @@ public class BattleControl : MonoBehaviour
     EnemyStatus enemy3Status;
 
     int enemyNumber;
+
+    int stageNumber;
     
     void Start(){
         battleStatus = BattleStatus.NO_BATTLE;
@@ -38,6 +40,8 @@ public class BattleControl : MonoBehaviour
         enemy1Status = enemy1.GetComponent<EnemyStatus>();
         enemy2Status = enemy2.GetComponent<EnemyStatus>();
         enemy3Status = enemy3.GetComponent<EnemyStatus>();
+
+        stageNumber = mainRpgcontroller.stageNumber;
     }
 
     // Update is called once per frame
@@ -54,6 +58,7 @@ public class BattleControl : MonoBehaviour
     public void setUpBattle(){
         enemyNumber = UnityEngine.Random.Range(1,4);
         if(enemyNumber == 1){
+            enemy1Status.spawnEnemy(stageNumber);
             enemy1.SetActive(true);
             enemy2.SetActive(false);
             enemy3.SetActive(false);

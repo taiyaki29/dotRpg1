@@ -19,6 +19,8 @@ public class MainRpgController : MonoBehaviour
     int playerStepsLimit = 0;
     public int enemyEncounterSteps = 9;
 
+    public int stageNumber =1;
+
     void Start(){
         mainRpgStatus = MainRpgStatus.WALK;
         battleScreen.SetActive(false);
