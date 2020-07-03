@@ -1,0 +1,4244 @@
+fileFormatVersion: 2
+guid: a1f4e6ca3b05441449cc5bbe8bae7598
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6395354835705085491
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_0"
+  - first:
+      213: -8781372779260523619
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_1"
+  - first:
+      213: -8645982482684407581
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_2"
+  - first:
+      213: -103862639915428216
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_3"
+  - first:
+      213: 5450925595646219706
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_4"
+  - first:
+      213: 4945718304820293389
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_5"
+  - first:
+      213: 6542895139134072003
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_6"
+  - first:
+      213: 1907789539740095925
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_7"
+  - first:
+      213: 6123136758828338246
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_8"
+  - first:
+      213: -2020896917170004505
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_9"
+  - first:
+      213: -467830790439672676
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_10"
+  - first:
+      213: -8927760743321218310
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_11"
+  - first:
+      213: 4928801789740751776
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_12"
+  - first:
+      213: 503244672169128607
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_13"
+  - first:
+      213: 7229035725356413293
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_14"
+  - first:
+      213: 849487110058016891
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_15"
+  - first:
+      213: 6290196680423760387
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_16"
+  - first:
+      213: -8849925255732287981
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_17"
+  - first:
+      213: 3892769861763500658
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_18"
+  - first:
+      213: -7059080669112839738
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_19"
+  - first:
+      213: -3133804932412142656
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_20"
+  - first:
+      213: 8988663402391590410
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_21"
+  - first:
+      213: -7311751025577468345
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_22"
+  - first:
+      213: -8673720392494569211
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_23"
+  - first:
+      213: -6655352650931287264
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_24"
+  - first:
+      213: -2729926321412332225
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_25"
+  - first:
+      213: -4035828912538751486
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_26"
+  - first:
+      213: -9187758822256040925
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_27"
+  - first:
+      213: 6889479151568255266
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_28"
+  - first:
+      213: 8616190259647969781
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_29"
+  - first:
+      213: -9052965027811594787
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_30"
+  - first:
+      213: -7558851606729630241
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_31"
+  - first:
+      213: 7352459925081645814
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_32"
+  - first:
+      213: -5272264997917284973
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_33"
+  - first:
+      213: 6451812574327743654
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_34"
+  - first:
+      213: 1325084070306721750
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_35"
+  - first:
+      213: -8334641096300778378
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_36"
+  - first:
+      213: -8340623082886819903
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_37"
+  - first:
+      213: -8118920042873516990
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_38"
+  - first:
+      213: -2043147629892615278
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_39"
+  - first:
+      213: 1322930546176278206
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_40"
+  - first:
+      213: -701483138299621388
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_41"
+  - first:
+      213: 5287516803922894956
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_42"
+  - first:
+      213: -1633259790300540901
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_43"
+  - first:
+      213: 1197382944133866783
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_44"
+  - first:
+      213: 7553257351838428129
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_45"
+  - first:
+      213: 8647621001151933406
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_46"
+  - first:
+      213: 6884931541562537529
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_47"
+  - first:
+      213: -951231730059116447
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_48"
+  - first:
+      213: 996303707945648193
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_49"
+  - first:
+      213: 759893342964484112
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_50"
+  - first:
+      213: 8935702543845738773
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_51"
+  - first:
+      213: -7769395554352545418
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_52"
+  - first:
+      213: -8312101226900112856
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_53"
+  - first:
+      213: 3618215008697049883
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_54"
+  - first:
+      213: -364218285372128185
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_55"
+  - first:
+      213: -4520462171779987250
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_56"
+  - first:
+      213: -3665803648074393187
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_57"
+  - first:
+      213: 5247936771288340727
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_58"
+  - first:
+      213: 4582148792741582189
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_59"
+  - first:
+      213: -8215055846098297119
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_60"
+  - first:
+      213: -1478758517329093598
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_61"
+  - first:
+      213: -8922553574731355039
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_62"
+  - first:
+      213: -7254193783169222673
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_63"
+  - first:
+      213: -2957643772220452275
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_64"
+  - first:
+      213: -4458443872653245627
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_65"
+  - first:
+      213: -9150508849001935289
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_66"
+  - first:
+      213: -2638637387857150151
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_67"
+  - first:
+      213: -2973415856017832791
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_68"
+  - first:
+      213: 1241408862341269716
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_69"
+  - first:
+      213: 1373621246550091903
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_70"
+  - first:
+      213: -4588560257230999947
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_71"
+  - first:
+      213: -1380467359215005955
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_72"
+  - first:
+      213: -979264237956413894
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_73"
+  - first:
+      213: 8113362429392315742
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_74"
+  - first:
+      213: 3867199238145372389
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_75"
+  - first:
+      213: 1421390963260415683
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_76"
+  - first:
+      213: 1544965459991642984
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_77"
+  - first:
+      213: -6065968548559705756
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_78"
+  - first:
+      213: 2611737291769724985
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_79"
+  - first:
+      213: 7987629571780496146
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_80"
+  - first:
+      213: -3539234100014807729
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_81"
+  - first:
+      213: -3568412755477810946
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_82"
+  - first:
+      213: -3441498208948229936
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_83"
+  - first:
+      213: 2814473453126324103
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_84"
+  - first:
+      213: -6074254251314578459
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_85"
+  - first:
+      213: -7701056977022965124
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_86"
+  - first:
+      213: 8890228558593112900
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_87"
+  - first:
+      213: -130734034005504917
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_88"
+  - first:
+      213: 5967653200802103712
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_89"
+  - first:
+      213: -8473533094481407361
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_90"
+  - first:
+      213: 7277781591927405717
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_91"
+  - first:
+      213: -585521818189822205
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_92"
+  - first:
+      213: -1110782296863588660
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_93"
+  - first:
+      213: -8423037956947179227
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_94"
+  - first:
+      213: -8587077763521148743
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_95"
+  - first:
+      213: -1898312888346451362
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_96"
+  - first:
+      213: 3691393353860203326
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_97"
+  - first:
+      213: 5840081953804273027
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_98"
+  - first:
+      213: 6085945763316321371
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_99"
+  - first:
+      213: -7007365442656448870
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_100"
+  - first:
+      213: -97496614251213736
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_101"
+  - first:
+      213: 7316564437496297769
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_102"
+  - first:
+      213: -8058722577228187177
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_103"
+  - first:
+      213: 5648704371757542870
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_104"
+  - first:
+      213: -5724864930025966517
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_105"
+  - first:
+      213: 969943023781038085
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_106"
+  - first:
+      213: 473480888753848927
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_107"
+  - first:
+      213: -3567317030409502689
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_108"
+  - first:
+      213: 8224572097329349956
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_109"
+  - first:
+      213: 1943005759871908922
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_110"
+  - first:
+      213: -3925626199945292374
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_111"
+  - first:
+      213: -7649881459619271773
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_112"
+  - first:
+      213: -6854998166247174726
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_113"
+  - first:
+      213: 5605849383739500743
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_114"
+  - first:
+      213: 8234953001859109903
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_115"
+  - first:
+      213: 2400746735891479423
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_116"
+  - first:
+      213: 2443754395009726994
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_117"
+  - first:
+      213: 8765734265594039107
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_118"
+  - first:
+      213: 5723156555152197370
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_119"
+  - first:
+      213: -1073178449157800193
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_120"
+  - first:
+      213: -1228732834797373632
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_121"
+  - first:
+      213: -7800483421572322378
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_122"
+  - first:
+      213: -4503890055446085419
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_123"
+  - first:
+      213: 897541419430517219
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_124"
+  - first:
+      213: -8126302563880497647
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_125"
+  - first:
+      213: 677875078017038350
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_126"
+  - first:
+      213: -6204231453842221155
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_127"
+  - first:
+      213: -8523280797338200373
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_128"
+  - first:
+      213: -3168219736210860217
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_129"
+  - first:
+      213: 7338590413802301642
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_130"
+  - first:
+      213: 3885829285378841834
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_131"
+  - first:
+      213: -4529125610520010566
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_132"
+  - first:
+      213: -8156221795598921617
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_133"
+  - first:
+      213: 945077130745459870
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_134"
+  - first:
+      213: -114825320904488507
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_135"
+  - first:
+      213: 8094008092717406378
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_136"
+  - first:
+      213: 1988269822734968477
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_137"
+  - first:
+      213: -6753890579848442955
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_138"
+  - first:
+      213: 737594577895839672
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_139"
+  - first:
+      213: -6973305027164499489
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_140"
+  - first:
+      213: -3824044382658663077
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_141"
+  - first:
+      213: -4770344242747782442
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_142"
+  - first:
+      213: 4506601730707789092
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_143"
+  - first:
+      213: 466158734626039202
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_144"
+  - first:
+      213: 8560109457893777361
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_145"
+  - first:
+      213: -5215958618058816327
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_146"
+  - first:
+      213: 7939277741251982553
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_147"
+  - first:
+      213: 6223166547051712669
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_148"
+  - first:
+      213: -6243507621307548041
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_149"
+  - first:
+      213: -7401376904056741335
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_150"
+  - first:
+      213: 4041941861918348715
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_151"
+  - first:
+      213: -7819013511068051696
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_152"
+  - first:
+      213: -2640128085800153647
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_153"
+  - first:
+      213: -6525047261890555978
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_154"
+  - first:
+      213: 7634572179140319712
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_155"
+  - first:
+      213: 1036910848985821206
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_156"
+  - first:
+      213: 4713242120439069041
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_157"
+  - first:
+      213: -3400092152465310553
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_158"
+  - first:
+      213: -187893381215951164
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_159"
+  - first:
+      213: -4395845379493368152
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_160"
+  - first:
+      213: -8853241725988895413
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_161"
+  - first:
+      213: -7609156251960566523
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_162"
+  - first:
+      213: -2119850795040551600
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_163"
+  - first:
+      213: -1286494931046545084
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_164"
+  - first:
+      213: -2774743352632185887
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_165"
+  - first:
+      213: 1359728942629675757
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_166"
+  - first:
+      213: -4186144855520660033
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_167"
+  - first:
+      213: -506407577099294200
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_168"
+  - first:
+      213: 3638229093650511776
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_169"
+  - first:
+      213: 4505514838410349205
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_170"
+  - first:
+      213: 8192074240012122785
+    second: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_171"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1c83539a22f37a0800000000000000
+      internalID: -6395354835705085491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_1"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b44e3abfb422680800000000000000
+      internalID: -8781372779260523619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_2"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e098598dbc430880800000000000000
+      internalID: -8645982482684407581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_3"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8861862ba710f8ef0800000000000000
+      internalID: -103862639915428216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_4"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5d391f2f395ab40800000000000000
+      internalID: 5450925595646219706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_5"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fe5fd3898b2a440800000000000000
+      internalID: 4945718304820293389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_6"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c467ba96780dca50800000000000000
+      internalID: 6542895139134072003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_7"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b51a6e7a74d97a10800000000000000
+      internalID: 1907789539740095925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_8"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c891db070c9f450800000000000000
+      internalID: 6123136758828338246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_9"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed566406f454f3e0800000000000000
+      internalID: -2020896917170004505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_10"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c946ad0ff5ee189f0800000000000000
+      internalID: -467830790439672676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_11"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af259aeb7e83a1480800000000000000
+      internalID: -8927760743321218310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_12"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab9ec52d1f966440800000000000000
+      internalID: 4928801789740751776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_13"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92bfbfec52ebf600800000000000000
+      internalID: 503244672169128607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_14"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d613a7ee0b1b25460800000000000000
+      internalID: 7229035725356413293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_15"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70084c960cf9cb00800000000000000
+      internalID: 849487110058016891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_16"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302efffcd844b4750800000000000000
+      internalID: 6290196680423760387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_17"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316a15b6edfbe2580800000000000000
+      internalID: -8849925255732287981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_18"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a82c28095e50630800000000000000
+      internalID: 3892769861763500658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_19"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1d3b4388b190e90800000000000000
+      internalID: -7059080669112839738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_20"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb0530840d7284d0800000000000000
+      internalID: -3133804932412142656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_21"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06da119db52ebc70800000000000000
+      internalID: 8988663402391590410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_22"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e5b5a7e21778a90800000000000000
+      internalID: -7311751025577468345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_23"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509ac442241c0a780800000000000000
+      internalID: -8673720392494569211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_24"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b494a860073a3a0800000000000000
+      internalID: -6655352650931287264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_25"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35aa35797a5d1ad0800000000000000
+      internalID: -2729926321412332225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_26"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e60ed9cfaddf7c0800000000000000
+      internalID: -4035828912538751486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_27"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 304
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324a77da7068e7080800000000000000
+      internalID: -9187758822256040925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_28"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297fac49c85c9f50800000000000000
+      internalID: 6889479151568255266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_29"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f97f7ff36bd29770800000000000000
+      internalID: 8616190259647969781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_30"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd614995486d5280800000000000000
+      internalID: -9052965027811594787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_31"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd5dfe1380991790800000000000000
+      internalID: -7558851606729630241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_32"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f269cbc85f290660800000000000000
+      internalID: 7352459925081645814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_33"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3952a650be625d6b0800000000000000
+      internalID: -5272264997917284973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_34"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4243a6a51798950800000000000000
+      internalID: 6451812574327743654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_35"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df292cf0f4a36210800000000000000
+      internalID: 1325084070306721750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_36"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cae9ce418655c80800000000000000
+      internalID: -8334641096300778378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_37"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf8b132f77204c80800000000000000
+      internalID: -8340623082886819903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_38"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c89b4ac3dc35f80800000000000000
+      internalID: -8118920042873516990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_39"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293c1904e0845a3e0800000000000000
+      internalID: -2043147629892615278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_40"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeb953925efb5210800000000000000
+      internalID: 1322930546176278206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_41"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff89b56dc4d346f0800000000000000
+      internalID: -701483138299621388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_42"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60abb9c488016940800000000000000
+      internalID: 5287516803922894956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_43"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b101535cfde7559e0800000000000000
+      internalID: -1633259790300540901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_44"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15e5359175fd9010800000000000000
+      internalID: 1197382944133866783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_45"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebef69ea8f82d860800000000000000
+      internalID: 7553257351838428129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_46"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb6ed5cb75820870800000000000000
+      internalID: 8647621001151933406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_47"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936b7b552c03c8f50800000000000000
+      internalID: 6884931541562537529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_48"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1600fb608cb8cc2f0800000000000000
+      internalID: -951231730059116447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_49"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140418891f493dd00800000000000000
+      internalID: 996303707945648193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_50"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018059628feab8a00800000000000000
+      internalID: 759893342964484112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_51"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519ca78ce1ef10c70800000000000000
+      internalID: 8935702543845738773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_52"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671415748ef8d2490800000000000000
+      internalID: -7769395554352545418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_53"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ab78939fb75ac80800000000000000
+      internalID: -8312101226900112856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_54"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13ef5a516b763230800000000000000
+      internalID: 3618215008697049883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_55"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74441bf266902faf0800000000000000
+      internalID: -364218285372128185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_56"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8867eea971441c0800000000000000
+      internalID: -4520462171779987250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_57"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99d13c1103702dc0800000000000000
+      internalID: -3665803648074393187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_58"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f81a5050ba64d840800000000000000
+      internalID: 5247936771288340727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_59"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65d85bbc00179f30800000000000000
+      internalID: 4582148792741582189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_60"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee9053bb324efd80800000000000000
+      internalID: -8215055846098297119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_61"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c140a96f46a7be0800000000000000
+      internalID: -1478758517329093598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_62"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ceeb82cc8bc2480800000000000000
+      internalID: -8922553574731355039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_63"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7f956403de35b90800000000000000
+      internalID: -7254193783169222673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_64"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4257a0d8a654f6d0800000000000000
+      internalID: -2957643772220452275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_65"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5438c7f6bec6022c0800000000000000
+      internalID: -4458443872653245627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_66"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ecb2deeacd20180800000000000000
+      internalID: -9150508849001935289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_67"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb5bd964da16bd0800000000000000
+      internalID: -2638637387857150151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_68"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a40b84680e4cb6d0800000000000000
+      internalID: -2973415856017832791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_69"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d88fd478ce5a3110800000000000000
+      internalID: 1241408862341269716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_70"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f782c88fe35101310800000000000000
+      internalID: 1373621246550091903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_71"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e654dd1c82250c0800000000000000
+      internalID: -4588560257230999947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_72"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfec7f5304897dce0800000000000000
+      internalID: -1380467359215005955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_73"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a364d5b2d54f862f0800000000000000
+      internalID: -979264237956413894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_74"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55ede1a424789070800000000000000
+      internalID: 8113362429392315742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_75"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0f051c73d0ba530800000000000000
+      internalID: 3867199238145372389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_76"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce561cdc8bc9b310800000000000000
+      internalID: 1421390963260415683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_77"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863cc0976e1d07510800000000000000
+      internalID: 1544965459991642984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_78"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46928647eb951dba0800000000000000
+      internalID: -6065968548559705756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_79"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9304392ba31ce3420800000000000000
+      internalID: 2611737291769724985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_80"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bc16776c2c9de60800000000000000
+      internalID: 7987629571780496146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_81"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f450ba3765d12eec0800000000000000
+      internalID: -3539234100014807729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_82"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0b5c151837a7ec0800000000000000
+      internalID: -3568412755477810946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_83"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d86f70ec975d30d0800000000000000
+      internalID: -3441498208948229936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_84"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f8c53a1b40f0720800000000000000
+      internalID: 2814473453126324103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_85"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebfcf2f0f9e3bba0800000000000000
+      internalID: -6074254251314578459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_86"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aa0893b79502590800000000000000
+      internalID: -7701056977022965124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_87"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bb9f685cf606b70800000000000000
+      internalID: 8890228558593112900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_88"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c4c07b61a8f2ef0800000000000000
+      internalID: -130734034005504917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_89"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a14888d7fc51d250800000000000000
+      internalID: 5967653200802103712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_90"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f725be69b86f76a80800000000000000
+      internalID: -8473533094481407361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_91"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 176
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cb5bb6ccfdff460800000000000000
+      internalID: 7277781591927405717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_92"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3070e82320fcfd7f0800000000000000
+      internalID: -585521818189822205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_93"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce37acd265b590f0800000000000000
+      internalID: -1110782296863588660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_94"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5290886fa9b5b1b80800000000000000
+      internalID: -8423037956947179227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_95"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b88aa6354294d880800000000000000
+      internalID: -8587077763521148743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_96"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5260995c76d7a5e0800000000000000
+      internalID: -1898312888346451362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_97"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33431f82b67a3330800000000000000
+      internalID: 3691393353860203326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_98"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3854cab48932c0150800000000000000
+      internalID: 5840081953804273027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_99"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c43c05d6f957450800000000000000
+      internalID: 6085945763316321371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_100"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e4d1ba146d0ce90800000000000000
+      internalID: -7007365442656448870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_101"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc0cc885f95aef0800000000000000
+      internalID: -97496614251213736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_102"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929f8315798a98560800000000000000
+      internalID: 7316564437496297769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_103"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9b4e0538aa92090800000000000000
+      internalID: -8058722577228187177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_104"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddedcfa2ba346e40800000000000000
+      internalID: 5648704371757542870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_105"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44f5b28da13d80b0800000000000000
+      internalID: -5724864930025966517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_106"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50846d88a0ee57d00800000000000000
+      internalID: 969943023781038085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_107"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f520c161c54229600800000000000000
+      internalID: 473480888753848927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_108"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f108d31bf085e7ec0800000000000000
+      internalID: -3567317030409502689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_109"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445c7e23fbc832270800000000000000
+      internalID: 8224572097329349956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_110"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cf3b1b171f6fa10800000000000000
+      internalID: 1943005759871908922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_111"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa55b4f15cf5589c0800000000000000
+      internalID: -3925626199945292374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_112"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abeb81e75926d590800000000000000
+      internalID: -7649881459619271773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_113"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd02e4bc772ed0a0800000000000000
+      internalID: -6854998166247174726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_114"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8a22e305afbcd40800000000000000
+      internalID: 5605849383739500743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_115"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0459d1ef1e684270800000000000000
+      internalID: 8234953001859109903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_116"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b7d74cf6a215120800000000000000
+      internalID: 2400746735891479423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_117"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21abad8bca5f9e120800000000000000
+      internalID: 2443754395009726994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_118"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bc3382fd426a970800000000000000
+      internalID: 8765734265594039107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_119"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af68bc7709cbc6f40800000000000000
+      internalID: 5723156555152197370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_120"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe385de2ed4b11f0800000000000000
+      internalID: -1073178449157800193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_121"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0473b023ff9a2fee0800000000000000
+      internalID: -1228732834797373632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_122"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbabd428ad1fb390800000000000000
+      internalID: -7800483421572322378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_123"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0c8b17bd7fe71c0800000000000000
+      internalID: -4503890055446085419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_124"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e91b546a25b47c00800000000000000
+      internalID: 897541419430517219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_125"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e8e868fd2993f80800000000000000
+      internalID: -8126302563880497647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_126"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08bb4bbacb486900800000000000000
+      internalID: 677875078017038350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_127"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97dd693d5426e9a0800000000000000
+      internalID: -6204231453842221155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_128"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc69fb9e54937b980800000000000000
+      internalID: -8523280797338200373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_129"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74715c49fe83804d0800000000000000
+      internalID: -3168219736210860217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_130"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8e5ce8919e7d560800000000000000
+      internalID: 7338590413802301642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_131"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecd0d4a52d3de530800000000000000
+      internalID: 3885829285378841834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_132"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0a4d9e0405521c0800000000000000
+      internalID: -4529125610520010566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_133"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60170c8d774fce80800000000000000
+      internalID: -8156221795598921617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_134"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94bd67a4a69d1d00800000000000000
+      internalID: 945077130745459870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_135"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c98440aafe086ef0800000000000000
+      internalID: -114825320904488507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_136"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8de87f971b35070800000000000000
+      internalID: 8094008092717406378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_137"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d962fb59ed0c79b10800000000000000
+      internalID: 1988269822734968477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_138"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbc6402d4c5542a0800000000000000
+      internalID: -6753890579848442955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_139"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b75cb35c567c3a00800000000000000
+      internalID: 737594577895839672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_140"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd11a612608d93f90800000000000000
+      internalID: -6973305027164499489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_141"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d6d4605e34eeac0800000000000000
+      internalID: -3824044382658663077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_142"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da40b28f255ccdb0800000000000000
+      internalID: -4770344242747782442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_143"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4259ff6a56aaa8e30800000000000000
+      internalID: 4506601730707789092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_144"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5a45a36e0287600800000000000000
+      internalID: 466158734626039202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_145"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df5834d23e9bc670800000000000000
+      internalID: 8560109457893777361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_146"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4877fa5413d97b0800000000000000
+      internalID: -5215958618058816327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_147"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d47d74aa0bfd2e60800000000000000
+      internalID: 7939277741251982553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_148"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d909c17b0012d5650800000000000000
+      internalID: 6223166547051712669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_149"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ef48fd5ea9a59a0800000000000000
+      internalID: -6243507621307548041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_150"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922eae08be6094990800000000000000
+      internalID: -7401376904056741335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_151"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba59c6255bcd71830800000000000000
+      internalID: 4041941861918348715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_152"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0171fca73a84d7390800000000000000
+      internalID: -7819013511068051696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_153"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd89547e716c5bd0800000000000000
+      internalID: -2640128085800153647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_154"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfc06426106275a0800000000000000
+      internalID: -6525047261890555978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_155"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e91dbd72f273f960800000000000000
+      internalID: 7634572179140319712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_156"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6107c816ce8d36e00800000000000000
+      internalID: 1036910848985821206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_157"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179fd299cbcc86140800000000000000
+      internalID: 4713242120439069041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_158"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac36b8a33270d0d0800000000000000
+      internalID: -3400092152465310553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_159"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6e9fc17f7746df0800000000000000
+      internalID: -187893381215951164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_160"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae61c3eae1def2c0800000000000000
+      internalID: -4395845379493368152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_161"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4504c38e87f22580800000000000000
+      internalID: -8853241725988895413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_162"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d927134b8d66690800000000000000
+      internalID: -7609156251960566523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_163"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d47c0fee6c492e0800000000000000
+      internalID: -2119850795040551600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_164"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44941a52da3752ee0800000000000000
+      internalID: -1286494931046545084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_165"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6b7b3f912e79d0800000000000000
+      internalID: -2774743352632185887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_166"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de26248e44abed210800000000000000
+      internalID: 1359728942629675757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_167"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5bc5cde63d7e5c0800000000000000
+      internalID: -4186144855520660033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_168"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a2e6fddf0e8f8f0800000000000000
+      internalID: -506407577099294200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_169"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7b782a5169d7230800000000000000
+      internalID: 3638229093650511776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_170"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a43b1dfddc68e30800000000000000
+      internalID: 4505514838410349205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "BrightForest-half\u306E\u30B3\u30D2\u309A\u30FC_171"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aafc892e1810b170800000000000000
+      internalID: 8192074240012122785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

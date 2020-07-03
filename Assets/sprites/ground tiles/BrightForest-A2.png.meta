@@ -1,0 +1,6812 @@
+fileFormatVersion: 2
+guid: df6eac7d98d484bb09f769f4dbd624c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3194163573705656017
+    second: BrightForest-A2_0
+  - first:
+      213: 4732344967518565680
+    second: BrightForest-A2_1
+  - first:
+      213: 1717963483100714451
+    second: BrightForest-A2_2
+  - first:
+      213: 7626019167201925856
+    second: BrightForest-A2_3
+  - first:
+      213: 7628254617063971670
+    second: BrightForest-A2_4
+  - first:
+      213: 2968049070264570572
+    second: BrightForest-A2_5
+  - first:
+      213: -7787961957887057017
+    second: BrightForest-A2_6
+  - first:
+      213: 2660234080087974893
+    second: BrightForest-A2_7
+  - first:
+      213: 8416777165609401159
+    second: BrightForest-A2_8
+  - first:
+      213: 5826740000281711869
+    second: BrightForest-A2_9
+  - first:
+      213: -2721135309224642544
+    second: BrightForest-A2_10
+  - first:
+      213: -6444060686583278930
+    second: BrightForest-A2_11
+  - first:
+      213: 5979249370906849342
+    second: BrightForest-A2_12
+  - first:
+      213: -1149472438162256092
+    second: BrightForest-A2_13
+  - first:
+      213: 3961824168408916986
+    second: BrightForest-A2_14
+  - first:
+      213: -8247201927055890493
+    second: BrightForest-A2_15
+  - first:
+      213: -121609356821244187
+    second: BrightForest-A2_16
+  - first:
+      213: 9053318319540450935
+    second: BrightForest-A2_17
+  - first:
+      213: 8356050659781163892
+    second: BrightForest-A2_18
+  - first:
+      213: 5098487637154631674
+    second: BrightForest-A2_19
+  - first:
+      213: -1460497370629717409
+    second: BrightForest-A2_20
+  - first:
+      213: -7687568419561598039
+    second: BrightForest-A2_21
+  - first:
+      213: -5115096958797643884
+    second: BrightForest-A2_22
+  - first:
+      213: -4714182104496537741
+    second: BrightForest-A2_23
+  - first:
+      213: 5974739136103985958
+    second: BrightForest-A2_24
+  - first:
+      213: -4834536026026801177
+    second: BrightForest-A2_25
+  - first:
+      213: -5975929283459983195
+    second: BrightForest-A2_26
+  - first:
+      213: 1104573661682933278
+    second: BrightForest-A2_27
+  - first:
+      213: 5694407137889250612
+    second: BrightForest-A2_28
+  - first:
+      213: 3086646183444913008
+    second: BrightForest-A2_29
+  - first:
+      213: 333986136300974590
+    second: BrightForest-A2_30
+  - first:
+      213: -628799069865863627
+    second: BrightForest-A2_31
+  - first:
+      213: 8049165042944160486
+    second: BrightForest-A2_32
+  - first:
+      213: -8472101255412229931
+    second: BrightForest-A2_33
+  - first:
+      213: -5192239459852534163
+    second: BrightForest-A2_34
+  - first:
+      213: -7132731948730442407
+    second: BrightForest-A2_35
+  - first:
+      213: 1181965077041966750
+    second: BrightForest-A2_36
+  - first:
+      213: 4357530951386604666
+    second: BrightForest-A2_37
+  - first:
+      213: -1127971113582627631
+    second: BrightForest-A2_38
+  - first:
+      213: 2780382886647679655
+    second: BrightForest-A2_39
+  - first:
+      213: 5576422124876371383
+    second: BrightForest-A2_40
+  - first:
+      213: 2262769448526058830
+    second: BrightForest-A2_41
+  - first:
+      213: 4291605171556615765
+    second: BrightForest-A2_42
+  - first:
+      213: 8415212042201995779
+    second: BrightForest-A2_43
+  - first:
+      213: 8293495719532713533
+    second: BrightForest-A2_44
+  - first:
+      213: 8601524708166145995
+    second: BrightForest-A2_45
+  - first:
+      213: 1957728908342737048
+    second: BrightForest-A2_46
+  - first:
+      213: 3879570821231789318
+    second: BrightForest-A2_47
+  - first:
+      213: -6530172897353379335
+    second: BrightForest-A2_48
+  - first:
+      213: 4949480914499061800
+    second: BrightForest-A2_49
+  - first:
+      213: 8665164233176834563
+    second: BrightForest-A2_50
+  - first:
+      213: -1379188758910400231
+    second: BrightForest-A2_51
+  - first:
+      213: 8882953318604944441
+    second: BrightForest-A2_52
+  - first:
+      213: 1573663327575270172
+    second: BrightForest-A2_53
+  - first:
+      213: 6583214108290975086
+    second: BrightForest-A2_54
+  - first:
+      213: 5975566993664024516
+    second: BrightForest-A2_55
+  - first:
+      213: -1343125386507475537
+    second: BrightForest-A2_56
+  - first:
+      213: 5186669551516504858
+    second: BrightForest-A2_57
+  - first:
+      213: -7526590744831495654
+    second: BrightForest-A2_58
+  - first:
+      213: -156181072890707227
+    second: BrightForest-A2_59
+  - first:
+      213: 6083814197086022221
+    second: BrightForest-A2_60
+  - first:
+      213: -8421260507351213529
+    second: BrightForest-A2_61
+  - first:
+      213: 4472677378080954734
+    second: BrightForest-A2_62
+  - first:
+      213: -202480175868761807
+    second: BrightForest-A2_63
+  - first:
+      213: -200003303241487225
+    second: BrightForest-A2_64
+  - first:
+      213: 3123651754992631621
+    second: BrightForest-A2_65
+  - first:
+      213: 1164005088516325172
+    second: BrightForest-A2_66
+  - first:
+      213: -5500357027842196411
+    second: BrightForest-A2_67
+  - first:
+      213: -8782684101629502267
+    second: BrightForest-A2_68
+  - first:
+      213: 8421119460506558795
+    second: BrightForest-A2_69
+  - first:
+      213: -8995241560199560371
+    second: BrightForest-A2_70
+  - first:
+      213: 961654255035754699
+    second: BrightForest-A2_71
+  - first:
+      213: 7640658766703522875
+    second: BrightForest-A2_72
+  - first:
+      213: -4022711546542194439
+    second: BrightForest-A2_73
+  - first:
+      213: -2730439164991394857
+    second: BrightForest-A2_74
+  - first:
+      213: -3237735589750599346
+    second: BrightForest-A2_75
+  - first:
+      213: 1727557942965946804
+    second: BrightForest-A2_76
+  - first:
+      213: -6486596753240107090
+    second: BrightForest-A2_77
+  - first:
+      213: -439703730992240809
+    second: BrightForest-A2_78
+  - first:
+      213: 8683425596604379034
+    second: BrightForest-A2_79
+  - first:
+      213: 6691736667788656957
+    second: BrightForest-A2_80
+  - first:
+      213: 840116147938456523
+    second: BrightForest-A2_81
+  - first:
+      213: -4285570323889339081
+    second: BrightForest-A2_82
+  - first:
+      213: 2763071581374103459
+    second: BrightForest-A2_83
+  - first:
+      213: 8753109688153771013
+    second: BrightForest-A2_84
+  - first:
+      213: 2299649342452882300
+    second: BrightForest-A2_85
+  - first:
+      213: -4005036783722298715
+    second: BrightForest-A2_86
+  - first:
+      213: -8343402640710792403
+    second: BrightForest-A2_87
+  - first:
+      213: 1129582068833293675
+    second: BrightForest-A2_88
+  - first:
+      213: 8305738652403228025
+    second: BrightForest-A2_89
+  - first:
+      213: 5813723506697412914
+    second: BrightForest-A2_90
+  - first:
+      213: -1401049418172885104
+    second: BrightForest-A2_91
+  - first:
+      213: 7378678634796215525
+    second: BrightForest-A2_92
+  - first:
+      213: 5907801549933207676
+    second: BrightForest-A2_93
+  - first:
+      213: -217692951400854420
+    second: BrightForest-A2_94
+  - first:
+      213: 7244795094348859624
+    second: BrightForest-A2_95
+  - first:
+      213: -6933302642083699980
+    second: BrightForest-A2_96
+  - first:
+      213: -4469463344812884105
+    second: BrightForest-A2_97
+  - first:
+      213: -1921779892983323168
+    second: BrightForest-A2_98
+  - first:
+      213: -2041718692076911298
+    second: BrightForest-A2_99
+  - first:
+      213: 9023983334796992879
+    second: BrightForest-A2_100
+  - first:
+      213: 4293278771563452998
+    second: BrightForest-A2_101
+  - first:
+      213: 7116001162179346666
+    second: BrightForest-A2_102
+  - first:
+      213: 2526256016752961112
+    second: BrightForest-A2_103
+  - first:
+      213: -2725588633055489356
+    second: BrightForest-A2_104
+  - first:
+      213: 919894504713495827
+    second: BrightForest-A2_105
+  - first:
+      213: 7524580066510848588
+    second: BrightForest-A2_106
+  - first:
+      213: 7611785985556124044
+    second: BrightForest-A2_107
+  - first:
+      213: -6931178775781644997
+    second: BrightForest-A2_108
+  - first:
+      213: 6032348790633602850
+    second: BrightForest-A2_109
+  - first:
+      213: 144460536962998010
+    second: BrightForest-A2_110
+  - first:
+      213: 1021702186760368337
+    second: BrightForest-A2_111
+  - first:
+      213: -215891683292855309
+    second: BrightForest-A2_112
+  - first:
+      213: -6649839826946473270
+    second: BrightForest-A2_113
+  - first:
+      213: -900505581030863463
+    second: BrightForest-A2_114
+  - first:
+      213: -5312539696926936392
+    second: BrightForest-A2_115
+  - first:
+      213: -408113398949166669
+    second: BrightForest-A2_116
+  - first:
+      213: 6599148914052439024
+    second: BrightForest-A2_117
+  - first:
+      213: -2930837158959152434
+    second: BrightForest-A2_118
+  - first:
+      213: 6290341169414380963
+    second: BrightForest-A2_119
+  - first:
+      213: -6706267206135396667
+    second: BrightForest-A2_120
+  - first:
+      213: -7125024791921572599
+    second: BrightForest-A2_121
+  - first:
+      213: -2243777220409024555
+    second: BrightForest-A2_122
+  - first:
+      213: 5052470259581877256
+    second: BrightForest-A2_123
+  - first:
+      213: -947144619573651503
+    second: BrightForest-A2_124
+  - first:
+      213: 5625705397962362804
+    second: BrightForest-A2_125
+  - first:
+      213: -6365437352042249261
+    second: BrightForest-A2_126
+  - first:
+      213: 2013385671236013879
+    second: BrightForest-A2_127
+  - first:
+      213: 5931646902797707279
+    second: BrightForest-A2_128
+  - first:
+      213: -3025848533440708163
+    second: BrightForest-A2_129
+  - first:
+      213: 4471541969354016603
+    second: BrightForest-A2_130
+  - first:
+      213: 1659405255498456453
+    second: BrightForest-A2_131
+  - first:
+      213: -4448635905469643506
+    second: BrightForest-A2_132
+  - first:
+      213: -6074732919588887008
+    second: BrightForest-A2_133
+  - first:
+      213: -5137038868687581795
+    second: BrightForest-A2_134
+  - first:
+      213: -2181767645064973418
+    second: BrightForest-A2_135
+  - first:
+      213: 3294929658602145116
+    second: BrightForest-A2_136
+  - first:
+      213: 188541445765543684
+    second: BrightForest-A2_137
+  - first:
+      213: 320625010447238279
+    second: BrightForest-A2_138
+  - first:
+      213: -7187436995888893436
+    second: BrightForest-A2_139
+  - first:
+      213: 8755794498491875818
+    second: BrightForest-A2_140
+  - first:
+      213: -1806604262058916013
+    second: BrightForest-A2_141
+  - first:
+      213: 1933204186924571827
+    second: BrightForest-A2_142
+  - first:
+      213: 1330550450939573033
+    second: BrightForest-A2_143
+  - first:
+      213: -6339482794105269131
+    second: BrightForest-A2_144
+  - first:
+      213: 8145366154115354093
+    second: BrightForest-A2_145
+  - first:
+      213: 7552691000701643263
+    second: BrightForest-A2_146
+  - first:
+      213: 7891664913022253033
+    second: BrightForest-A2_147
+  - first:
+      213: 6750843750030982333
+    second: BrightForest-A2_148
+  - first:
+      213: 3610422556549721882
+    second: BrightForest-A2_149
+  - first:
+      213: 6171415288299547250
+    second: BrightForest-A2_150
+  - first:
+      213: -5657137624460606832
+    second: BrightForest-A2_151
+  - first:
+      213: -1119804917023677659
+    second: BrightForest-A2_152
+  - first:
+      213: -5231040166297876978
+    second: BrightForest-A2_153
+  - first:
+      213: 5468313278341473479
+    second: BrightForest-A2_154
+  - first:
+      213: -781914169408188110
+    second: BrightForest-A2_155
+  - first:
+      213: -2492153183224478957
+    second: BrightForest-A2_156
+  - first:
+      213: 6335078675565516724
+    second: BrightForest-A2_157
+  - first:
+      213: -7533096676290742233
+    second: BrightForest-A2_158
+  - first:
+      213: 8952138026955537684
+    second: BrightForest-A2_159
+  - first:
+      213: -3372222500029986039
+    second: BrightForest-A2_160
+  - first:
+      213: 575903393107135257
+    second: BrightForest-A2_161
+  - first:
+      213: 7902611137107286648
+    second: BrightForest-A2_162
+  - first:
+      213: -390230931572645905
+    second: BrightForest-A2_163
+  - first:
+      213: 8047117009399819909
+    second: BrightForest-A2_164
+  - first:
+      213: -5740346254833968304
+    second: BrightForest-A2_165
+  - first:
+      213: 6784953078077339729
+    second: BrightForest-A2_166
+  - first:
+      213: -8486932704343725252
+    second: BrightForest-A2_167
+  - first:
+      213: 991867586668897064
+    second: BrightForest-A2_168
+  - first:
+      213: -2882157673749742926
+    second: BrightForest-A2_169
+  - first:
+      213: -5708737865954926114
+    second: BrightForest-A2_170
+  - first:
+      213: 1313153423378284984
+    second: BrightForest-A2_171
+  - first:
+      213: 2114962555144453945
+    second: BrightForest-A2_172
+  - first:
+      213: -2365644872078698176
+    second: BrightForest-A2_173
+  - first:
+      213: 5862481786121366417
+    second: BrightForest-A2_174
+  - first:
+      213: 6916115564447833162
+    second: BrightForest-A2_175
+  - first:
+      213: 3389966407493489823
+    second: BrightForest-A2_176
+  - first:
+      213: -5343261839186899153
+    second: BrightForest-A2_177
+  - first:
+      213: 8327890401601027836
+    second: BrightForest-A2_178
+  - first:
+      213: -8723231878451197294
+    second: BrightForest-A2_179
+  - first:
+      213: 8443304591074389947
+    second: BrightForest-A2_180
+  - first:
+      213: 924409973347991862
+    second: BrightForest-A2_181
+  - first:
+      213: -3756162182375753495
+    second: BrightForest-A2_182
+  - first:
+      213: -2664568326982722576
+    second: BrightForest-A2_183
+  - first:
+      213: -2213223697354651338
+    second: BrightForest-A2_184
+  - first:
+      213: -287295897598926778
+    second: BrightForest-A2_185
+  - first:
+      213: 2310682097834158004
+    second: BrightForest-A2_0
+  - first:
+      213: 7498026691067003819
+    second: BrightForest-A2_1
+  - first:
+      213: 4726913788138057771
+    second: BrightForest-A2_2
+  - first:
+      213: -8435023279775198966
+    second: BrightForest-A2_3
+  - first:
+      213: 8160989335539250032
+    second: BrightForest-A2_4
+  - first:
+      213: -8758389474551952064
+    second: BrightForest-A2_5
+  - first:
+      213: -5233332784372976674
+    second: BrightForest-A2_6
+  - first:
+      213: -7155511548268248067
+    second: BrightForest-A2_7
+  - first:
+      213: -6673885305944219991
+    second: BrightForest-A2_8
+  - first:
+      213: 8319527645532505904
+    second: BrightForest-A2_9
+  - first:
+      213: 5419716073334196341
+    second: BrightForest-A2_10
+  - first:
+      213: 4859034214740452057
+    second: BrightForest-A2_11
+  - first:
+      213: -2560154545892295128
+    second: BrightForest-A2_12
+  - first:
+      213: -8011515556995832503
+    second: BrightForest-A2_13
+  - first:
+      213: -8995520726568403323
+    second: BrightForest-A2_14
+  - first:
+      213: -8528463390086804195
+    second: BrightForest-A2_15
+  - first:
+      213: 4325164903814254023
+    second: BrightForest-A2_16
+  - first:
+      213: -7828124149842530492
+    second: BrightForest-A2_17
+  - first:
+      213: -1322047205667719942
+    second: BrightForest-A2_18
+  - first:
+      213: 4155606955696717376
+    second: BrightForest-A2_19
+  - first:
+      213: 8598977413934756262
+    second: BrightForest-A2_20
+  - first:
+      213: -451072658228046368
+    second: BrightForest-A2_21
+  - first:
+      213: 8953221901897898334
+    second: BrightForest-A2_22
+  - first:
+      213: -4088594458536824453
+    second: BrightForest-A2_23
+  - first:
+      213: 6461046251284407885
+    second: BrightForest-A2_24
+  - first:
+      213: 7065861304525739225
+    second: BrightForest-A2_25
+  - first:
+      213: 8961584876389703331
+    second: BrightForest-A2_26
+  - first:
+      213: -336833085381797758
+    second: BrightForest-A2_27
+  - first:
+      213: 5642285824220062045
+    second: BrightForest-A2_28
+  - first:
+      213: 1218612542643532650
+    second: BrightForest-A2_29
+  - first:
+      213: -8441843502718867987
+    second: BrightForest-A2_30
+  - first:
+      213: -2938853397903037342
+    second: BrightForest-A2_31
+  - first:
+      213: -5464406577983028997
+    second: BrightForest-A2_32
+  - first:
+      213: -4739656471344627335
+    second: BrightForest-A2_33
+  - first:
+      213: -2438098603685637742
+    second: BrightForest-A2_34
+  - first:
+      213: -7028132657284562681
+    second: BrightForest-A2_35
+  - first:
+      213: 7667393865964302935
+    second: BrightForest-A2_36
+  - first:
+      213: 6351396738007952787
+    second: BrightForest-A2_37
+  - first:
+      213: 7994294870059492861
+    second: BrightForest-A2_38
+  - first:
+      213: -6086861456141479832
+    second: BrightForest-A2_39
+  - first:
+      213: -4714466520583329064
+    second: BrightForest-A2_40
+  - first:
+      213: 3872624676701356537
+    second: BrightForest-A2_41
+  - first:
+      213: 8014405377686370375
+    second: BrightForest-A2_42
+  - first:
+      213: -5816080685802562464
+    second: BrightForest-A2_43
+  - first:
+      213: -8540156029533829979
+    second: BrightForest-A2_44
+  - first:
+      213: -7531401489925894732
+    second: BrightForest-A2_45
+  - first:
+      213: -4203816839597500763
+    second: BrightForest-A2_46
+  - first:
+      213: -6660189592157756323
+    second: BrightForest-A2_47
+  - first:
+      213: 1820469343050684696
+    second: BrightForest-A2_48
+  - first:
+      213: -1806225034121513005
+    second: BrightForest-A2_49
+  - first:
+      213: 6796469480893573485
+    second: BrightForest-A2_50
+  - first:
+      213: -6443772084124527408
+    second: BrightForest-A2_51
+  - first:
+      213: -5170574879622988129
+    second: BrightForest-A2_52
+  - first:
+      213: 2494023921914333420
+    second: BrightForest-A2_53
+  - first:
+      213: -1052439048861521420
+    second: BrightForest-A2_54
+  - first:
+      213: 8433415478850901920
+    second: BrightForest-A2_55
+  - first:
+      213: -8508303966302469634
+    second: BrightForest-A2_56
+  - first:
+      213: -9204955744708259089
+    second: BrightForest-A2_57
+  - first:
+      213: -8530917294463352111
+    second: BrightForest-A2_58
+  - first:
+      213: 6547525405207694390
+    second: BrightForest-A2_59
+  - first:
+      213: 966772996909726545
+    second: BrightForest-A2_60
+  - first:
+      213: 4257993466674357665
+    second: BrightForest-A2_61
+  - first:
+      213: -6913227912803375093
+    second: BrightForest-A2_62
+  - first:
+      213: 7192824624601076521
+    second: BrightForest-A2_63
+  - first:
+      213: 2070964368051827203
+    second: BrightForest-A2_64
+  - first:
+      213: -1670200228247854706
+    second: BrightForest-A2_65
+  - first:
+      213: 2937392746908242375
+    second: BrightForest-A2_66
+  - first:
+      213: -7005292432668557580
+    second: BrightForest-A2_67
+  - first:
+      213: -5458826116634730572
+    second: BrightForest-A2_68
+  - first:
+      213: 7668784198087975708
+    second: BrightForest-A2_69
+  - first:
+      213: -3735032015656935924
+    second: BrightForest-A2_70
+  - first:
+      213: 8640828645723888964
+    second: BrightForest-A2_71
+  - first:
+      213: -4271926038075238876
+    second: BrightForest-A2_72
+  - first:
+      213: -4626203439086672150
+    second: BrightForest-A2_73
+  - first:
+      213: 7651126084762651012
+    second: BrightForest-A2_74
+  - first:
+      213: -5258952823952637615
+    second: BrightForest-A2_75
+  - first:
+      213: 8784927280980070976
+    second: BrightForest-A2_76
+  - first:
+      213: -6613240810371846088
+    second: BrightForest-A2_77
+  - first:
+      213: 1850134470595324530
+    second: BrightForest-A2_78
+  - first:
+      213: -4728815856776924704
+    second: BrightForest-A2_79
+  - first:
+      213: 8837513819796970524
+    second: BrightForest-A2_80
+  - first:
+      213: -6549179205772317002
+    second: BrightForest-A2_81
+  - first:
+      213: 4245416811938846092
+    second: BrightForest-A2_82
+  - first:
+      213: 5050604641381104342
+    second: BrightForest-A2_83
+  - first:
+      213: -9101018012576841075
+    second: BrightForest-A2_84
+  - first:
+      213: -4506397661324310945
+    second: BrightForest-A2_85
+  - first:
+      213: 5420922664391682022
+    second: BrightForest-A2_86
+  - first:
+      213: 8055736311963811376
+    second: BrightForest-A2_87
+  - first:
+      213: 9025063868640264765
+    second: BrightForest-A2_88
+  - first:
+      213: -1647767417768035952
+    second: BrightForest-A2_89
+  - first:
+      213: 7501872314890710441
+    second: BrightForest-A2_90
+  - first:
+      213: 8114644915242089248
+    second: BrightForest-A2_91
+  - first:
+      213: -3691969567374885710
+    second: BrightForest-A2_92
+  - first:
+      213: 5495713602601837476
+    second: BrightForest-A2_93
+  - first:
+      213: -5104447373397275238
+    second: BrightForest-A2_94
+  - first:
+      213: 2302305876336628908
+    second: BrightForest-A2_95
+  - first:
+      213: -796138399202287617
+    second: BrightForest-A2_96
+  - first:
+      213: -1308519483290442264
+    second: BrightForest-A2_97
+  - first:
+      213: 2326808885109105465
+    second: BrightForest-A2_98
+  - first:
+      213: -3749589471631804430
+    second: BrightForest-A2_99
+  - first:
+      213: -7263122451809731909
+    second: BrightForest-A2_100
+  - first:
+      213: 7675958125666837692
+    second: BrightForest-A2_101
+  - first:
+      213: 1749734662874396626
+    second: BrightForest-A2_102
+  - first:
+      213: -3182875358406099240
+    second: BrightForest-A2_103
+  - first:
+      213: -5536610275741643531
+    second: BrightForest-A2_104
+  - first:
+      213: -7288366326187395708
+    second: BrightForest-A2_105
+  - first:
+      213: -2968470022078337588
+    second: BrightForest-A2_106
+  - first:
+      213: -1958586602247908634
+    second: BrightForest-A2_107
+  - first:
+      213: -4542423951076152021
+    second: BrightForest-A2_108
+  - first:
+      213: 8087369555238291942
+    second: BrightForest-A2_109
+  - first:
+      213: 2631913945640360401
+    second: BrightForest-A2_110
+  - first:
+      213: 1589659771688671922
+    second: BrightForest-A2_111
+  - first:
+      213: 9216963296966428558
+    second: BrightForest-A2_112
+  - first:
+      213: 2566697435597142889
+    second: BrightForest-A2_113
+  - first:
+      213: -3398964270672132835
+    second: BrightForest-A2_114
+  - first:
+      213: -5289414983100125339
+    second: BrightForest-A2_115
+  - first:
+      213: -7040493430729105083
+    second: BrightForest-A2_116
+  - first:
+      213: -6922885025812280448
+    second: BrightForest-A2_117
+  - first:
+      213: 6868072526401031123
+    second: BrightForest-A2_118
+  - first:
+      213: -9026807494900030514
+    second: BrightForest-A2_119
+  - first:
+      213: 9068900571283017303
+    second: BrightForest-A2_120
+  - first:
+      213: -1810033235029354002
+    second: BrightForest-A2_121
+  - first:
+      213: -8206071528259691051
+    second: BrightForest-A2_122
+  - first:
+      213: 6298514179011700912
+    second: BrightForest-A2_123
+  - first:
+      213: -3676808901461366622
+    second: BrightForest-A2_124
+  - first:
+      213: 8237437636729519104
+    second: BrightForest-A2_125
+  - first:
+      213: 4334813843771278573
+    second: BrightForest-A2_126
+  - first:
+      213: 8329008265921432086
+    second: BrightForest-A2_127
+  - first:
+      213: 9084143504999245281
+    second: BrightForest-A2_128
+  - first:
+      213: 579861506594985106
+    second: BrightForest-A2_129
+  - first:
+      213: 6384946634870600742
+    second: BrightForest-A2_130
+  - first:
+      213: 6951586495396606050
+    second: BrightForest-A2_131
+  - first:
+      213: 3701106358526366562
+    second: BrightForest-A2_132
+  - first:
+      213: 8273537030817670452
+    second: BrightForest-A2_133
+  - first:
+      213: 1010960159996768390
+    second: BrightForest-A2_134
+  - first:
+      213: -1568250447312630085
+    second: BrightForest-A2_135
+  - first:
+      213: 6456677938734514150
+    second: BrightForest-A2_136
+  - first:
+      213: 5407983110290440404
+    second: BrightForest-A2_137
+  - first:
+      213: 7105628564476109949
+    second: BrightForest-A2_138
+  - first:
+      213: -1767923376141775414
+    second: BrightForest-A2_139
+  - first:
+      213: -5547831843544511961
+    second: BrightForest-A2_140
+  - first:
+      213: 6117194999749760585
+    second: BrightForest-A2_141
+  - first:
+      213: -7983431490472994326
+    second: BrightForest-A2_142
+  - first:
+      213: 380857762487594183
+    second: BrightForest-A2_143
+  - first:
+      213: -8533035640707154713
+    second: BrightForest-A2_144
+  - first:
+      213: -5225725189156109412
+    second: BrightForest-A2_145
+  - first:
+      213: -7001447870808939868
+    second: BrightForest-A2_146
+  - first:
+      213: -7278862734802572836
+    second: BrightForest-A2_147
+  - first:
+      213: 3048366147568286742
+    second: BrightForest-A2_148
+  - first:
+      213: 6736329606778166893
+    second: BrightForest-A2_149
+  - first:
+      213: 1784840122068450621
+    second: BrightForest-A2_150
+  - first:
+      213: 6432404638554984184
+    second: BrightForest-A2_151
+  - first:
+      213: 6493380889047569761
+    second: BrightForest-A2_152
+  - first:
+      213: -2617560559684590940
+    second: BrightForest-A2_153
+  - first:
+      213: 3686512366742902198
+    second: BrightForest-A2_154
+  - first:
+      213: -9130107008857193316
+    second: BrightForest-A2_155
+  - first:
+      213: 6110984777187451931
+    second: BrightForest-A2_156
+  - first:
+      213: 341146896983963099
+    second: BrightForest-A2_157
+  - first:
+      213: 4865634998953420754
+    second: BrightForest-A2_158
+  - first:
+      213: 2762633126544225591
+    second: BrightForest-A2_159
+  - first:
+      213: -5024395417312463300
+    second: BrightForest-A2_160
+  - first:
+      213: -58158890262408940
+    second: BrightForest-A2_161
+  - first:
+      213: -2212618819587422244
+    second: BrightForest-A2_162
+  - first:
+      213: 1782418446281330551
+    second: BrightForest-A2_163
+  - first:
+      213: 7696981756318792955
+    second: BrightForest-A2_164
+  - first:
+      213: 5725137978274410823
+    second: BrightForest-A2_165
+  - first:
+      213: -3203657609032462812
+    second: BrightForest-A2_166
+  - first:
+      213: 5317964688024986074
+    second: BrightForest-A2_167
+  - first:
+      213: -2310008741697758588
+    second: BrightForest-A2_168
+  - first:
+      213: 3026390579117764520
+    second: BrightForest-A2_169
+  - first:
+      213: -859873062351741544
+    second: BrightForest-A2_170
+  - first:
+      213: 2910756389148483964
+    second: BrightForest-A2_171
+  - first:
+      213: 354058098372777726
+    second: BrightForest-A2_172
+  - first:
+      213: 7682197901961967087
+    second: BrightForest-A2_173
+  - first:
+      213: 3695984302225202648
+    second: BrightForest-A2_174
+  - first:
+      213: -7837009721353015745
+    second: BrightForest-A2_175
+  - first:
+      213: -7027288601325250980
+    second: BrightForest-A2_176
+  - first:
+      213: -2423920585636350917
+    second: BrightForest-A2_177
+  - first:
+      213: 1841770053273161179
+    second: BrightForest-A2_178
+  - first:
+      213: -7809888694200776249
+    second: BrightForest-A2_179
+  - first:
+      213: -2418422509464397852
+    second: BrightForest-A2_180
+  - first:
+      213: -5944431345001444822
+    second: BrightForest-A2_181
+  - first:
+      213: 4286072376191990393
+    second: BrightForest-A2_182
+  - first:
+      213: -6448823613530260567
+    second: BrightForest-A2_183
+  - first:
+      213: 3047629487155956508
+    second: BrightForest-A2_184
+  - first:
+      213: 1683633298880137685
+    second: BrightForest-A2_185
+  - first:
+      213: 238983862843135006
+    second: BrightForest-A2_186
+  - first:
+      213: 3974007726519813243
+    second: BrightForest-A2_187
+  - first:
+      213: -8986800964450365902
+    second: BrightForest-A2_188
+  - first:
+      213: -2813998859910490939
+    second: BrightForest-A2_189
+  - first:
+      213: 8160864208250845257
+    second: BrightForest-A2_190
+  - first:
+      213: -6898917853019172808
+    second: BrightForest-A2_191
+  - first:
+      213: -6091606871497570068
+    second: BrightForest-A2_192
+  - first:
+      213: -8865770024120057791
+    second: BrightForest-A2_193
+  - first:
+      213: -5472530763577571468
+    second: BrightForest-A2_194
+  - first:
+      213: 6578103077547153126
+    second: BrightForest-A2_195
+  - first:
+      213: -5519398993203631717
+    second: BrightForest-A2_196
+  - first:
+      213: -5376955795292267110
+    second: BrightForest-A2_197
+  - first:
+      213: -1726235879557859569
+    second: BrightForest-A2_198
+  - first:
+      213: 9116257993532224412
+    second: BrightForest-A2_199
+  - first:
+      213: 7640720415151284259
+    second: BrightForest-A2_200
+  - first:
+      213: 5086524835035527593
+    second: BrightForest-A2_201
+  - first:
+      213: 7655454525621904253
+    second: BrightForest-A2_202
+  - first:
+      213: -1544960039732875309
+    second: BrightForest-A2_203
+  - first:
+      213: -3165978369258402602
+    second: BrightForest-A2_204
+  - first:
+      213: 5754951706789656149
+    second: BrightForest-A2_205
+  - first:
+      213: -4174725677882681331
+    second: BrightForest-A2_206
+  - first:
+      213: 7018255737696135502
+    second: BrightForest-A2_207
+  - first:
+      213: -6526308007106054632
+    second: BrightForest-A2_208
+  - first:
+      213: -4322650952927500172
+    second: BrightForest-A2_209
+  - first:
+      213: 5277113507134788258
+    second: BrightForest-A2_210
+  - first:
+      213: 206213932449467384
+    second: BrightForest-A2_211
+  - first:
+      213: -3313604151810128462
+    second: BrightForest-A2_212
+  - first:
+      213: 6926625610543737295
+    second: BrightForest-A2_213
+  - first:
+      213: -2803415184122423663
+    second: BrightForest-A2_214
+  - first:
+      213: -6048555540965564727
+    second: BrightForest-A2_215
+  - first:
+      213: -8488066233274229581
+    second: BrightForest-A2_216
+  - first:
+      213: 5087731222862349981
+    second: BrightForest-A2_217
+  - first:
+      213: -1021635567005495054
+    second: BrightForest-A2_218
+  - first:
+      213: 5286785331808015079
+    second: BrightForest-A2_219
+  - first:
+      213: -7655527477645004009
+    second: BrightForest-A2_220
+  - first:
+      213: -6230800770928424590
+    second: BrightForest-A2_221
+  - first:
+      213: 3304540910720138761
+    second: BrightForest-A2_222
+  - first:
+      213: -4877803202433983696
+    second: BrightForest-A2_223
+  - first:
+      213: 3734578252468340939
+    second: BrightForest-A2_224
+  - first:
+      213: 1562623050239534861
+    second: BrightForest-A2_225
+  - first:
+      213: -8461200413562500726
+    second: BrightForest-A2_226
+  - first:
+      213: 5605795779485470355
+    second: BrightForest-A2_227
+  - first:
+      213: -965941327638609519
+    second: BrightForest-A2_228
+  - first:
+      213: 3536015675342633558
+    second: BrightForest-A2_229
+  - first:
+      213: -3883076525986748572
+    second: BrightForest-A2_230
+  - first:
+      213: 8681565789655856459
+    second: BrightForest-A2_231
+  - first:
+      213: 8226116851754521817
+    second: BrightForest-A2_232
+  - first:
+      213: -8111842782413974429
+    second: BrightForest-A2_233
+  - first:
+      213: 8250576597273641483
+    second: BrightForest-A2_234
+  - first:
+      213: -703186231065687708
+    second: BrightForest-A2_235
+  - first:
+      213: 269210433411282198
+    second: BrightForest-A2_236
+  - first:
+      213: -3839750344715066823
+    second: BrightForest-A2_237
+  - first:
+      213: 6449858777389652587
+    second: BrightForest-A2_238
+  - first:
+      213: -7154803726532597044
+    second: BrightForest-A2_239
+  - first:
+      213: -5071970160845362376
+    second: BrightForest-A2_240
+  - first:
+      213: 9017213767673196517
+    second: BrightForest-A2_241
+  - first:
+      213: 6772925961718549280
+    second: BrightForest-A2_242
+  - first:
+      213: -6927478080551691075
+    second: BrightForest-A2_243
+  - first:
+      213: -6625276414714691387
+    second: BrightForest-A2_244
+  - first:
+      213: -5903622184759342801
+    second: BrightForest-A2_245
+  - first:
+      213: 2333180605579020555
+    second: BrightForest-A2_246
+  - first:
+      213: 8538961259900490748
+    second: BrightForest-A2_247
+  - first:
+      213: 4091217381917617098
+    second: BrightForest-A2_248
+  - first:
+      213: 3903061916867233588
+    second: BrightForest-A2_249
+  - first:
+      213: -4031760794584561096
+    second: BrightForest-A2_250
+  - first:
+      213: -2476403319864498108
+    second: BrightForest-A2_251
+  - first:
+      213: 1535702628344474408
+    second: BrightForest-A2_252
+  - first:
+      213: 8202867660439565879
+    second: BrightForest-A2_253
+  - first:
+      213: -2969515083182980560
+    second: BrightForest-A2_254
+  - first:
+      213: 4426298183424226095
+    second: BrightForest-A2_255
+  - first:
+      213: -3010727072149419816
+    second: BrightForest-A2_256
+  - first:
+      213: 6387889105313117993
+    second: BrightForest-A2_257
+  - first:
+      213: 4556086306765558405
+    second: BrightForest-A2_258
+  - first:
+      213: -3326152218725253361
+    second: BrightForest-A2_259
+  - first:
+      213: -5312856688484362089
+    second: BrightForest-A2_260
+  - first:
+      213: -5864044877376630802
+    second: BrightForest-A2_261
+  - first:
+      213: -8240942909420584749
+    second: BrightForest-A2_262
+  - first:
+      213: -4080464584959641399
+    second: BrightForest-A2_263
+  - first:
+      213: -9001602582757722280
+    second: BrightForest-A2_264
+  - first:
+      213: -914878864486991601
+    second: BrightForest-A2_265
+  - first:
+      213: -6430215348343642074
+    second: BrightForest-A2_266
+  - first:
+      213: -3925365184656176252
+    second: BrightForest-A2_267
+  - first:
+      213: -8901317384215415577
+    second: BrightForest-A2_268
+  - first:
+      213: -8719128194713348852
+    second: BrightForest-A2_269
+  - first:
+      213: -3136591838534300528
+    second: BrightForest-A2_270
+  - first:
+      213: -7052094462956889662
+    second: BrightForest-A2_271
+  - first:
+      213: -1305881683080286351
+    second: BrightForest-A2_272
+  - first:
+      213: -3356931129798184281
+    second: BrightForest-A2_273
+  - first:
+      213: 4855878393338166630
+    second: BrightForest-A2_274
+  - first:
+      213: 1283785167422036874
+    second: BrightForest-A2_275
+  - first:
+      213: -5795106919912361033
+    second: BrightForest-A2_276
+  - first:
+      213: 7250975488724976545
+    second: BrightForest-A2_277
+  - first:
+      213: 9187380956252320694
+    second: BrightForest-A2_278
+  - first:
+      213: 8165147275404267528
+    second: BrightForest-A2_279
+  - first:
+      213: -3746444415796190331
+    second: BrightForest-A2_280
+  - first:
+      213: 51481234465081661
+    second: BrightForest-A2_281
+  - first:
+      213: 1143723061377243223
+    second: BrightForest-A2_282
+  - first:
+      213: -5419686615842108876
+    second: BrightForest-A2_283
+  - first:
+      213: 6117012180831874002
+    second: BrightForest-A2_284
+  - first:
+      213: 341428569795944758
+    second: BrightForest-A2_285
+  - first:
+      213: -2932663410403474172
+    second: BrightForest-A2_286
+  - first:
+      213: -4789289088946450046
+    second: BrightForest-A2_287
+  - first:
+      213: 2136719181789581135
+    second: BrightForest-A2_288
+  - first:
+      213: -97634054744471938
+    second: BrightForest-A2_289
+  - first:
+      213: -248869504465840123
+    second: BrightForest-A2_290
+  - first:
+      213: -3785603965047116225
+    second: BrightForest-A2_291
+  - first:
+      213: 3384703629461670421
+    second: BrightForest-A2_292
+  - first:
+      213: -8753568152643941393
+    second: BrightForest-A2_293
+  - first:
+      213: -2489847437489158518
+    second: BrightForest-A2_294
+  - first:
+      213: 6918295773116639902
+    second: BrightForest-A2_295
+  - first:
+      213: -7685314723946585360
+    second: BrightForest-A2_296
+  - first:
+      213: -2812841937774971534
+    second: BrightForest-A2_297
+  - first:
+      213: -341099147259579695
+    second: BrightForest-A2_298
+  - first:
+      213: -6981615285659080023
+    second: BrightForest-A2_299
+  - first:
+      213: -6305474832647562545
+    second: BrightForest-A2_300
+  - first:
+      213: -2694576302400211999
+    second: BrightForest-A2_301
+  - first:
+      213: -8214616611350491303
+    second: BrightForest-A2_302
+  - first:
+      213: -4033961874432998226
+    second: BrightForest-A2_303
+  - first:
+      213: 9094676162475380425
+    second: BrightForest-A2_304
+  - first:
+      213: 897168420207008196
+    second: BrightForest-A2_305
+  - first:
+      213: 4368561943356173660
+    second: BrightForest-A2_306
+  - first:
+      213: -724241434391571469
+    second: BrightForest-A2_307
+  - first:
+      213: 4487553749856251868
+    second: BrightForest-A2_308
+  - first:
+      213: 1806635167371557044
+    second: BrightForest-A2_309
+  - first:
+      213: 1332605746068063025
+    second: BrightForest-A2_310
+  - first:
+      213: 6424957769443680718
+    second: BrightForest-A2_311
+  - first:
+      213: 2047117348229710336
+    second: BrightForest-A2_312
+  - first:
+      213: -6906723220460088208
+    second: BrightForest-A2_313
+  - first:
+      213: -2169827131207140869
+    second: BrightForest-A2_314
+  - first:
+      213: 4473951865637672472
+    second: BrightForest-A2_315
+  - first:
+      213: 1293705939454249160
+    second: BrightForest-A2_316
+  - first:
+      213: -489114104416690394
+    second: BrightForest-A2_317
+  - first:
+      213: 9218028308564009866
+    second: BrightForest-A2_318
+  - first:
+      213: 6626521730251939471
+    second: BrightForest-A2_319
+  - first:
+      213: 1016343007232446871
+    second: BrightForest-A2_320
+  - first:
+      213: -7879012622898120402
+    second: BrightForest-A2_321
+  - first:
+      213: -5268269142694390530
+    second: BrightForest-A2_322
+  - first:
+      213: -815374786600611749
+    second: BrightForest-A2_323
+  - first:
+      213: -5603617380950496481
+    second: BrightForest-A2_324
+  - first:
+      213: -2003425186158540526
+    second: BrightForest-A2_325
+  - first:
+      213: -9173594340539193598
+    second: BrightForest-A2_326
+  - first:
+      213: -111639919562953869
+    second: BrightForest-A2_327
+  - first:
+      213: 1673357866642757131
+    second: BrightForest-A2_328
+  - first:
+      213: -1865422897356290968
+    second: BrightForest-A2_329
+  - first:
+      213: -7499318247943338369
+    second: BrightForest-A2_330
+  - first:
+      213: -6397404784918720886
+    second: BrightForest-A2_331
+  - first:
+      213: -8777730987818497632
+    second: BrightForest-A2_332
+  - first:
+      213: -9119396269796519644
+    second: BrightForest-A2_333
+  - first:
+      213: -3645795502215465835
+    second: BrightForest-A2_334
+  - first:
+      213: -2507741148991369057
+    second: BrightForest-A2_335
+  - first:
+      213: -7833327621030826980
+    second: BrightForest-A2_336
+  - first:
+      213: -3720339690764376699
+    second: BrightForest-A2_337
+  - first:
+      213: 5143767403722931353
+    second: BrightForest-A2_338
+  - first:
+      213: 95908622010134990
+    second: BrightForest-A2_339
+  - first:
+      213: -227682607628695653
+    second: BrightForest-A2_340
+  - first:
+      213: -4111911518861613021
+    second: BrightForest-A2_341
+  - first:
+      213: -3731274258619209729
+    second: BrightForest-A2_342
+  - first:
+      213: -5792616288377020336
+    second: BrightForest-A2_343
+  - first:
+      213: -6650989522208268656
+    second: BrightForest-A2_344
+  - first:
+      213: -7227558789520627796
+    second: BrightForest-A2_345
+  - first:
+      213: 7161065824813848853
+    second: BrightForest-A2_346
+  - first:
+      213: 1609995959540888715
+    second: BrightForest-A2_347
+  - first:
+      213: -7337435092504656033
+    second: BrightForest-A2_348
+  - first:
+      213: -1896274772569441439
+    second: BrightForest-A2_349
+  - first:
+      213: -1610957411691884258
+    second: BrightForest-A2_350
+  - first:
+      213: -8653076784807987049
+    second: BrightForest-A2_351
+  - first:
+      213: 4227136638453423322
+    second: BrightForest-A2_352
+  - first:
+      213: -200494375232747167
+    second: BrightForest-A2_353
+  - first:
+      213: 327005612005611056
+    second: BrightForest-A2_354
+  - first:
+      213: 2467575033397004713
+    second: BrightForest-A2_355
+  - first:
+      213: 1294932176759474066
+    second: BrightForest-A2_356
+  - first:
+      213: 470517834385347652
+    second: BrightForest-A2_357
+  - first:
+      213: -5966407560584089699
+    second: BrightForest-A2_358
+  - first:
+      213: 4375083037993284073
+    second: BrightForest-A2_359
+  - first:
+      213: 5338855312594350343
+    second: BrightForest-A2_360
+  - first:
+      213: 2571884964266685142
+    second: BrightForest-A2_361
+  - first:
+      213: -2560121290228220731
+    second: BrightForest-A2_362
+  - first:
+      213: 6127949264704004075
+    second: BrightForest-A2_363
+  - first:
+      213: 2284322571043490059
+    second: BrightForest-A2_364
+  - first:
+      213: -1183068429908106521
+    second: BrightForest-A2_365
+  - first:
+      213: 7159479194736928267
+    second: BrightForest-A2_366
+  - first:
+      213: 6097645684372747086
+    second: BrightForest-A2_367
+  - first:
+      213: 8023760333669940156
+    second: BrightForest-A2_368
+  - first:
+      213: -2943221876313613732
+    second: BrightForest-A2_369
+  - first:
+      213: 3043194866646125635
+    second: BrightForest-A2_370
+  - first:
+      213: -6466338147278312249
+    second: BrightForest-A2_371
+  - first:
+      213: 8218300498733182868
+    second: BrightForest-A2_372
+  - first:
+      213: 5336668773090491314
+    second: BrightForest-A2_373
+  - first:
+      213: 7254549725059451682
+    second: BrightForest-A2_374
+  - first:
+      213: 8896205973621532399
+    second: BrightForest-A2_375
+  - first:
+      213: 5784556628036207903
+    second: BrightForest-A2_376
+  - first:
+      213: 6758440179614116872
+    second: BrightForest-A2_377
+  - first:
+      213: 7448300989441436714
+    second: BrightForest-A2_378
+  - first:
+      213: -427192789431343030
+    second: BrightForest-A2_379
+  - first:
+      213: 3571996150170703136
+    second: BrightForest-A2_380
+  - first:
+      213: -1430474619738594790
+    second: BrightForest-A2_381
+  - first:
+      213: -2320457792683145511
+    second: BrightForest-A2_382
+  - first:
+      213: 4021584168732384372
+    second: BrightForest-A2_383
+  - first:
+      213: 8797192821408116892
+    second: BrightForest-A2_384
+  - first:
+      213: 2212855693467259225
+    second: BrightForest-A2_385
+  - first:
+      213: 4396042463912992970
+    second: BrightForest-A2_386
+  - first:
+      213: 6032976317481825579
+    second: BrightForest-A2_387
+  - first:
+      213: 6561543816491835775
+    second: BrightForest-A2_388
+  - first:
+      213: 5306604968933097333
+    second: BrightForest-A2_389
+  - first:
+      213: 5963144193783239403
+    second: BrightForest-A2_390
+  - first:
+      213: 8795091528338873042
+    second: BrightForest-A2_391
+  - first:
+      213: 5382272233519551847
+    second: BrightForest-A2_392
+  - first:
+      213: -1181716888995322211
+    second: BrightForest-A2_393
+  - first:
+      213: -2876615309650534819
+    second: BrightForest-A2_394
+  - first:
+      213: 6135347143916394385
+    second: BrightForest-A2_395
+  - first:
+      213: 7634468127426755261
+    second: BrightForest-A2_396
+  - first:
+      213: 7296188427654182072
+    second: BrightForest-A2_397
+  - first:
+      213: -7997005414345231120
+    second: BrightForest-A2_398
+  - first:
+      213: -7229665762348489837
+    second: BrightForest-A2_399
+  - first:
+      213: -4029018843195173175
+    second: BrightForest-A2_400
+  - first:
+      213: -4353678766688708912
+    second: BrightForest-A2_401
+  - first:
+      213: 6961739556007261435
+    second: BrightForest-A2_402
+  - first:
+      213: 8238311441575970479
+    second: BrightForest-A2_403
+  - first:
+      213: 6677513140171448166
+    second: BrightForest-A2_404
+  - first:
+      213: -2278175965860690582
+    second: BrightForest-A2_405
+  - first:
+      213: 5820807757664007027
+    second: BrightForest-A2_406
+  - first:
+      213: -4600456484294104016
+    second: BrightForest-A2_407
+  - first:
+      213: -4009394662852890593
+    second: BrightForest-A2_408
+  - first:
+      213: -4955848524885039133
+    second: BrightForest-A2_409
+  - first:
+      213: -223276108643564897
+    second: BrightForest-A2_410
+  - first:
+      213: 3589853297836023869
+    second: BrightForest-A2_411
+  - first:
+      213: 4918052896263800396
+    second: BrightForest-A2_412
+  - first:
+      213: -6644041962598743447
+    second: BrightForest-A2_413
+  - first:
+      213: -8801989051105959957
+    second: BrightForest-A2_414
+  - first:
+      213: 2926073076829208306
+    second: BrightForest-A2_415
+  - first:
+      213: 5175104550367898199
+    second: BrightForest-A2_416
+  - first:
+      213: -2516356609025551988
+    second: BrightForest-A2_417
+  - first:
+      213: 6961476430772125607
+    second: BrightForest-A2_418
+  - first:
+      213: 1418581411608873206
+    second: BrightForest-A2_419
+  - first:
+      213: -6265757643499203326
+    second: BrightForest-A2_420
+  - first:
+      213: 5788699877596992151
+    second: BrightForest-A2_421
+  - first:
+      213: 6356980499386171624
+    second: BrightForest-A2_422
+  - first:
+      213: 8751392114109979445
+    second: BrightForest-A2_423
+  - first:
+      213: -7344010368241616682
+    second: BrightForest-A2_424
+  - first:
+      213: 1684607492329318954
+    second: BrightForest-A2_425
+  - first:
+      213: 5067257814464539958
+    second: BrightForest-A2_426
+  - first:
+      213: -1074158044618708919
+    second: BrightForest-A2_427
+  - first:
+      213: -883698504989448371
+    second: BrightForest-A2_428
+  - first:
+      213: -5149427576784353709
+    second: BrightForest-A2_429
+  - first:
+      213: -3418774000483493795
+    second: BrightForest-A2_430
+  - first:
+      213: -7503149144810957984
+    second: BrightForest-A2_431
+  - first:
+      213: -7575224231749663678
+    second: BrightForest-A2_432
+  - first:
+      213: 8548138039091539350
+    second: BrightForest-A2_433
+  - first:
+      213: -9177078877822687480
+    second: BrightForest-A2_434
+  - first:
+      213: -8428053463355916098
+    second: BrightForest-A2_435
+  - first:
+      213: -6141671622552188442
+    second: BrightForest-A2_436
+  - first:
+      213: -4003792085411116421
+    second: BrightForest-A2_437
+  - first:
+      213: 5285380593178756502
+    second: BrightForest-A2_438
+  - first:
+      213: 8431136855720479592
+    second: BrightForest-A2_439
+  - first:
+      213: -3505977852855755938
+    second: BrightForest-A2_440
+  - first:
+      213: 2053843419411537970
+    second: BrightForest-A2_441
+  - first:
+      213: -4583828324635457708
+    second: BrightForest-A2_442
+  - first:
+      213: -2289363207312818388
+    second: BrightForest-A2_443
+  - first:
+      213: -3413240412687970551
+    second: BrightForest-A2_444
+  - first:
+      213: 678065653525579343
+    second: BrightForest-A2_445
+  - first:
+      213: -4196047042427104019
+    second: BrightForest-A2_446
+  - first:
+      213: -227343709912349041
+    second: BrightForest-A2_447
+  - first:
+      213: 4860491909497076879
+    second: BrightForest-A2_448
+  - first:
+      213: -4958112435569099089
+    second: BrightForest-A2_449
+  - first:
+      213: -788237317404034327
+    second: BrightForest-A2_450
+  - first:
+      213: 2284604507606652818
+    second: BrightForest-A2_451
+  - first:
+      213: 3341484822996250497
+    second: BrightForest-A2_452
+  - first:
+      213: 7892151447368167226
+    second: BrightForest-A2_453
+  - first:
+      213: -9001730008194052561
+    second: BrightForest-A2_454
+  - first:
+      213: -2106218584201724491
+    second: BrightForest-A2_455
+  - first:
+      213: -6432402657642232808
+    second: BrightForest-A2_456
+  - first:
+      213: 9146205353243183878
+    second: BrightForest-A2_457
+  - first:
+      213: 3121385215934304850
+    second: BrightForest-A2_458
+  - first:
+      213: 4190189476827308014
+    second: BrightForest-A2_459
+  - first:
+      213: -1421740565686196112
+    second: BrightForest-A2_460
+  - first:
+      213: -6448345459438252732
+    second: BrightForest-A2_461
+  - first:
+      213: 3867377241238433587
+    second: BrightForest-A2_462
+  - first:
+      213: 5833027178788653302
+    second: BrightForest-A2_463
+  - first:
+      213: -4713853370226270521
+    second: BrightForest-A2_464
+  - first:
+      213: -1830823633054708105
+    second: BrightForest-A2_465
+  - first:
+      213: 1317393544582448678
+    second: BrightForest-A2_466
+  - first:
+      213: -8457227010868829513
+    second: BrightForest-A2_467
+  - first:
+      213: 74753547890417488
+    second: BrightForest-A2_468
+  - first:
+      213: 593574466217694011
+    second: BrightForest-A2_469
+  - first:
+      213: -2864139273303822939
+    second: BrightForest-A2_470
+  - first:
+      213: -2013685768893849119
+    second: BrightForest-A2_471
+  - first:
+      213: 6089041252720092316
+    second: BrightForest-A2_472
+  - first:
+      213: 6048050032737113306
+    second: BrightForest-A2_473
+  - first:
+      213: -8432144499521715125
+    second: BrightForest-A2_474
+  - first:
+      213: 4366624338308713474
+    second: BrightForest-A2_475
+  - first:
+      213: 6825351573966491047
+    second: BrightForest-A2_476
+  - first:
+      213: 8372527456731254929
+    second: BrightForest-A2_477
+  - first:
+      213: -677053005889326247
+    second: BrightForest-A2_478
+  - first:
+      213: -8165958896912064210
+    second: BrightForest-A2_479
+  - first:
+      213: -3376804929430080082
+    second: BrightForest-A2_480
+  - first:
+      213: 6467763876528571785
+    second: BrightForest-A2_481
+  - first:
+      213: -8015532793578600483
+    second: BrightForest-A2_482
+  - first:
+      213: -6501060446491711106
+    second: BrightForest-A2_483
+  - first:
+      213: -5979804825416738560
+    second: BrightForest-A2_484
+  - first:
+      213: 1542908601715661566
+    second: BrightForest-A2_485
+  - first:
+      213: 5679563401074727807
+    second: BrightForest-A2_486
+  - first:
+      213: 782247035230481197
+    second: BrightForest-A2_487
+  - first:
+      213: -4345517030082452818
+    second: BrightForest-A2_488
+  - first:
+      213: -705257348801266299
+    second: BrightForest-A2_489
+  - first:
+      213: -4926119296859619315
+    second: BrightForest-A2_490
+  - first:
+      213: 6481288993848326686
+    second: BrightForest-A2_491
+  - first:
+      213: 424158358189903183
+    second: BrightForest-A2_492
+  - first:
+      213: 8304276436028468092
+    second: BrightForest-A2_493
+  - first:
+      213: -2966733124627626963
+    second: BrightForest-A2_494
+  - first:
+      213: -4316502718266192229
+    second: BrightForest-A2_495
+  - first:
+      213: 3582192222057436517
+    second: BrightForest-A2_496
+  - first:
+      213: -7765174938690013213
+    second: BrightForest-A2_497
+  - first:
+      213: 5716214707805408227
+    second: BrightForest-A2_498
+  - first:
+      213: 7823158557105615470
+    second: BrightForest-A2_499
+  - first:
+      213: -1005674924938021241
+    second: BrightForest-A2_500
+  - first:
+      213: 3135166460434828200
+    second: BrightForest-A2_501
+  - first:
+      213: -7501705801126353790
+    second: BrightForest-A2_502
+  - first:
+      213: -5852968258091867448
+    second: BrightForest-A2_503
+  - first:
+      213: 5570012075248578614
+    second: BrightForest-A2_504
+  - first:
+      213: -5015219140079614926
+    second: BrightForest-A2_505
+  - first:
+      213: 2784064359884058279
+    second: BrightForest-A2_506
+  - first:
+      213: -3040730421870120777
+    second: BrightForest-A2_507
+  - first:
+      213: -5894810680789842693
+    second: BrightForest-A2_508
+  - first:
+      213: 2808720330613864663
+    second: BrightForest-A2_509
+  - first:
+      213: 5577327923194553404
+    second: BrightForest-A2_510
+  - first:
+      213: 5371976538006350343
+    second: BrightForest-A2_511
+  - first:
+      213: 8779813344138050682
+    second: BrightForest-A2_512
+  - first:
+      213: -5164150831935243287
+    second: BrightForest-A2_513
+  - first:
+      213: -3294913081994093392
+    second: BrightForest-A2_514
+  - first:
+      213: 5596351642576036830
+    second: BrightForest-A2_515
+  - first:
+      213: -6893625877624134088
+    second: BrightForest-A2_516
+  - first:
+      213: -3107343454343246152
+    second: BrightForest-A2_517
+  - first:
+      213: 1594426019252971214
+    second: BrightForest-A2_518
+  - first:
+      213: 5330459072544570713
+    second: BrightForest-A2_519
+  - first:
+      213: -334489406391628602
+    second: BrightForest-A2_520
+  - first:
+      213: -4844820371976026063
+    second: BrightForest-A2_521
+  - first:
+      213: -7574920484142508480
+    second: BrightForest-A2_522
+  - first:
+      213: 2342577962932881133
+    second: BrightForest-A2_523
+  - first:
+      213: -8992210275857961338
+    second: BrightForest-A2_524
+  - first:
+      213: -8325150394014467256
+    second: BrightForest-A2_525
+  - first:
+      213: 3523458884681301500
+    second: BrightForest-A2_526
+  - first:
+      213: 941531167025926181
+    second: BrightForest-A2_527
+  - first:
+      213: -6395044107917018095
+    second: BrightForest-A2_528
+  - first:
+      213: 2614397558578994675
+    second: BrightForest-A2_529
+  - first:
+      213: -8849099530150051632
+    second: BrightForest-A2_530
+  - first:
+      213: -34964160705515447
+    second: BrightForest-A2_531
+  - first:
+      213: 5928254193409916655
+    second: BrightForest-A2_532
+  - first:
+      213: 6147745773587327848
+    second: BrightForest-A2_533
+  - first:
+      213: -5561161396429129617
+    second: BrightForest-A2_534
+  - first:
+      213: -7841463647577140888
+    second: BrightForest-A2_535
+  - first:
+      213: -3645409065694446915
+    second: BrightForest-A2_536
+  - first:
+      213: -8912788104404590502
+    second: BrightForest-A2_537
+  - first:
+      213: -1549469241938370023
+    second: BrightForest-A2_538
+  - first:
+      213: 1647518023644585798
+    second: BrightForest-A2_539
+  - first:
+      213: 1215785097941247154
+    second: BrightForest-A2_540
+  - first:
+      213: 3899574569580803647
+    second: BrightForest-A2_541
+  - first:
+      213: -2022841725154307015
+    second: BrightForest-A2_542
+  - first:
+      213: 8528248540657988981
+    second: BrightForest-A2_543
+  - first:
+      213: -2402358575573195079
+    second: BrightForest-A2_544
+  - first:
+      213: 8467587124670170580
+    second: BrightForest-A2_545
+  - first:
+      213: -860978661135911833
+    second: BrightForest-A2_546
+  - first:
+      213: 3476604267780705599
+    second: BrightForest-A2_547
+  - first:
+      213: 7251416078654250593
+    second: BrightForest-A2_548
+  - first:
+      213: 6614198214876015543
+    second: BrightForest-A2_549
+  - first:
+      213: 9087607371272980481
+    second: BrightForest-A2_550
+  - first:
+      213: 188731754925500888
+    second: BrightForest-A2_551
+  - first:
+      213: -1042119920517023259
+    second: BrightForest-A2_552
+  - first:
+      213: 8913188803227140474
+    second: BrightForest-A2_553
+  - first:
+      213: 4303325009733074939
+    second: BrightForest-A2_554
+  - first:
+      213: 3161067122893217002
+    second: BrightForest-A2_555
+  - first:
+      213: -3495104929131868254
+    second: BrightForest-A2_556
+  - first:
+      213: -4152949003019810882
+    second: BrightForest-A2_557
+  - first:
+      213: 7850557132201290845
+    second: BrightForest-A2_558
+  - first:
+      213: 7940067064296389966
+    second: BrightForest-A2_559
+  - first:
+      213: 1944267620659796293
+    second: BrightForest-A2_560
+  - first:
+      213: -1771610334755133851
+    second: BrightForest-A2_561
+  - first:
+      213: 6401445800561974725
+    second: BrightForest-A2_562
+  - first:
+      213: -1172702206182380359
+    second: BrightForest-A2_563
+  - first:
+      213: 5742025103971073111
+    second: BrightForest-A2_564
+  - first:
+      213: 2578316616009583211
+    second: BrightForest-A2_565
+  - first:
+      213: -416460190300022616
+    second: BrightForest-A2_566
+  - first:
+      213: 6918816584739766753
+    second: BrightForest-A2_567
+  - first:
+      213: -4547127429313091239
+    second: BrightForest-A2_568
+  - first:
+      213: -5610116790005654564
+    second: BrightForest-A2_569
+  - first:
+      213: -8852860405631349260
+    second: BrightForest-A2_570
+  - first:
+      213: -1645512128974504196
+    second: BrightForest-A2_571
+  - first:
+      213: 5136765435913180907
+    second: BrightForest-A2_572
+  - first:
+      213: -641881381166572811
+    second: BrightForest-A2_573
+  - first:
+      213: -4859016497129237155
+    second: BrightForest-A2_574
+  - first:
+      213: -1605583883251750531
+    second: BrightForest-A2_575
+  - first:
+      213: -1440105386779142707
+    second: BrightForest-A2_576
+  - first:
+      213: 2875271318256774768
+    second: BrightForest-A2_577
+  - first:
+      213: 6102537969607448421
+    second: BrightForest-A2_578
+  - first:
+      213: 3568583629703375241
+    second: BrightForest-A2_579
+  - first:
+      213: -2617624723706201523
+    second: BrightForest-A2_580
+  - first:
+      213: -3849638763599950090
+    second: BrightForest-A2_581
+  - first:
+      213: -903146349619063106
+    second: BrightForest-A2_582
+  - first:
+      213: -8635110598042526183
+    second: BrightForest-A2_583
+  - first:
+      213: 3253937283925212693
+    second: BrightForest-A2_584
+  - first:
+      213: -3918562391057463972
+    second: BrightForest-A2_585
+  - first:
+      213: 953817720512392026
+    second: BrightForest-A2_586
+  - first:
+      213: -725003317568387408
+    second: BrightForest-A2_587
+  - first:
+      213: 6700236791951045060
+    second: BrightForest-A2_588
+  - first:
+      213: -988410736298433373
+    second: BrightForest-A2_589
+  - first:
+      213: -1507974468374580675
+    second: BrightForest-A2_590
+  - first:
+      213: -4719508835694684379
+    second: BrightForest-A2_591
+  - first:
+      213: 6438444670587188231
+    second: BrightForest-A2_592
+  - first:
+      213: 2435821539828941791
+    second: BrightForest-A2_593
+  - first:
+      213: 4088891899451257862
+    second: BrightForest-A2_594
+  - first:
+      213: 4482882519447308773
+    second: BrightForest-A2_595
+  - first:
+      213: -616620403604094725
+    second: BrightForest-A2_596
+  - first:
+      213: 1597520736672520900
+    second: BrightForest-A2_597
+  - first:
+      213: -6631493061559080209
+    second: BrightForest-A2_598
+  - first:
+      213: -1391707303488281815
+    second: BrightForest-A2_599
+  - first:
+      213: -2376406866263703286
+    second: BrightForest-A2_600
+  - first:
+      213: 8196601092753500296
+    second: BrightForest-A2_601
+  - first:
+      213: 4180792582258871148
+    second: BrightForest-A2_602
+  - first:
+      213: -2216778935391884166
+    second: BrightForest-A2_603
+  - first:
+      213: 8811499184654342885
+    second: BrightForest-A2_604
+  - first:
+      213: 7561453343786198995
+    second: BrightForest-A2_605
+  - first:
+      213: -7269088052957937603
+    second: BrightForest-A2_606
+  - first:
+      213: -7579943441256407867
+    second: BrightForest-A2_607
+  - first:
+      213: -5158703449941311201
+    second: BrightForest-A2_608
+  - first:
+      213: 8751231468733472220
+    second: BrightForest-A2_609
+  - first:
+      213: -459332969779544154
+    second: BrightForest-A2_610
+  - first:
+      213: 1334754186044889986
+    second: BrightForest-A2_611
+  - first:
+      213: 4429403716759458343
+    second: BrightForest-A2_612
+  - first:
+      213: -232778198606201095
+    second: BrightForest-A2_613
+  - first:
+      213: -1207461479511282151
+    second: BrightForest-A2_614
+  - first:
+      213: -5903010955595240129
+    second: BrightForest-A2_615
+  - first:
+      213: 4452936653989324000
+    second: BrightForest-A2_616
+  - first:
+      213: 3898703664613885708
+    second: BrightForest-A2_617
+  - first:
+      213: 3440041110599764596
+    second: BrightForest-A2_618
+  - first:
+      213: 2701881407057634605
+    second: BrightForest-A2_619
+  - first:
+      213: 4614749261715322633
+    second: BrightForest-A2_620
+  - first:
+      213: -5323118510137423913
+    second: BrightForest-A2_621
+  - first:
+      213: -6183064085988972972
+    second: BrightForest-A2_622
+  - first:
+      213: 8774237363952476195
+    second: BrightForest-A2_623
+  - first:
+      213: -7201055538932137246
+    second: BrightForest-A2_624
+  - first:
+      213: 1874111964292257449
+    second: BrightForest-A2_625
+  - first:
+      213: 548290273119330562
+    second: BrightForest-A2_626
+  - first:
+      213: 1897157071735832190
+    second: BrightForest-A2_627
+  - first:
+      213: 7843739931288593072
+    second: BrightForest-A2_628
+  - first:
+      213: 6788339997853780572
+    second: BrightForest-A2_629
+  - first:
+      213: 8133637225513761142
+    second: BrightForest-A2_630
+  - first:
+      213: -7601262887994074462
+    second: BrightForest-A2_631
+  - first:
+      213: 2162792067708090763
+    second: BrightForest-A2_632
+  - first:
+      213: -7476487407494436693
+    second: BrightForest-A2_633
+  - first:
+      213: 787107863780579816
+    second: BrightForest-A2_634
+  - first:
+      213: 5097371448901764129
+    second: BrightForest-A2_635
+  - first:
+      213: 6864948844181492541
+    second: BrightForest-A2_636
+  - first:
+      213: 4949367625165044624
+    second: BrightForest-A2_637
+  - first:
+      213: -2444608027939034581
+    second: BrightForest-A2_638
+  - first:
+      213: -1981369154149195803
+    second: BrightForest-A2_639
+  - first:
+      213: 4793657589363914180
+    second: BrightForest-A2_640
+  - first:
+      213: -4659940913257091643
+    second: BrightForest-A2_641
+  - first:
+      213: -5793821397481454662
+    second: BrightForest-A2_642
+  - first:
+      213: -5179271002442477436
+    second: BrightForest-A2_643
+  - first:
+      213: -5000198984814964950
+    second: BrightForest-A2_644
+  - first:
+      213: -4930453671003034691
+    second: BrightForest-A2_645
+  - first:
+      213: 8792962910300316754
+    second: BrightForest-A2_646
+  - first:
+      213: 9162626053857762703
+    second: BrightForest-A2_647
+  - first:
+      213: -1017467745430394140
+    second: BrightForest-A2_648
+  - first:
+      213: -202576946369939291
+    second: BrightForest-A2_649
+  - first:
+      213: -3019808644659723487
+    second: BrightForest-A2_650
+  - first:
+      213: -8259832819098882588
+    second: BrightForest-A2_651
+  - first:
+      213: 7417393069936646119
+    second: BrightForest-A2_652
+  - first:
+      213: 351758947401348098
+    second: BrightForest-A2_653
+  - first:
+      213: 4136279778447888745
+    second: BrightForest-A2_654
+  - first:
+      213: 4119824938269366070
+    second: BrightForest-A2_655
+  - first:
+      213: 7071726977944365369
+    second: BrightForest-A2_656
+  - first:
+      213: 500073234818331536
+    second: BrightForest-A2_657
+  - first:
+      213: -1553194441536503265
+    second: BrightForest-A2_658
+  - first:
+      213: -5799750484805400896
+    second: BrightForest-A2_659
+  - first:
+      213: 4788029339636064051
+    second: BrightForest-A2_660
+  - first:
+      213: -2887542900148054557
+    second: BrightForest-A2_661
+  - first:
+      213: -1077021144943836661
+    second: BrightForest-A2_662
+  - first:
+      213: 7315779041975112810
+    second: BrightForest-A2_663
+  - first:
+      213: 8219780603198382479
+    second: BrightForest-A2_664
+  - first:
+      213: -2143707661290356551
+    second: BrightForest-A2_665
+  - first:
+      213: 4941955615977949759
+    second: BrightForest-A2_666
+  - first:
+      213: 8070468218530968847
+    second: BrightForest-A2_667
+  - first:
+      213: -4968411130695260758
+    second: BrightForest-A2_668
+  - first:
+      213: -3728241445191461769
+    second: BrightForest-A2_669
+  - first:
+      213: -2750780912004637593
+    second: BrightForest-A2_670
+  - first:
+      213: -2373700569070335181
+    second: BrightForest-A2_671
+  - first:
+      213: -880310583850083391
+    second: BrightForest-A2_672
+  - first:
+      213: -2814994426837787608
+    second: BrightForest-A2_673
+  - first:
+      213: 6128713960588911811
+    second: BrightForest-A2_674
+  - first:
+      213: 3948601762286615810
+    second: BrightForest-A2_675
+  - first:
+      213: 2813442526942307764
+    second: BrightForest-A2_676
+  - first:
+      213: -4007576924481111005
+    second: BrightForest-A2_677
+  - first:
+      213: 3314362495407105867
+    second: BrightForest-A2_678
+  - first:
+      213: -5657731987176171407
+    second: BrightForest-A2_679
+  - first:
+      213: -1552595962774042125
+    second: BrightForest-A2_680
+  - first:
+      213: 5699914452695973303
+    second: BrightForest-A2_681
+  - first:
+      213: -4774874825018209038
+    second: BrightForest-A2_682
+  - first:
+      213: 1166746126716147135
+    second: BrightForest-A2_683
+  - first:
+      213: 8558457168776316608
+    second: BrightForest-A2_684
+  - first:
+      213: 2047104282279442283
+    second: BrightForest-A2_685
+  - first:
+      213: -2612712318806555113
+    second: BrightForest-A2_686
+  - first:
+      213: 7095348060746017550
+    second: BrightForest-A2_687
+  - first:
+      213: 6776584814668106583
+    second: BrightForest-A2_688
+  - first:
+      213: 5407623927293451295
+    second: BrightForest-A2_689
+  - first:
+      213: -7441880579126023034
+    second: BrightForest-A2_690
+  - first:
+      213: -9043361145694000166
+    second: BrightForest-A2_691
+  - first:
+      213: -4004114637670303478
+    second: BrightForest-A2_692
+  - first:
+      213: 1826090782486520856
+    second: BrightForest-A2_693
+  - first:
+      213: 1470210089378481746
+    second: BrightForest-A2_694
+  - first:
+      213: 1764834383703079902
+    second: BrightForest-A2_695
+  - first:
+      213: -1650847527947966887
+    second: BrightForest-A2_696
+  - first:
+      213: 3490044945067161229
+    second: BrightForest-A2_697
+  - first:
+      213: 1373735727619098326
+    second: BrightForest-A2_698
+  - first:
+      213: -6474839541244211656
+    second: BrightForest-A2_699
+  - first:
+      213: 3536419421382578085
+    second: BrightForest-A2_700
+  - first:
+      213: 5737187765084616861
+    second: BrightForest-A2_701
+  - first:
+      213: -2945937273173331409
+    second: BrightForest-A2_702
+  - first:
+      213: -7730507362301023610
+    second: BrightForest-A2_703
+  - first:
+      213: 662934372359977434
+    second: BrightForest-A2_704
+  - first:
+      213: -9012282106714445789
+    second: BrightForest-A2_705
+  - first:
+      213: 795686887013399102
+    second: BrightForest-A2_706
+  - first:
+      213: -4528501509116436999
+    second: BrightForest-A2_707
+  - first:
+      213: 2304473825021284015
+    second: BrightForest-A2_708
+  - first:
+      213: -1507065528833772888
+    second: BrightForest-A2_709
+  - first:
+      213: -4198937218371985035
+    second: BrightForest-A2_710
+  - first:
+      213: 4970942127270771833
+    second: BrightForest-A2_711
+  - first:
+      213: 1097062211734560052
+    second: BrightForest-A2_712
+  - first:
+      213: 2365105879164236579
+    second: BrightForest-A2_713
+  - first:
+      213: 6288786499473841710
+    second: BrightForest-A2_714
+  - first:
+      213: -1342746656204466626
+    second: BrightForest-A2_715
+  - first:
+      213: 7726505192737181694
+    second: BrightForest-A2_716
+  - first:
+      213: 5135621288022681933
+    second: BrightForest-A2_717
+  - first:
+      213: 8351749046709285430
+    second: BrightForest-A2_718
+  - first:
+      213: 5142766414463302121
+    second: BrightForest-A2_719
+  - first:
+      213: 796580948216244089
+    second: BrightForest-A2_720
+  - first:
+      213: 5015485906761528462
+    second: BrightForest-A2_721
+  - first:
+      213: 9090227891042792521
+    second: BrightForest-A2_722
+  - first:
+      213: 1949659355166864368
+    second: BrightForest-A2_723
+  - first:
+      213: 1829105414640657226
+    second: BrightForest-A2_724
+  - first:
+      213: -5665071632396378385
+    second: BrightForest-A2_725
+  - first:
+      213: 6284988507423829288
+    second: BrightForest-A2_726
+  - first:
+      213: -5493884076309113805
+    second: BrightForest-A2_727
+  - first:
+      213: -1044592339750630003
+    second: BrightForest-A2_728
+  - first:
+      213: -5626650457667956700
+    second: BrightForest-A2_729
+  - first:
+      213: -576751991266406313
+    second: BrightForest-A2_730
+  - first:
+      213: 6730074150218785128
+    second: BrightForest-A2_731
+  - first:
+      213: -6094944999761347035
+    second: BrightForest-A2_732
+  - first:
+      213: 6218855290061005826
+    second: BrightForest-A2_733
+  - first:
+      213: 1664402092116351282
+    second: BrightForest-A2_734
+  - first:
+      213: -8590108998703905798
+    second: BrightForest-A2_735
+  - first:
+      213: -7281808023909791035
+    second: BrightForest-A2_736
+  - first:
+      213: -3019503354903640928
+    second: BrightForest-A2_737
+  - first:
+      213: 3395166159384768016
+    second: BrightForest-A2_738
+  - first:
+      213: -4463814930873852825
+    second: BrightForest-A2_739
+  - first:
+      213: -6114420837184181872
+    second: BrightForest-A2_740
+  - first:
+      213: -4687076411658322026
+    second: BrightForest-A2_741
+  - first:
+      213: -1612098950221363224
+    second: BrightForest-A2_742
+  - first:
+      213: 5018180001180135002
+    second: BrightForest-A2_743
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BrightForest-A2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7624e1021311020800000000000000
+      internalID: 2310682097834158004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3427d9c875e0860800000000000000
+      internalID: 7498026691067003819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b207dd9cb0f599140800000000000000
+      internalID: 4726913788138057771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0159d88407c0fa80800000000000000
+      internalID: -8435023279775198966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0737198df88a14170800000000000000
+      internalID: 8160989335539250032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d8fc44d23f37680800000000000000
+      internalID: -8758389474551952064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3fa0c5f877f57b0800000000000000
+      internalID: -5233332784372976674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3044b882482bc90800000000000000
+      internalID: -7155511548268248067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aede7b8ca89163a0800000000000000
+      internalID: -6673885305944219991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037c10b9056e47370800000000000000
+      internalID: 8319527645532505904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5784f86cd03b63b40800000000000000
+      internalID: 5419716073334196341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2e211cfd1ce6340800000000000000
+      internalID: 4859034214740452057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82efcf93101887cd0800000000000000
+      internalID: -2560154545892295128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9456fb83c0161d090800000000000000
+      internalID: -8011515556995832503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ef93b3f8d792380800000000000000
+      internalID: -8995520726568403323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dc3f18bbfc4a980800000000000000
+      internalID: -8528463390086804195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdc5d67092160c30800000000000000
+      internalID: 4325164903814254023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44faaf69f8aec5390800000000000000
+      internalID: -7828124149842530492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4b0e9221527ade0800000000000000
+      internalID: -1322047205667719942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ef174428eaba930800000000000000
+      internalID: 4155606955696717376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1303d0664b55770800000000000000
+      internalID: 8598977413934756262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_21
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e51d66aec77db9f0800000000000000
+      internalID: -451072658228046368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591fd132eb304c70800000000000000
+      internalID: 8953221901897898334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71384490056247c0800000000000000
+      internalID: -4088594458536824453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_24
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d462d2d555f3aa950800000000000000
+      internalID: 6461046251284407885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d45f608b6bfe0260800000000000000
+      internalID: 7065861304525739225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae98bde6f1fd5c70800000000000000
+      internalID: 8961584876389703331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288183de714535bf0800000000000000
+      internalID: -336833085381797758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51ebd1201d6d4e40800000000000000
+      internalID: 5642285824220062045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a637a1ba6a169e010800000000000000
+      internalID: 1218612542643532650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5a003af0c88da80800000000000000
+      internalID: -8441843502718867987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c2a03c7681737d0800000000000000
+      internalID: -2938853397903037342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf083034b278a24b0800000000000000
+      internalID: -5464406577983028997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9714f141d8b593eb0800000000000000
+      internalID: -4739656471344627335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29111ffcc322a2ed0800000000000000
+      internalID: -2438098603685637742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7014b38b59e077e90800000000000000
+      internalID: -7028132657284562681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752bfc5f81e086a60800000000000000
+      internalID: 7667393865964302935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_37
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39de98c9ea1b42850800000000000000
+      internalID: 6351396738007952787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_38
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5af9724d071fe60800000000000000
+      internalID: 7994294870059492861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_39
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8609ba551cf178ba0800000000000000
+      internalID: -6086861456141479832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_40
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daa8278da9d29eb0800000000000000
+      internalID: -4714466520583329064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_41
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1423b10a35eb530800000000000000
+      internalID: 3872624676701356537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748f9f69a33e83f60800000000000000
+      internalID: 8014405377686370375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c5ab16e61294fa0800000000000000
+      internalID: -5816080685802562464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4c93db6554b7980800000000000000
+      internalID: -8540156029533829979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd8e1c7f361b7790800000000000000
+      internalID: -7531401489925894732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a65cfe6bda09a5c0800000000000000
+      internalID: -4203816839597500763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54eea66ad04293a0800000000000000
+      internalID: -6660189592157756323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8195605e83b934910800000000000000
+      internalID: 1820469343050684696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_49
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7f4c8b6effee6e0800000000000000
+      internalID: -1806225034121513005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69e17fcbf8e15e50800000000000000
+      internalID: 6796469480893573485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_51
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4dd281e6f1396a0800000000000000
+      internalID: -6443772084124527408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_52
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e7387ba8d6e38b0800000000000000
+      internalID: -5170574879622988129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_53
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8c7070b8d8c9220800000000000000
+      internalID: 2494023921914333420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9ebd8d24cf461f0800000000000000
+      internalID: -1052439048861521420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_55
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7503422b2890570800000000000000
+      internalID: 8433415478850901920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_56
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef18e7f1f9e6ce980800000000000000
+      internalID: -8508303966302469634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_57
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe21977258d614080800000000000000
+      internalID: -9204955744708259089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2864f5be71c9980800000000000000
+      internalID: -8530917294463352111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_59
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c004f6aab7dda50800000000000000
+      internalID: 6547525405207694390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b7e332beaaa6d00800000000000000
+      internalID: 966772996909726545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a52f058f7e671b30800000000000000
+      internalID: 4257993466674357665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b082a0657d74f00a0800000000000000
+      internalID: -6913227912803375093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_63
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923970903eb02d360800000000000000
+      internalID: 7192824624601076521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302783cce1b8dbc10800000000000000
+      internalID: 2070964368051827203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_65
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81a283ddb142d8e0800000000000000
+      internalID: -1670200228247854706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1564de327b3c820800000000000000
+      internalID: 2937392746908242375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_67
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fefe0be5a338ce90800000000000000
+      internalID: -7005292432668557580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_68
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf9c5ba19a5e34b0800000000000000
+      internalID: -5458826116634730572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_69
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13a922e89efc6a60800000000000000
+      internalID: 7668784198087975708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e9e0abb208a2cc0800000000000000
+      internalID: -3735032015656935924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_71
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d54694fd36ae770800000000000000
+      internalID: 8640828645723888964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_72
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42698c9e6e117b4c0800000000000000
+      internalID: -4271926038075238876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_73
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae66c8a9b7c6ccfb0800000000000000
+      internalID: -4626203439086672150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489c00ef2a24e2a60800000000000000
+      internalID: 7651126084762651012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15104cd05427407b0800000000000000
+      internalID: -5258952823952637615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042947841d45ae970800000000000000
+      internalID: 8784927280980070976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8307bab758c0934a0800000000000000
+      internalID: -6613240810371846088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a2a82af7ffca910800000000000000
+      internalID: 1850134470595324530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1b398580fdf5eb0800000000000000
+      internalID: -4728815856776924704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c9a96fef725aa70800000000000000
+      internalID: 8837513819796970524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bee09d1634ac15a0800000000000000
+      internalID: -6549179205772317002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c851617e810caea30800000000000000
+      internalID: 4245416811938846092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_83
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dab57e792a571640800000000000000
+      internalID: 5050604641381104342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d820de93650b2b180800000000000000
+      internalID: -9101018012576841075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_85
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f560d14f33f0671c0800000000000000
+      internalID: -4506397661324310945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e72ee5217cfa3b40800000000000000
+      internalID: 5420922664391682022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_87
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e71de9e79bbcf60800000000000000
+      internalID: 8055736311963811376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_88
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32048d85c77f3d70800000000000000
+      internalID: 9025063868640264765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_89
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09939778344f129e0800000000000000
+      internalID: -1647767417768035952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ade56faf110c1860800000000000000
+      internalID: 7501872314890710441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b3f63ae820d9070800000000000000
+      internalID: 8114644915242089248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc31174d3d73ccc0800000000000000
+      internalID: -3691969567374885710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a36d5e6762b44c40800000000000000
+      internalID: 5495713602601837476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dcafd882c5929b0800000000000000
+      internalID: -5104447373397275238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4d6531ffe63ff10800000000000000
+      internalID: 2302305876336628908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffdf73185c83f4f0800000000000000
+      internalID: -796138399202287617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5abc8767437dde0800000000000000
+      internalID: -1308519483290442264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933a6216a5c7a4020800000000000000
+      internalID: 2326808885109105465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f777d1ed38c6fbc0800000000000000
+      internalID: -3749589471631804430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_100
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba77bb9c94343b90800000000000000
+      internalID: -7263122451809731909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_101
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4252f0f3b768a60800000000000000
+      internalID: 7675958125666837692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f0d7c76e484810800000000000000
+      internalID: 1749734662874396626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_103
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de3cd1a9b724d3d0800000000000000
+      internalID: -3182875358406099240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_104
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc44a6d9420a23b0800000000000000
+      internalID: -5536610275741643531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_105
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4857ea611758ada90800000000000000
+      internalID: -7288366326187395708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdef971e30edc6d0800000000000000
+      internalID: -2968470022078337588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_107
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e29c2fbcd3b1d4e0800000000000000
+      internalID: -1958586602247908634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_108
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d21e8bb7116f0c0800000000000000
+      internalID: -4542423951076152021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_109
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9894303cb1c3070800000000000000
+      internalID: 8087369555238291942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d95a410acf668420800000000000000
+      internalID: 2631913945640360401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_111
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba5b35d32b9f0610800000000000000
+      internalID: 1589659771688671922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_112
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e874f77f84b39ef70800000000000000
+      internalID: 9216963296966428558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_113
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b7caef7bdbe9320800000000000000
+      internalID: 2566697435597142889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_114
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15c75a110474d0d0800000000000000
+      internalID: -3398964270672132835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_115
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f20bee8193896b0800000000000000
+      internalID: -5289414983100125339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_116
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541abe1e6842b4e90800000000000000
+      internalID: -7040493430729105083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_117
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b869f7fb8fcef90800000000000000
+      internalID: -6922885025812280448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_118
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbc0cbf29b405f50800000000000000
+      internalID: 6868072526401031123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_119
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec366a2d8665ab280800000000000000
+      internalID: -9026807494900030514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_120
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e49ae35053bdd70800000000000000
+      internalID: 9068900571283017303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_121
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee99c6adc5871e6e0800000000000000
+      internalID: -1810033235029354002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd52a43c6d2e1e80800000000000000
+      internalID: -8206071528259691051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_123
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e0cc5641d86750800000000000000
+      internalID: 6298514179011700912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8a661e8c959fcc0800000000000000
+      internalID: -3676808901461366622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_125
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c32b403e1415270800000000000000
+      internalID: 8237437636729519104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_126
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4ce6d593a582c30800000000000000
+      internalID: 4334813843771278573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_127
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a0a8d83e4969370800000000000000
+      internalID: 8329008265921432086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5e620536c511e70800000000000000
+      internalID: 9084143504999245281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_129
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294548fc7f41c0800800000000000000
+      internalID: 579861506594985106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_130
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624b941b223eb9850800000000000000
+      internalID: 6384946634870600742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_131
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2607483261ff87060800000000000000
+      internalID: 6951586495396606050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_132
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26357efaf98fc5330800000000000000
+      internalID: 3701106358526366562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_133
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4356ded281281d270800000000000000
+      internalID: 8273537030817670452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_134
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680fda2c8e6a70e00800000000000000
+      internalID: 1010960159996768390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_135
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe4511f6847c3ae0800000000000000
+      internalID: -1568250447312630085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_136
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef3f57506aba9950800000000000000
+      internalID: 6456677938734514150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_137
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d08c207cf30d0b40800000000000000
+      internalID: 5407983110290440404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74a77b38834c9260800000000000000
+      internalID: 7105628564476109949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_139
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdc5f66e031777e0800000000000000
+      internalID: -1767923376141775414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_140
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72acdebf4542203b0800000000000000
+      internalID: -5547831843544511961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_141
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94651e52174a4e450800000000000000
+      internalID: 6117194999749760585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_142
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae990b18b57253190800000000000000
+      internalID: -7983431490472994326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_143
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cce50bfd14194500800000000000000
+      internalID: 380857762487594183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecf6e37b41949980800000000000000
+      internalID: -8533035640707154713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_145
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c930a86a0ae7a77b0800000000000000
+      internalID: -5225725189156109412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_146
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2a40bb14cd5de90800000000000000
+      internalID: -7001447870808939868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_147
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a34368e84cfa90800000000000000
+      internalID: -7278862734802572836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_148
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c322b3cd8fd4a20800000000000000
+      internalID: 3048366147568286742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_149
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e95f536104c7d50800000000000000
+      internalID: 6736329606778166893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d31c072a605c810800000000000000
+      internalID: 1784840122068450621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_151
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe05ac30fd744950800000000000000
+      internalID: 6432404638554984184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_152
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1659df2e38f1d1a50800000000000000
+      internalID: 6493380889047569761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_153
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a26de51a8e8cabd0800000000000000
+      internalID: -2617560559684590940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b59bcf277f192330800000000000000
+      internalID: 3686512366742902198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_155
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9443cf7c085b4180800000000000000
+      internalID: -9130107008857193316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_156
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14e31807449ec450800000000000000
+      internalID: 6110984777187451931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_157
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5b4fa9b4ffbb400800000000000000
+      internalID: 341146896983963099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_158
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7a3579045368340800000000000000
+      internalID: 4865634998953420754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_159
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73535680138d65620800000000000000
+      internalID: 2762633126544225591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_160
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367df30df2c54ab0800000000000000
+      internalID: -5024395417312463300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_161
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411d0652cc0613ff0800000000000000
+      internalID: -58158890262408940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_162
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7c52318e23b41e0800000000000000
+      internalID: -2212618819587422244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_163
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fc3bb122c6cb810800000000000000
+      internalID: 1782418446281330551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_164
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc3b04802c21da60800000000000000
+      internalID: 7696981756318792955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_165
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741f42d78a6c37f40800000000000000
+      internalID: 5725137978274410823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_166
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e84a7d0625a83d0800000000000000
+      internalID: -3203657609032462812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_167
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1eccd35b43dc940800000000000000
+      internalID: 5317964688024986074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_168
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ade03d94331ffd0800000000000000
+      internalID: -2310008741697758588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_169
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af27eb7236eff920800000000000000
+      internalID: 3026390579117764520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dd89e610e1114f0800000000000000
+      internalID: -859873062351741544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_171
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71e4ea9385156820800000000000000
+      internalID: 2910756389148483964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_172
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef61c5fe6fdd9e400800000000000000
+      internalID: 354058098372777726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_173
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5b1b03a46ac9a60800000000000000
+      internalID: 7682197901961967087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_174
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd9d850426ca4330800000000000000
+      internalID: 3695984302225202648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_175
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e68714e295d3390800000000000000
+      internalID: -7837009721353015745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_176
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c565bdfcf3e0a7e90800000000000000
+      internalID: -7027288601325250980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_177
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b347361e1118c5ed0800000000000000
+      internalID: -2423920585636350917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_178
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd8c47fa184f8910800000000000000
+      internalID: 1841770053273161179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_179
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9c2d67c93bd9390800000000000000
+      internalID: -7809888694200776249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_180
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7d09e7a89007ed0800000000000000
+      internalID: -2418422509464397852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_181
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2acd79cf23218da0800000000000000
+      internalID: -5944431345001444822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_182
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ab9881e103b7b30800000000000000
+      internalID: 4286072376191990393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_183
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abb060471d2186a0800000000000000
+      internalID: -6448823613530260567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_184
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bcfec1fda5b4a20800000000000000
+      internalID: 3047629487155956508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightForest-A2_185
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d905c7a0977d5710800000000000000
+      internalID: 1683633298880137685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
