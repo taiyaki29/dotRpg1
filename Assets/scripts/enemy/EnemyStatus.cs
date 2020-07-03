@@ -6,7 +6,7 @@ public class EnemyStatus : MonoBehaviour
 {
     public string enemyName = "テスト敵";
     　
-    public int enemyLevel = 1;
+    public int enemyLevel = 10;
 
     public int enemyMaxHp = 20;
     public int enemyCurrentHp = 20;
