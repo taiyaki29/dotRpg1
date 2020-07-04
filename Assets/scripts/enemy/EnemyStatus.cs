@@ -15,6 +15,8 @@ public class EnemyStatus : MonoBehaviour
     　
     public int enemyLevel = 10;
 
+    public int enemyExperience = 10;
+
     public int enemyCurrentHp = 20;
     public int enemyMaxHp = 20;
     public int enemyCurrentMp = 20;
@@ -65,6 +67,8 @@ public class EnemyStatus : MonoBehaviour
         enemyImage = this.GetComponent<SpriteRenderer>();
         enemySprite = Resources.Load<Sprite>("sprites/enemy/mon1/mon_002");
         enemyImage.sprite = enemySprite;
+
+        enemyExperience = 10;
         
         enemyCurrentHp = enemyMaxHp = 10;
         enemyCurrentMp = enemyMaxMp = 10;
@@ -83,6 +87,8 @@ public class EnemyStatus : MonoBehaviour
         enemyImage = this.GetComponent<SpriteRenderer>();
         enemySprite = Resources.Load<Sprite>("sprites/enemy/mon1/mon_025");
         enemyImage.sprite = enemySprite;
+
+        enemyExperience = 15;
         
         enemyCurrentHp = enemyMaxHp = 15;
         enemyCurrentMp = enemyMaxMp = 15;

@@ -10,7 +10,15 @@ public class BattleControl : MonoBehaviour
 {
     public BattleStatus battleStatus;
 
+    public GameObject otherButtons;
+    public GameObject playerController;
     public GameObject battleTextHolder;
+
+    RectTransform otherButtonsTransform;
+    RectTransform playerControllerTransform;
+    RectTransform battleTextHolderTransform;
+
+    public GameObject battleTextGameObject;
     Text battleText;
 
     public GameObject mainRpgcontrol;
@@ -27,6 +35,22 @@ public class BattleControl : MonoBehaviour
     public GameObject enemy2HPSlider;
     public GameObject enemy3HPSlider;
 
+    public GameObject enemy1HPSliderBG;
+    public GameObject enemy2HPSliderBG;
+    public GameObject enemy3HPSliderBG;
+
+    public GameObject enemy1HPSliderBorder;
+    public GameObject enemy2HPSliderBorder;
+    public GameObject enemy3HPSliderBorder;
+
+    Image enemy1HPSliderBGImage;
+    Image enemy2HPSliderBGImage;
+    Image enemy3HPSliderBGImage;
+
+    Image enemy1HPSliderBorderImage;
+    Image enemy2HPSliderBorderImage;
+    Image enemy3HPSliderBorderImage;
+
     Slider enemy1HP;
     Slider enemy2HP;
     Slider enemy3HP;
@@ -34,6 +58,10 @@ public class BattleControl : MonoBehaviour
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
+
+    RectTransform enemy1Transform;
+    RectTransform enemy2Transform;
+    RectTransform enemy3Transform;
 
     EnemyStatus enemy1Status;
     EnemyStatus enemy2Status;
@@ -75,14 +103,30 @@ public class BattleControl : MonoBehaviour
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         skills = skill.GetComponent<Skills>();
 
-        battleText = battleTextHolder.GetComponent<Text>();
+        battleText = battleTextGameObject.GetComponent<Text>();
         enemy1Status = enemy1.GetComponent<EnemyStatus>();
         enemy2Status = enemy2.GetComponent<EnemyStatus>();
         enemy3Status = enemy3.GetComponent<EnemyStatus>();
 
+        enemy1Transform = enemy1.GetComponent<RectTransform>();
+        enemy2Transform = enemy2.GetComponent<RectTransform>();
+        enemy3Transform = enemy3.GetComponent<RectTransform>();
+
         enemy1HP = enemy1HPSlider.GetComponent<Slider>();
         enemy2HP = enemy2HPSlider.GetComponent<Slider>();
         enemy3HP = enemy3HPSlider.GetComponent<Slider>();
+
+        otherButtonsTransform = otherButtons.GetComponent<RectTransform>();
+        playerControllerTransform = playerController.GetComponent<RectTransform>();
+        battleTextHolderTransform = battleTextHolder.GetComponent<RectTransform>();
+
+        enemy1HPSliderBGImage = enemy1HPSliderBG.GetComponent<Image>();
+        enemy2HPSliderBGImage = enemy2HPSliderBG.GetComponent<Image>();
+        enemy3HPSliderBGImage = enemy3HPSliderBG.GetComponent<Image>();
+
+        enemy1HPSliderBorderImage = enemy1HPSliderBorder.GetComponent<Image>();
+        enemy2HPSliderBorderImage = enemy2HPSliderBorder.GetComponent<Image>();
+        enemy3HPSliderBorderImage = enemy3HPSliderBorder.GetComponent<Image>();
 
         stageNumber = mainRpgcontroller.stageNumber;
 
@@ -105,13 +149,17 @@ public class BattleControl : MonoBehaviour
         else if(battleStatus == BattleStatus.PLAYERTURNSKILL && mainRpgcontroller.mainRpgStatus == MainRpgStatus.BATTLE){
             battleText.text = playerActions[skillNumber];
         }
+
+        if(battleStatus == BattleStatus.LOSE){
+            StartCoroutine(playerLoseMotion());
+        }
     }
 
     public void startBattle(){
-        StartCoroutine(setUpBattle());
+        StartCoroutine(setStartBattle());
     }
 
-    public IEnumerator setUpBattle(){
+    public IEnumerator setStartBattle(){
         enemyNumber = UnityEngine.Random.Range(1,4);
         if(enemyNumber == 1){
             enemy1Status.spawnEnemy(stageNumber);
@@ -182,13 +230,13 @@ public class BattleControl : MonoBehaviour
             }
         }
         Debug.Log("start wait");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         battleText.text = playerActions[0];
         battleStatus = BattleStatus.PLAYERTURN;
         Debug.Log("end wait");
     }
 
-    public void chooseAction(){Debug.Log(actionNumber);
+    public void chooseAction(){
         // attack
         if(actionNumber == 0){
             StartCoroutine(playerAttackMotion(2));
@@ -315,9 +363,9 @@ public class BattleControl : MonoBehaviour
 
         StartCoroutine(enemyTakeDamage(chosenEnemy));
 
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1f);
 
-        if(mainPlayerStatus.playerPhysicalAttack < chosenEnemy.enemyPhysicalDefense){
+        if(mainPlayerStatus.playerPhysicalAttack <= chosenEnemy.enemyPhysicalDefense){
             chosenEnemy.enemyCurrentHp--;
             battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に 1 " + "のダメージ！" + "</color>";
         }
@@ -327,6 +375,7 @@ public class BattleControl : MonoBehaviour
             battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + (mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense) + " のダメージ！" + "</color>";
         }
 
+        yield return new WaitForSeconds(0.4f);
         //adjust health bar
         if(chosenEnemy == enemy1Status){
             enemy1HP.value = chosenEnemy.enemyCurrentHp;
@@ -338,19 +387,130 @@ public class BattleControl : MonoBehaviour
             enemy3HP.value = chosenEnemy.enemyCurrentHp;
         }
 
+        if(chosenEnemy.enemyCurrentHp == 0) {
+            chosenEnemy.enemyImage.color = invisible;
+            if(chosenEnemy == enemy1Status) {
+                enemy1HPSliderBGImage.color = invisible;
+                enemy1HPSliderBorderImage.color = invisible;
+            } 
+            if(chosenEnemy == enemy2Status) {
+                enemy2HPSliderBGImage.color = invisible;
+                enemy2HPSliderBorderImage.color = invisible;
+            }
+            if(chosenEnemy == enemy3Status) {
+                enemy3HPSliderBGImage.color = invisible;
+                enemy3HPSliderBorderImage.color = invisible;
+            }
+        }
+
         yield return new WaitForSeconds(1);
         
         if(chosenEnemy.enemyCurrentHp == 0) {
             battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した " + "</color>";
+            chosenEnemy = null;
             yield return new WaitForSeconds(1);
         }
+
         if(!isEnemyAlive()){
             StartCoroutine(playerWinMotion());
         }
         else {
             battleStatus = BattleStatus.ENEMYTURN;
+            StartCoroutine(enemyTurn());
+            Debug.Log("enemy turn");
         }
     }
+
+    public IEnumerator enemyTurn(){
+        // enemyChoice = 0 enemy normal attack
+        // enemyChoice = 1 enemy skill
+        bool playerAlive = true;
+        if(enemy1Status.enemyCurrentHp > 0){
+            int enemyChoice = UnityEngine.Random.Range(0,2);
+            enemyChoice = 0; //tmp!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            if(enemyChoice == 0){
+                battleText.text = "<color=#ffffffff>" + enemy1Status.enemyName + "の攻撃 " + "</color>";
+                yield return new WaitForSeconds(1);
+                StartCoroutine(enemyAttackMotion(enemy1Transform));
+                yield return new WaitForSeconds(0.6f);
+                if(enemy1Status.enemyPhysicalAttack <= mainPlayerStatus.playerPhysicalDefense){
+                    mainPlayerStatus.playerCurrentHp--;
+                    battleText.text = "<color=#ffffffff>" + " 1 " + "のダメージを受けた" + "</color>";
+                }
+                else{
+                    mainPlayerStatus.playerCurrentHp -= enemy3Status.enemyPhysicalAttack - mainPlayerStatus.playerCurrentHp;
+                    battleText.text = "<color=#ffffffff>" + (enemy1Status.enemyPhysicalAttack - mainPlayerStatus.playerPhysicalDefense) + "のダメージを受けた " + "</color>";
+                }
+                if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
+                yield return new WaitForSeconds(1f);
+                if(!isPlayerAlive()) playerAlive = false;
+
+            }
+            else if(enemyChoice == 1){
+
+            }
+        }
+        if(playerAlive && enemyNumber > 1 && enemy2Status.enemyCurrentHp > 0){
+            int enemyChoice = UnityEngine.Random.Range(0,2);
+            enemyChoice = 0; //tmp!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+            if(enemy2Status.enemyCurrentHp > 0){
+                if(enemyChoice == 0){
+                    battleText.text = "<color=#ffffffff>" + enemy2Status.enemyName + "の攻撃 " + "</color>";
+                    yield return new WaitForSeconds(1);
+                    StartCoroutine(enemyAttackMotion(enemy2Transform));
+                    yield return new WaitForSeconds(0.6f);
+                    if(enemy2Status.enemyPhysicalAttack <= mainPlayerStatus.playerPhysicalDefense){
+                        mainPlayerStatus.playerCurrentHp--;
+                        battleText.text = "<color=#ffffffff>" + " 1 " + "のダメージを受けた" + "</color>";
+                    }
+                    else{
+                        mainPlayerStatus.playerCurrentHp -= enemy3Status.enemyPhysicalAttack - mainPlayerStatus.playerCurrentHp;
+                        battleText.text = "<color=#ffffffff>" + (enemy2Status.enemyPhysicalAttack - mainPlayerStatus.playerPhysicalDefense) + "のダメージを受けた " + "</color>";
+                    }
+                    if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
+                    yield return new WaitForSeconds(1f);
+                    if(!isPlayerAlive()) playerAlive = false;
+
+                }
+                else if(enemyChoice == 1){
+
+                }
+            }
+        }
+        if(playerAlive && enemyNumber > 2 && enemy3Status.enemyCurrentHp > 0){
+            int enemyChoice = UnityEngine.Random.Range(0,2);
+            enemyChoice = 0; //tmp!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+            if(enemy3Status.enemyCurrentHp > 0){
+                if(enemyChoice == 0){
+                    battleText.text = "<color=#ffffffff>" + enemy3Status.enemyName + "の攻撃 " + "</color>";
+                    yield return new WaitForSeconds(1);
+                    StartCoroutine(enemyAttackMotion(enemy3Transform));
+                    yield return new WaitForSeconds(0.6f);
+                    if(enemy3Status.enemyPhysicalAttack <= mainPlayerStatus.playerPhysicalDefense){
+                        mainPlayerStatus.playerCurrentHp--;
+                        battleText.text = "<color=#ffffffff>" + " 1 " + "のダメージを受けた" + "</color>";
+                    }
+                    else{
+                        mainPlayerStatus.playerCurrentHp -= enemy3Status.enemyPhysicalAttack - mainPlayerStatus.playerCurrentHp;
+                        battleText.text = "<color=#ffffffff>" + (enemy3Status.enemyPhysicalAttack - mainPlayerStatus.playerPhysicalDefense) + "のダメージを受けた " + "</color>";
+                    }
+                    if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
+                    yield return new WaitForSeconds(1f);
+                    if(!isPlayerAlive()) playerAlive = false;
+
+                }
+                else if(enemyChoice == 1){
+
+                }
+            }
+        }
+        yield return new WaitForSeconds(1);
+        battleText.text = playerActions[0];
+        battleStatus = BattleStatus.PLAYERTURN;
+    }
+
     public IEnumerator playerSkillMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
@@ -363,15 +523,54 @@ public class BattleControl : MonoBehaviour
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
-    public IEnumerator enemyAttack(){
-        yield return new WaitForSeconds(1);
+    public IEnumerator enemyAttackMotion(RectTransform enemy){
+        Vector3 enemyTmp = enemy.position;
+        enemyTmp.y -= 0.5f;
+        enemy.position = enemyTmp;
+        yield return new WaitForSeconds(0.2f);
+        enemyTmp.y += 0.5f;
+        enemy.position = enemyTmp;
 
+        Vector3 otherButtonsTransformTmp = otherButtonsTransform.position;
+        Vector3 playerControllerTransformTmp = playerControllerTransform.position;
+        Vector3 battleTextHolderTransformTmp = battleTextHolderTransform.position;
+
+        otherButtonsTransformTmp.y -= 0.2f;
+        playerControllerTransformTmp.y -= 0.2f;
+        battleTextHolderTransformTmp.y -= 0.2f;
+
+        yield return new WaitForSeconds(0.2f);
+        otherButtonsTransform.position = otherButtonsTransformTmp;
+        playerControllerTransform.position = playerControllerTransformTmp;
+        battleTextHolderTransform.position = battleTextHolderTransformTmp;
+
+        otherButtonsTransformTmp.y += 0.2f;
+        playerControllerTransformTmp.y += 0.2f;
+        battleTextHolderTransformTmp.y += 0.2f;
+
+        yield return new WaitForSeconds(0.2f);
+        otherButtonsTransform.position = otherButtonsTransformTmp;
+        playerControllerTransform.position = playerControllerTransformTmp;
+        battleTextHolderTransform.position = battleTextHolderTransformTmp;
     }
     public IEnumerator playerWinMotion(){
         yield return new WaitForSeconds(1);
 
     }
+    public IEnumerator playerLoseMotion(){
+        yield return new WaitForSeconds(1);
+
+    }
+    public bool isPlayerAlive(){
+        if(mainPlayerStatus.playerCurrentHp < 0){
+            mainPlayerStatus.playerCurrentHp = 0;
+            battleStatus = BattleStatus.LOSE;
+            return false;
+        }
+        return true;
+    }
     public IEnumerator enemyTakeDamage(EnemyStatus enemy){
+        yield return new WaitForSeconds(1f);
         enemy.enemyImage.color = invisible;
         yield return new WaitForSeconds(0.1f);
         enemy.enemyImage.color = normal;
@@ -389,13 +588,13 @@ public class BattleControl : MonoBehaviour
 
     public bool isEnemyAlive(){
         if(enemyNumber == 1){
-            return enemy1Status.enemyCurrentHp > 0; 
+            return enemy1Status.enemyCurrentHp > 0 ? true : false; 
         }
         else if(enemyNumber == 2){
-            return enemy1Status.enemyCurrentHp == 0 && enemy2Status.enemyCurrentHp == 0;
+            return enemy1Status.enemyCurrentHp > 0 || enemy2Status.enemyCurrentHp > 0 ? true : false;
         }
         else if(enemyNumber == 3){
-            return enemy1Status.enemyCurrentHp == 0 && enemy2Status.enemyCurrentHp == 0 && enemy3Status.enemyCurrentHp == 0;
+            return enemy1Status.enemyCurrentHp > 0 || enemy2Status.enemyCurrentHp > 0 || enemy3Status.enemyCurrentHp > 0 ? true : false;
         }
         else return false;
     }
