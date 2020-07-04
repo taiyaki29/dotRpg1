@@ -45,7 +45,7 @@ public class EnemyStatus : MonoBehaviour
         else {
             battleControl.chosenEnemy = this;
         }
-        // Debug.Log(battleControl.chosenEnemy);
+        Debug.Log(battleControl.chosenEnemy);
     }
 
     public void spawnEnemy(int stageNumber){

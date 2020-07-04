@@ -23,6 +23,14 @@ public class BattleControl : MonoBehaviour
     Skills skills;
     Skills useSkill;
 
+    public GameObject enemy1HPSlider;
+    public GameObject enemy2HPSlider;
+    public GameObject enemy3HPSlider;
+
+    Slider enemy1HP;
+    Slider enemy2HP;
+    Slider enemy3HP;
+
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
@@ -53,6 +61,9 @@ public class BattleControl : MonoBehaviour
     public int actionNumber = 0;
 
     public int skillNumber = 0;
+
+    Color invisible;
+    Color normal;
     
     void Start(){
         setChooseAtionText();
@@ -69,7 +80,14 @@ public class BattleControl : MonoBehaviour
         enemy2Status = enemy2.GetComponent<EnemyStatus>();
         enemy3Status = enemy3.GetComponent<EnemyStatus>();
 
+        enemy1HP = enemy1HPSlider.GetComponent<Slider>();
+        enemy2HP = enemy2HPSlider.GetComponent<Slider>();
+        enemy3HP = enemy3HPSlider.GetComponent<Slider>();
+
         stageNumber = mainRpgcontroller.stageNumber;
+
+        invisible = new Color(1.0f, 1.0f, 1.0f, 0f);
+        normal = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     }
 
     // Update is called once per frame
@@ -97,6 +115,11 @@ public class BattleControl : MonoBehaviour
         enemyNumber = UnityEngine.Random.Range(1,4);
         if(enemyNumber == 1){
             enemy1Status.spawnEnemy(stageNumber);
+            Debug.Log(enemy1Status.enemyMaxHp);
+            Debug.Log(enemy1HP.maxValue);
+            enemy1HP.maxValue = enemy1Status.enemyMaxHp;
+
+            enemy1HP.value = enemy1Status.enemyMaxHp;
 
             enemy1.SetActive(true);
             enemy2.SetActive(false);
@@ -107,6 +130,12 @@ public class BattleControl : MonoBehaviour
         else if(enemyNumber == 2){
             enemy1Status.spawnEnemy(stageNumber);
             enemy2Status.spawnEnemy(stageNumber);
+
+            enemy1HP.maxValue = enemy1Status.enemyMaxHp;
+            enemy2HP.maxValue = enemy2Status.enemyMaxHp;
+
+            enemy1HP.value = enemy1Status.enemyMaxHp;
+            enemy2HP.value = enemy2Status.enemyMaxHp;
 
             enemy1.SetActive(true);
             enemy2.SetActive(true);
@@ -123,6 +152,14 @@ public class BattleControl : MonoBehaviour
             enemy1Status.spawnEnemy(stageNumber);
             enemy2Status.spawnEnemy(stageNumber);
             enemy3Status.spawnEnemy(stageNumber);
+
+            enemy1HP.maxValue = enemy1Status.enemyMaxHp;
+            enemy2HP.maxValue = enemy2Status.enemyMaxHp;
+            enemy3HP.maxValue = enemy3Status.enemyMaxHp;
+
+            enemy1HP.value = enemy1Status.enemyMaxHp;
+            enemy2HP.value = enemy2Status.enemyMaxHp;
+            enemy3HP.value = enemy3Status.enemyMaxHp;
 
             enemy1.SetActive(true);
             enemy2.SetActive(true);
@@ -258,8 +295,61 @@ public class BattleControl : MonoBehaviour
 
     // Actions
     public IEnumerator playerAttackMotion(int seconds){
-        battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds);
+        battleStatus = BattleStatus.PLAYERMOTION; 
+        // yield return new WaitForSeconds(1);
+
+        //choose enemy
+        if(!chosenEnemy){
+            if(enemy1Status.enemyCurrentHp > 0){
+                chosenEnemy = enemy1Status;
+            }
+            else if(enemyNumber > 1 && enemy2Status.enemyCurrentHp > 0){
+                chosenEnemy = enemy2Status;
+            }
+            else if(enemyNumber > 2 && enemy3Status.enemyCurrentHp > 0){
+                chosenEnemy = enemy3Status;
+            }
+        }
+
+        battleText.text = "<color=#ffffffff>" + mainPlayerStatus.playerName + "が" + chosenEnemy.enemyName + "を攻撃！\n" + "</color>";
+
+        StartCoroutine(enemyTakeDamage(chosenEnemy));
+
+        yield return new WaitForSeconds(0.3f);
+
+        if(mainPlayerStatus.playerPhysicalAttack < chosenEnemy.enemyPhysicalDefense){
+            chosenEnemy.enemyCurrentHp--;
+            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に 1 " + "のダメージ！" + "</color>";
+        }
+        else{
+            chosenEnemy.enemyCurrentHp -= mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense;
+            if(chosenEnemy.enemyCurrentHp < 0)chosenEnemy.enemyCurrentHp = 0;
+            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + (mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense) + " のダメージ！" + "</color>";
+        }
+
+        //adjust health bar
+        if(chosenEnemy == enemy1Status){
+            enemy1HP.value = chosenEnemy.enemyCurrentHp;
+        }
+        else if(chosenEnemy == enemy2Status){
+            enemy2HP.value = chosenEnemy.enemyCurrentHp;
+        }
+        else if(chosenEnemy == enemy3Status){
+            enemy3HP.value = chosenEnemy.enemyCurrentHp;
+        }
+
+        yield return new WaitForSeconds(1);
+        
+        if(chosenEnemy.enemyCurrentHp == 0) {
+            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した " + "</color>";
+            yield return new WaitForSeconds(1);
+        }
+        if(!isEnemyAlive()){
+            StartCoroutine(playerWinMotion());
+        }
+        else {
+            battleStatus = BattleStatus.ENEMYTURN;
+        }
     }
     public IEnumerator playerSkillMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
@@ -273,12 +363,40 @@ public class BattleControl : MonoBehaviour
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
+    public IEnumerator enemyAttack(){
+        yield return new WaitForSeconds(1);
+
+    }
+    public IEnumerator playerWinMotion(){
+        yield return new WaitForSeconds(1);
+
+    }
+    public IEnumerator enemyTakeDamage(EnemyStatus enemy){
+        enemy.enemyImage.color = invisible;
+        yield return new WaitForSeconds(0.1f);
+        enemy.enemyImage.color = normal;
+        yield return new WaitForSeconds(0.1f);
+        enemy.enemyImage.color = invisible;
+        yield return new WaitForSeconds(0.1f);
+        enemy.enemyImage.color = normal;
+    }
+
 
     public IEnumerator wait(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
 
-    // on click enemy
-    
+    public bool isEnemyAlive(){
+        if(enemyNumber == 1){
+            return enemy1Status.enemyCurrentHp > 0; 
+        }
+        else if(enemyNumber == 2){
+            return enemy1Status.enemyCurrentHp == 0 && enemy2Status.enemyCurrentHp == 0;
+        }
+        else if(enemyNumber == 3){
+            return enemy1Status.enemyCurrentHp == 0 && enemy2Status.enemyCurrentHp == 0 && enemy3Status.enemyCurrentHp == 0;
+        }
+        else return false;
+    }
 }
