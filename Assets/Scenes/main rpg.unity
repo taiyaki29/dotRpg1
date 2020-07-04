@@ -15721,6 +15721,8 @@ GameObject:
   - component: {fileID: 335881791}
   - component: {fileID: 335881792}
   - component: {fileID: 335881793}
+  - component: {fileID: 335881794}
+  - component: {fileID: 335881795}
   m_Layer: 5
   m_Name: enemy 3
   m_TagString: Untagged
@@ -15785,7 +15787,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1002
+  m_SortingOrder: 1020
   m_Sprite: {fileID: 21300000, guid: 79fbae2f03a844bdb8187641459ad16b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15809,6 +15811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e100b0332d7e44a99ae2d7e6659e286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleController: {fileID: 0}
   enemyName: "\u30C6\u30B9\u30C8\u6575"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
@@ -15822,6 +15825,60 @@ MonoBehaviour:
   enemyPhysicalAttack: 10
   enemyMagicalAttack: 10
   enemySpeed: 10
+--- !u!114 &335881794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335881790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1714904973}
+          m_MethodName: chooseEnemy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!61 &335881795
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335881790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &368681023
 GameObject:
   m_ObjectHideFlags: 0
@@ -15846,7 +15903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368681023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.06873, y: 55.27161, z: -16191.758}
+  m_LocalPosition: {x: -56.06873, y: 55.27161, z: 0}
   m_LocalScale: {x: 179.90842, y: 179.90842, z: 179.90842}
   m_Children:
   - {fileID: 1020285091}
@@ -16182,6 +16239,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -16197,6 +16255,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -16462,7 +16536,7 @@ Transform:
   m_Children:
   - {fileID: 965864652}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619559553
 GameObject:
@@ -16839,7 +16913,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &965864654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17081,6 +17155,8 @@ GameObject:
   - component: {fileID: 1020285091}
   - component: {fileID: 1020285092}
   - component: {fileID: 1020285093}
+  - component: {fileID: 1020285094}
+  - component: {fileID: 1020285095}
   m_Layer: 5
   m_Name: enemy 1
   m_TagString: Untagged
@@ -17145,7 +17221,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1002
+  m_SortingOrder: 1020
   m_Sprite: {fileID: 21300000, guid: 7367005718a8e4490af2e1d4089ccb4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17169,6 +17245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e100b0332d7e44a99ae2d7e6659e286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleController: {fileID: 0}
   enemyName: "\u30C6\u30B9\u30C8\u6575"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
@@ -17182,6 +17259,60 @@ MonoBehaviour:
   enemyPhysicalAttack: 10
   enemyMagicalAttack: 10
   enemySpeed: 10
+--- !u!114 &1020285094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020285090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1714904973}
+          m_MethodName: chooseEnemy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!61 &1020285095
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020285090}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1024910910
 GameObject:
   m_ObjectHideFlags: 0
@@ -17946,7 +18077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -18742,6 +18873,8 @@ GameObject:
   - component: {fileID: 1564746714}
   - component: {fileID: 1564746715}
   - component: {fileID: 1564746716}
+  - component: {fileID: 1564746717}
+  - component: {fileID: 1564746718}
   m_Layer: 5
   m_Name: enemy 2
   m_TagString: Untagged
@@ -18806,7 +18939,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1002
+  m_SortingOrder: 1020
   m_Sprite: {fileID: 21300000, guid: 79fbae2f03a844bdb8187641459ad16b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18830,6 +18963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e100b0332d7e44a99ae2d7e6659e286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleController: {fileID: 0}
   enemyName: "\u30C6\u30B9\u30C8\u65752"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
@@ -18843,6 +18977,60 @@ MonoBehaviour:
   enemyPhysicalAttack: 10
   enemyMagicalAttack: 10
   enemySpeed: 10
+--- !u!114 &1564746717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564746713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1714904973}
+          m_MethodName: chooseEnemy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!61 &1564746718
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564746713}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1568496085
 GameObject:
   m_ObjectHideFlags: 0
@@ -19376,6 +19564,7 @@ MonoBehaviour:
   enemy1: {fileID: 1020285090}
   enemy2: {fileID: 1564746713}
   enemy3: {fileID: 335881790}
+  chosenEnemy: {fileID: 0}
   playerActions:
   - 
   - 
@@ -19450,7 +19639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -19531,7 +19720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -19663,7 +19852,7 @@ Transform:
   m_Children:
   - {fileID: 533191423}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1819365856
 MonoBehaviour:

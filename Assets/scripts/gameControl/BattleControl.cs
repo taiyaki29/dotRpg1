@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public enum BattleStatus { START, PLAYERTURN, PLAYERTURNSKILL, ENEMYTURN, WIN, LOSE, NO_BATTLE }
+public enum BattleStatus { START, PLAYERTURN, PLAYERTURNSKILL, PLAYERMOTION, ENEMYTURN, WIN, LOSE, NO_BATTLE }
 
 public class BattleControl : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class BattleControl : MonoBehaviour
 
     public GameObject skill;
     Skills skills;
+    Skills useSkill;
 
     public GameObject enemy1;
     public GameObject enemy2;
@@ -28,6 +30,8 @@ public class BattleControl : MonoBehaviour
     EnemyStatus enemy1Status;
     EnemyStatus enemy2Status;
     EnemyStatus enemy3Status;
+
+    public EnemyStatus chosenEnemy;
 
     int enemyNumber;
 
@@ -168,24 +172,8 @@ public class BattleControl : MonoBehaviour
     }
 
     public void chooseSkill(){
-        if(skillNumber == 0){
-
-        }
-        else if(skillNumber == 1){
-
-        }
-        else if(skillNumber == 2){
-            
-        }
-        else if(skillNumber == 3){
-            
-        }
-        else if(skillNumber == 4){
-            
-        }
-        else if(skillNumber == 5){
-            
-        }
+        useSkill = skills.useSkill(mainPlayerStatus.playerSkills[skillNumber]);
+        StartCoroutine(playerSkillMotion(2));
     }
 
     public void returnToChooseAction(){
@@ -242,26 +230,55 @@ public class BattleControl : MonoBehaviour
             playerActions[4] = "";
             playerActions[5] = "";
         }
+        else if(mainPlayerStatus.playerSkillCount == 4){
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 +  "\n" + skill_3 +"</color>";
+            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 +  "\n" + skill_3 +"</color>";
+            playerActions[3] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 +  "\n" + "▶︎" + skill_3 +"</color>";
+            playerActions[4] = "";
+            playerActions[5] = "";
+        }
+        else if(mainPlayerStatus.playerSkillCount == 5){
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 + "</color>";
+            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 + "\n" + skill_3 + "\n" + skill_4 + "</color>";
+            playerActions[3] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + "▶︎" + skill_3 + "\n" + skill_4 + "</color>";
+            playerActions[4] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + "▶︎" + skill_4 + "</color>";
+            playerActions[5] = "";
+        }
+        else if(mainPlayerStatus.playerSkillCount == 6){
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
+            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
+            playerActions[3] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + "▶︎" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
+            playerActions[4] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "▶︎" + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
+            playerActions[5] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + "▶︎" + skill_5 + "</color>";
+        }
     }
 
     // Actions
     public IEnumerator playerAttackMotion(int seconds){
+        battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
-
     }
     public IEnumerator playerSkillMotion(int seconds){
+        battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
-        
     }
     public IEnumerator playerDefendMotion(int seconds){
+        battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
-        
     }
     public IEnumerator playerFleeMotion(int seconds){
+        battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
 
     public IEnumerator wait(int seconds){
+        battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
+
+    // on click enemy
+    
 }

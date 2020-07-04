@@ -16,7 +16,7 @@ public class Skills : MonoBehaviour {
 
     public float healMultiplyer = 1f;
 
-    public void useSkill(int skillNumber){
+    public Skills useSkill(int skillNumber){
         if(skillNumber == 0){
             skillName = "強打";
             physicalAttackMultiplyer = 1.3f;
@@ -29,6 +29,7 @@ public class Skills : MonoBehaviour {
             skillName = "強打3";
             physicalAttackMultiplyer = 1.3f;
         }
+        return null;
     }
 
     public string returnSkillName(int skillNumber){

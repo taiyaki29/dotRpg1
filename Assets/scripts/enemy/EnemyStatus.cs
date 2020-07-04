@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class EnemyStatus : MonoBehaviour
 {
+    public GameObject battleController;
+    BattleControl battleControl;
+
     public string enemyName = "テスト敵";
 
     public SpriteRenderer enemyImage;
@@ -27,12 +30,22 @@ public class EnemyStatus : MonoBehaviour
 
     void Start()
     {
-        
+        battleControl = battleController.GetComponent<BattleControl>();
     }
 
     void Update()
     {
         
+    }
+
+    public void chooseEnemy(){
+        if(battleControl.chosenEnemy == this){
+            battleControl.chosenEnemy = null;
+        }
+        else {
+            battleControl.chosenEnemy = this;
+        }
+        // Debug.Log(battleControl.chosenEnemy);
     }
 
     public void spawnEnemy(int stageNumber){
