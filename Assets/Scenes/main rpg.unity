@@ -784,7 +784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &269214733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17349,6 +17349,7 @@ MonoBehaviour:
   walkingAnimator: {fileID: 1028102689}
   mainRpgControl: {fileID: 1179888419}
   battleControl: {fileID: 1714904972}
+  player: {fileID: 1028102684}
   movementSpeed: 0.1
   playerStepsLimit: 200
 --- !u!50 &1028102687
@@ -17424,6 +17425,7 @@ MonoBehaviour:
   LvStatus: {fileID: 512988414}
   GoldStatus: {fileID: 619559553}
   StepsLimit: {fileID: 1160320947}
+  Skills: {fileID: 1070861420}
   playerName: "\u30C6\u30B9\u30C8\u52C7\u8005"
   playerLevel: 1
   playerExperience: 0
@@ -17447,6 +17449,59 @@ MonoBehaviour:
   playerNecklace: null
   playerWristband: null
   playerWeapon: null
+  playerSkills: ffffffffffffffffffffffffffffffffffffffffffffffff
+  playerSkillCount: 0
+--- !u!1 &1070861420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070861421}
+  - component: {fileID: 1070861422}
+  m_Layer: 0
+  m_Name: Skills
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070861421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070861420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1216396262}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070861422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070861420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
 --- !u!1 &1082210852
 GameObject:
   m_ObjectHideFlags: 0
@@ -17731,6 +17786,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184713700}
   m_CullTransparentMesh: 0
+--- !u!1 &1216396261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216396262}
+  m_Layer: 0
+  m_Name: OtherScripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216396262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216396261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4728465, y: 0.01991539, z: -43.376953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1070861421}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1261610959
 GameObject:
   m_ObjectHideFlags: 0
@@ -18018,7 +18104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1369885468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18341,7 +18427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1488816788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18838,7 +18924,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1568496088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 685289253}
+        m_MethodName: B_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1568496088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18991,7 +19088,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1591403995}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 685289253}
+        m_MethodName: A_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1591403995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19264,19 +19372,19 @@ MonoBehaviour:
   battleTextHolder: {fileID: 1742536386}
   mainRpgcontrol: {fileID: 1179888419}
   player: {fileID: 1028102684}
+  skill: {fileID: 1070861420}
   enemy1: {fileID: 1020285090}
   enemy2: {fileID: 1564746713}
   enemy3: {fileID: 335881790}
-  actionAttack: "<color=#ffffffff>\u25B6\uFE0E\u3000\u653B\u6483\n\u30B9\u30AD\u30EB\n\u9632\u5FA1\n\u9003\u3052\u308B</color>"
-  actionSkill: "<color=#ffffffff>\u653B\u6483\n\u25B6\uFE0E\u3000\u30B9\u30AD\u30EB\n\u9632\u5FA1\n\u9003\u3052\u308B</color>"
-  actionDefend: "<color=#ffffffff>\u653B\u6483\n\u30B9\u30AD\u30EB\n\u25B6\uFE0E\u3000\u9632\u5FA1\n\u9003\u3052\u308B</color>"
-  actionFlee: "<color=#ffffffff>\u653B\u6483\n\u30B9\u30AD\u30EB\n\u9632\u5FA1\n\u25B6\uFE0E\u3000\u9003\u3052\u308B</color>"
   playerActions:
   - 
   - 
   - 
   - 
+  - 
+  - 
   actionNumber: 0
+  skillNumber: 0
 --- !u!4 &1714904974
 Transform:
   m_ObjectHideFlags: 0

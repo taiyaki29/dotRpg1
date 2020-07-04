@@ -54,6 +54,8 @@ public class CharacterCreateController : MonoBehaviour
 
         mainPlayerStatus.playerWeapon = data.playerWeapon;
 
+        mainPlayerStatus.playerSkills = data.playerSkills;
+
         Vector3 position;
         position.x = data.playerPosition[0];
         position.y = data.playerPosition[1];

@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject battleControl;
     BattleControl battleController;
 
+    public GameObject player;
+    MainPlayerStatus mainPlayerStatus;
+
     public float movementSpeed = 0.1f;
 
     bool playerMovingUp =false;
@@ -32,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void Start(){
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
         battleController = battleControl.GetComponent<BattleControl>();
+        mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
     }
 
     void Update(){
@@ -156,8 +160,14 @@ public class PlayerMovement : MonoBehaviour
             holdMoveUp = true;
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
-            if(battleController.actionNumber > 0)battleController.actionNumber--;
-            else if(battleController.actionNumber == 0)battleController.actionNumber = 3;
+            if(battleController.battleStatus == BattleStatus.PLAYERTURN){
+                if(battleController.actionNumber > 0) battleController.actionNumber--;
+                else if(battleController.actionNumber == 0) battleController.actionNumber = 3;
+            }
+            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+                if(battleController.skillNumber > 0) battleController.skillNumber--;
+                else if(battleController.skillNumber == 0) battleController.skillNumber = mainPlayerStatus.playerSkillCount - 1;
+            }
         }
     }
     public void MoveUpPointerUp(){
@@ -170,8 +180,14 @@ public class PlayerMovement : MonoBehaviour
             holdMoveDown = true;
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
-            if(battleController.actionNumber < 3)battleController.actionNumber++;
-            else if(battleController.actionNumber == 3)battleController.actionNumber = 0;
+            if(battleController.battleStatus == BattleStatus.PLAYERTURN){
+                if(battleController.actionNumber < 3)battleController.actionNumber++;
+                else if(battleController.actionNumber == 3)battleController.actionNumber = 0;
+            }
+            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+                if(battleController.skillNumber < mainPlayerStatus.playerSkillCount - 1) battleController.skillNumber++;
+                else if(battleController.skillNumber == mainPlayerStatus.playerSkillCount - 1) battleController.skillNumber = 0;
+            }
         }
     }
     public void MoveDownPointerUp(){

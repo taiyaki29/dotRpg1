@@ -50,7 +50,10 @@ public class UIButtonControls : MonoBehaviour
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
             if(battleController.battleStatus == BattleStatus.PLAYERTURN){
-
+                battleController.chooseAction();
+            }
+            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+                battleController.chooseSkill();
             }
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
@@ -69,7 +72,9 @@ public class UIButtonControls : MonoBehaviour
 
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
-
+            if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+                battleController.returnToChooseAction();
+            }
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
             

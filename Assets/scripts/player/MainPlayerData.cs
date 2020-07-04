@@ -40,6 +40,8 @@ public class MainPlayerData {
 
     public string playerWeapon;
 
+    public int[] playerSkills;
+
     public float[] playerPosition;
 
     public MainPlayerData (MainPlayerStatus mainPlayerStatus, PlayerMovement playerMovement) {
@@ -77,6 +79,8 @@ public class MainPlayerData {
         playerWristband = mainPlayerStatus.playerWristband;
 
         playerWeapon = mainPlayerStatus.playerWeapon;
+
+        playerSkills = mainPlayerStatus.playerSkills;
 
         playerPosition = new float[3];
         playerPosition[0] = playerMovement.playerPosition.position.x;

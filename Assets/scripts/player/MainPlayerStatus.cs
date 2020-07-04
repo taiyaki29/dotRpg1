@@ -11,6 +11,9 @@ public class MainPlayerStatus : MonoBehaviour
     public GameObject LvStatus;
     public GameObject GoldStatus;
     public GameObject StepsLimit;
+    public GameObject Skills;
+
+    Skills skills;
 
     public string playerName = "テスト勇者";
     　
@@ -47,6 +50,9 @@ public class MainPlayerStatus : MonoBehaviour
 
     public string playerWeapon = "null";
 
+    public int[] playerSkills = new int[] {-1, -1, -1, -1, -1, -1};
+    public int playerSkillCount = 0;
+
     Text NameStatusText;
     Text HpStatusText;
     Text MpStatusText;
@@ -63,6 +69,7 @@ public class MainPlayerStatus : MonoBehaviour
         LvStatusText = LvStatus.GetComponent<Text>();
         GoldStatusText = GoldStatus.GetComponent<Text>();
         StepsLimitText = StepsLimit.GetComponent<Text>();
+        skills = Skills.GetComponent<Skills>();
 
         NameStatusText.text = "<color=#ffffffff>" + playerName + "</color>";
         HpStatusText.text = "<color=#00ff00ff>HP: " + playerCurrentHp.ToString() +"</color>";
@@ -73,6 +80,14 @@ public class MainPlayerStatus : MonoBehaviour
 
         playerMovement = this.GetComponent<PlayerMovement>();
         Debug.Log("start");
+
+        // temporary
+        playerSkills[0] = 0;
+        playerSkills[1] = 1;
+        playerSkills[2] = 2;
+        playerSkillCount++;
+        playerSkillCount++;
+        playerSkillCount++;
     }
 
     void FixedUpdate(){
