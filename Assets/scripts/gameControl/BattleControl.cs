@@ -167,16 +167,6 @@ public class BattleControl : MonoBehaviour
         if(battleStatus == BattleStatus.LOSE){
             StartCoroutine(playerLoseMotion());
         }
-
-        if(chosenEnemy == enemy1Status && !chosen1.activeSelf){
-            chosen1.SetActive(true);
-        }
-        if(chosenEnemy == enemy2Status && !chosen2.activeSelf){
-            chosen2.SetActive(true);
-        }
-        if(chosenEnemy == enemy3Status && !chosen3.activeSelf){
-            chosen3.SetActive(true);
-        }
     }
 
     public void startBattle(){
@@ -420,6 +410,7 @@ public class BattleControl : MonoBehaviour
 
         battleText.text = "<color=#ffffffff>" + mainPlayerStatus.playerName + "の" + usingSkill.skillName + "！\n" + "</color>";
         mainPlayerStatus.playerCurrentMp -= useSkill.MpCost;
+        Debug.Log(mainPlayerStatus.playerCurrentMp);
 
         if(!usingSkill.isSkillTargetMultiple) StartCoroutine(enemyTakeDamage(chosenEnemy));
         else StartCoroutine(allEnemyTakeDamage(allEnemys));
@@ -459,14 +450,17 @@ public class BattleControl : MonoBehaviour
                     if(allEnemys[i] == enemy1Status) {
                         enemy1HPSliderBGImage.color = invisible;
                         enemy1HPSliderBorderImage.color = invisible;
+                        chosen1.SetActive(false);
                     } 
                     if(allEnemys[i] == enemy2Status) {
                         enemy2HPSliderBGImage.color = invisible;
                         enemy2HPSliderBorderImage.color = invisible;
+                        chosen2.SetActive(false);
                     }
                     if(allEnemys[i] == enemy3Status) {
                         enemy3HPSliderBGImage.color = invisible;
                         enemy3HPSliderBorderImage.color = invisible;
+                        chosen3.SetActive(false);
                     }
                 }
             }
@@ -494,7 +488,6 @@ public class BattleControl : MonoBehaviour
         if(!usingSkill.isSkillTargetMultiple){
             if(chosenEnemy.enemyCurrentHp == 0) {
                 battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した " + "</color>";
-                chosenEnemy = null;
                 yield return new WaitForSeconds(1);
             }
         }
@@ -505,6 +498,10 @@ public class BattleControl : MonoBehaviour
 
         remainingEnemyNumber = numberEnemyAlive();
         Debug.Log(remainingEnemyNumber);
+
+        if(chosenEnemy.enemyCurrentHp == 0) {
+            chosenEnemy = null;
+        }
 
         if(remainingEnemyNumber == 0){
             StartCoroutine(playerWinMotion());
@@ -530,12 +527,11 @@ public class BattleControl : MonoBehaviour
                 StartCoroutine(enemyAttackMotion(enemy1Transform));
                 yield return new WaitForSeconds(0.6f);
 
-                int damage = calculateDamage(mainPlayerStatus, chosenEnemy, enemySkill, false);
+                int damage = calculateDamage(mainPlayerStatus, enemy1Status, enemySkill, false);
                 mainPlayerStatus.playerCurrentHp -= damage;
                 battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
                 if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
 
-                yield return new WaitForSeconds(1f);
                 if(!isPlayerAlive()) playerAlive = false;
 
             }
@@ -555,12 +551,11 @@ public class BattleControl : MonoBehaviour
                     StartCoroutine(enemyAttackMotion(enemy2Transform));
                     yield return new WaitForSeconds(0.6f);
 
-                    int damage = calculateDamage(mainPlayerStatus, chosenEnemy, enemySkill, false);
+                    int damage = calculateDamage(mainPlayerStatus, enemy2Status, enemySkill, false);
                     mainPlayerStatus.playerCurrentHp -= damage;
                     battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
                     if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
 
-                    yield return new WaitForSeconds(1f);
                     if(!isPlayerAlive()) playerAlive = false;
 
                 }
@@ -581,12 +576,11 @@ public class BattleControl : MonoBehaviour
                     StartCoroutine(enemyAttackMotion(enemy3Transform));
                     yield return new WaitForSeconds(0.6f);
 
-                    int damage = calculateDamage(mainPlayerStatus, chosenEnemy, enemySkill, false);
+                    int damage = calculateDamage(mainPlayerStatus, enemy3Status, enemySkill, false);
                     mainPlayerStatus.playerCurrentHp -= damage;
                     battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
                     if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
 
-                    yield return new WaitForSeconds(1f);
                     if(!isPlayerAlive()) playerAlive = false;
 
                 }
@@ -720,7 +714,7 @@ public class BattleControl : MonoBehaviour
     public int calculateDamage(MainPlayerStatus player, EnemyStatus enemy, Skills skill, bool isPlayerAttack){
         int attack;
         if(isPlayerAttack){
-            if(skills.isPhysicalAttack){
+            if(skill.isPhysicalAttack){
                 attack = (int)Convert.ToSingle(Math.Round(player.playerPhysicalAttack * skill.physicalAttackMultiplyer));
                 attack -= enemy.enemyPhysicalDefense;
                 if(attack <= 0) attack = 1;
@@ -732,7 +726,9 @@ public class BattleControl : MonoBehaviour
             }
         }
         else {
-            if(skills.isPhysicalAttack){
+            if(skill.isPhysicalAttack){
+                Debug.Log(enemy.enemyPhysicalAttack);
+                Debug.Log(skill.physicalAttackMultiplyer);
                 attack = (int)Convert.ToSingle(Math.Round(enemy.enemyPhysicalAttack * skill.physicalAttackMultiplyer));
                 attack -= player.playerPhysicalDefense;
                 if(attack <= 0) attack = 1;

@@ -25,23 +25,70 @@ public class Skills : MonoBehaviour {
         if(skillNumber == 0){
             skillName = "攻撃";
             isSkillTargetMultiple = false;
-            physicalAttackMultiplyer = 1f;
+            isPhysicalAttack = true;
+            isHeal = false;
+
             MpCost = 0;
+
+            physicalAttackMultiplyer = 1f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
         else if(skillNumber == 1){
-            skillName = "強打1";
+            skillName = "強打１";
             isSkillTargetMultiple = false;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 10;
+
             physicalAttackMultiplyer = 1.3f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
         else if(skillNumber == 2){
-            skillName = "強打2";
+            skillName = "強打２";
             isSkillTargetMultiple = false;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 15;
+
             physicalAttackMultiplyer = 1.5f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
         else if(skillNumber == 3){
             skillName = "大振り";
             isSkillTargetMultiple = true;
-            physicalAttackMultiplyer = 1.3f;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 20;
+
+            physicalAttackMultiplyer = 1f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
     }
 
