@@ -65,7 +65,7 @@ public class EnemyStatus : MonoBehaviour
             battleControl.chosen2.SetActive(false);
             battleControl.chosen3.SetActive(true);
         }
-        Debug.Log(battleControl.chosenEnemy);
+        Debug.Log(battleControl.chosenEnemy); //error when chosen enemy is unchosen  during attack
     }
 
     public void spawnEnemy(int stageNumber){

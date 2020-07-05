@@ -451,16 +451,19 @@ public class BattleControl : MonoBehaviour
                         enemy1HPSliderBGImage.color = invisible;
                         enemy1HPSliderBorderImage.color = invisible;
                         chosen1.SetActive(false);
+                        enemy1.SetActive(false);
                     } 
                     if(allEnemys[i] == enemy2Status) {
                         enemy2HPSliderBGImage.color = invisible;
                         enemy2HPSliderBorderImage.color = invisible;
                         chosen2.SetActive(false);
+                        enemy2.SetActive(false);
                     }
                     if(allEnemys[i] == enemy3Status) {
                         enemy3HPSliderBGImage.color = invisible;
                         enemy3HPSliderBorderImage.color = invisible;
                         chosen3.SetActive(false);
+                        enemy3.SetActive(false);
                     }
                 }
             }
@@ -472,14 +475,20 @@ public class BattleControl : MonoBehaviour
                 if(chosenEnemy == enemy1Status) {
                     enemy1HPSliderBGImage.color = invisible;
                     enemy1HPSliderBorderImage.color = invisible;
+                    chosen1.SetActive(false);
+                    enemy1.SetActive(false);
                 } 
                 if(chosenEnemy == enemy2Status) {
                     enemy2HPSliderBGImage.color = invisible;
                     enemy2HPSliderBorderImage.color = invisible;
+                    chosen2.SetActive(false);
+                    enemy2.SetActive(false);
                 }
                 if(chosenEnemy == enemy3Status) {
                     enemy3HPSliderBGImage.color = invisible;
                     enemy3HPSliderBorderImage.color = invisible;
+                    chosen3.SetActive(false);
+                    enemy3.SetActive(false);
                 }
             }
         }
