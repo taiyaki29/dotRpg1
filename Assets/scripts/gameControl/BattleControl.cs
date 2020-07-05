@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-public enum BattleStatus { START, PLAYERTURN, PLAYERTURNSKILL, PLAYERMOTION, ENEMYTURN, WIN, LOSE, NO_BATTLE }
+public enum BattleStatus { START, PLAYERTURN, PLAYERTURNSKILL, PLAYERMOTION, ENEMYTURN, WIN, LOSE, NO_BATTLE, WAIT }
 
 public class BattleControl : MonoBehaviour
 {
@@ -263,7 +263,20 @@ public class BattleControl : MonoBehaviour
 
     public void chooseSkill(){
         useSkill.useSkill(mainPlayerStatus.playerSkills[skillNumber]);
-        StartCoroutine(playerAttackMotion(useSkill));
+        if(useSkill.MpCost <= mainPlayerStatus.playerCurrentMp){
+            StartCoroutine(playerAttackMotion(useSkill));
+        }
+        else{
+            StartCoroutine(notEnoughMP());
+        }
+    }
+
+    public IEnumerator notEnoughMP(){
+        battleStatus = BattleStatus.WAIT;
+        battleText.text = "<color=#ffffffff>MPが足りない！</color>";
+        yield return new WaitForSeconds(1f);
+        setChooseSkillText();
+        battleStatus= BattleStatus.PLAYERTURNSKILL;
     }
 
     public void returnToChooseAction(){
@@ -369,7 +382,6 @@ public class BattleControl : MonoBehaviour
                 chosenEnemy = enemy3Status;
             }
         }
-        Debug.Log(useSkill);
 
         if(usingSkill.isSkillTargetMultiple){
             int k = 0;
@@ -389,6 +401,7 @@ public class BattleControl : MonoBehaviour
         }
 
         battleText.text = "<color=#ffffffff>" + mainPlayerStatus.playerName + "の" + usingSkill.skillName + "！\n" + "</color>";
+        mainPlayerStatus.playerCurrentMp -= useSkill.MpCost;
 
         if(!usingSkill.isSkillTargetMultiple) StartCoroutine(enemyTakeDamage(chosenEnemy));
         else StartCoroutine(allEnemyTakeDamage(allEnemys));

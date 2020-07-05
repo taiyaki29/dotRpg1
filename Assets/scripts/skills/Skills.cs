@@ -26,6 +26,7 @@ public class Skills : MonoBehaviour {
             skillName = "攻撃";
             isSkillTargetMultiple = false;
             physicalAttackMultiplyer = 1f;
+            MpCost = 0;
         }
         else if(skillNumber == 1){
             skillName = "強打1";
