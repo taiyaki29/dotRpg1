@@ -43,9 +43,27 @@ public class EnemyStatus : MonoBehaviour
     public void chooseEnemy(){
         if(battleControl.chosenEnemy == this){
             battleControl.chosenEnemy = null;
+            battleControl.chosen1.SetActive(false);
+            battleControl.chosen2.SetActive(false);
+            battleControl.chosen3.SetActive(false);
         }
         else {
             battleControl.chosenEnemy = this;
+        }
+        if(battleControl.chosenEnemy == battleControl.enemy1Status){
+            battleControl.chosen1.SetActive(true);
+            battleControl.chosen2.SetActive(false);
+            battleControl.chosen3.SetActive(false);
+        }
+        else if(battleControl.chosenEnemy == battleControl.enemy2Status){
+            battleControl.chosen1.SetActive(false);
+            battleControl.chosen2.SetActive(true);
+            battleControl.chosen3.SetActive(false);
+        }
+        else if(battleControl.chosenEnemy == battleControl.enemy3Status){
+            battleControl.chosen1.SetActive(false);
+            battleControl.chosen2.SetActive(false);
+            battleControl.chosen3.SetActive(true);
         }
         Debug.Log(battleControl.chosenEnemy);
     }

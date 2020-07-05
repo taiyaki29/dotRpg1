@@ -65,9 +65,13 @@ public class BattleControl : MonoBehaviour
     RectTransform enemy2Transform;
     RectTransform enemy3Transform;
 
-    EnemyStatus enemy1Status;
-    EnemyStatus enemy2Status;
-    EnemyStatus enemy3Status;
+    public EnemyStatus enemy1Status;
+    public EnemyStatus enemy2Status;
+    public EnemyStatus enemy3Status;
+
+    public GameObject chosen1;
+    public GameObject chosen2;
+    public GameObject chosen3;
 
     public EnemyStatus chosenEnemy;
     public EnemyStatus[] allEnemys;
@@ -136,6 +140,10 @@ public class BattleControl : MonoBehaviour
 
         stageNumber = mainRpgcontroller.stageNumber;
 
+        chosen1.SetActive(false);
+        chosen2.SetActive(false);
+        chosen3.SetActive(false);
+
         invisible = new Color(1.0f, 1.0f, 1.0f, 0f);
         normal = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     }
@@ -158,6 +166,16 @@ public class BattleControl : MonoBehaviour
 
         if(battleStatus == BattleStatus.LOSE){
             StartCoroutine(playerLoseMotion());
+        }
+
+        if(chosenEnemy == enemy1Status && !chosen1.activeSelf){
+            chosen1.SetActive(true);
+        }
+        if(chosenEnemy == enemy2Status && !chosen2.activeSelf){
+            chosen2.SetActive(true);
+        }
+        if(chosenEnemy == enemy3Status && !chosen3.activeSelf){
+            chosen3.SetActive(true);
         }
     }
 
