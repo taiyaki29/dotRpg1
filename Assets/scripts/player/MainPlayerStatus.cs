@@ -85,6 +85,8 @@ public class MainPlayerStatus : MonoBehaviour
         playerSkills[0] = 0;
         playerSkills[1] = 1;
         playerSkills[2] = 2;
+        playerSkills[3] = 3;
+        playerSkillCount++;
         playerSkillCount++;
         playerSkillCount++;
         playerSkillCount++;

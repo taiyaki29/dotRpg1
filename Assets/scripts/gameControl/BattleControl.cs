@@ -68,8 +68,10 @@ public class BattleControl : MonoBehaviour
     EnemyStatus enemy3Status;
 
     public EnemyStatus chosenEnemy;
+    public EnemyStatus[] allEnemys;
 
     int enemyNumber;
+    int remainingEnemyNumber;
 
     int stageNumber;
 
@@ -102,6 +104,7 @@ public class BattleControl : MonoBehaviour
         mainRpgcontroller = mainRpgcontrol.GetComponent<MainRpgController>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         skills = skill.GetComponent<Skills>();
+        useSkill = skill.GetComponent<Skills>();
 
         battleText = battleTextGameObject.GetComponent<Text>();
         enemy1Status = enemy1.GetComponent<EnemyStatus>();
@@ -163,8 +166,6 @@ public class BattleControl : MonoBehaviour
         enemyNumber = UnityEngine.Random.Range(1,4);
         if(enemyNumber == 1){
             enemy1Status.spawnEnemy(stageNumber);
-            Debug.Log(enemy1Status.enemyMaxHp);
-            Debug.Log(enemy1HP.maxValue);
             enemy1HP.maxValue = enemy1Status.enemyMaxHp;
 
             enemy1HP.value = enemy1Status.enemyMaxHp;
@@ -229,7 +230,7 @@ public class BattleControl : MonoBehaviour
                 battleText.text = "<color=#ffffffff>" + enemy1Status.enemyName + "達と\n" + enemy2Status.enemyName + "が襲いかかってきた。"+ "</color>";
             }
         }
-        Debug.Log("start wait");
+        Debug.Log(enemy1Status.enemyLevel);
         yield return new WaitForSeconds(1.5f);
         battleText.text = playerActions[0];
         battleStatus = BattleStatus.PLAYERTURN;
@@ -239,7 +240,8 @@ public class BattleControl : MonoBehaviour
     public void chooseAction(){
         // attack
         if(actionNumber == 0){
-            StartCoroutine(playerAttackMotion(2));
+            useSkill.useSkill(0);
+            StartCoroutine(playerAttackMotion(useSkill));
         }
         // skill
         else if(actionNumber == 1){
@@ -257,8 +259,8 @@ public class BattleControl : MonoBehaviour
     }
 
     public void chooseSkill(){
-        useSkill = skills.useSkill(mainPlayerStatus.playerSkills[skillNumber]);
-        StartCoroutine(playerSkillMotion(2));
+        useSkill.useSkill(mainPlayerStatus.playerSkills[skillNumber]);
+        StartCoroutine(playerAttackMotion(useSkill));
     }
 
     public void returnToChooseAction(){
@@ -342,8 +344,10 @@ public class BattleControl : MonoBehaviour
     }
 
     // Actions
-    public IEnumerator playerAttackMotion(int seconds){
+    public IEnumerator playerAttackMotion(Skills usingSkill){
         battleStatus = BattleStatus.PLAYERMOTION; 
+
+        remainingEnemyNumber = numberEnemyAlive();
         // yield return new WaitForSeconds(1);
 
         //choose enemy
@@ -358,60 +362,123 @@ public class BattleControl : MonoBehaviour
                 chosenEnemy = enemy3Status;
             }
         }
+        Debug.Log(useSkill);
 
-        battleText.text = "<color=#ffffffff>" + mainPlayerStatus.playerName + "が" + chosenEnemy.enemyName + "を攻撃！\n" + "</color>";
+        if(usingSkill.isSkillTargetMultiple){
+            int k = 0;
+            allEnemys = new EnemyStatus[remainingEnemyNumber];
+            if(enemy1Status.enemyCurrentHp > 0) {
+                allEnemys[k] = enemy1Status;
+                k++;
+            }
+            if(enemyNumber > 1 && enemy2Status.enemyCurrentHp > 0) {
+                allEnemys[k] = enemy2Status;
+                k++;
+            }
+            if(enemyNumber > 2 && enemy3Status.enemyCurrentHp > 0) {
+                allEnemys[k] = enemy3Status;
+                k++;
+            }
+        }
 
-        StartCoroutine(enemyTakeDamage(chosenEnemy));
+        battleText.text = "<color=#ffffffff>" + mainPlayerStatus.playerName + "の" + usingSkill.skillName + "！\n" + "</color>";
+
+        if(!usingSkill.isSkillTargetMultiple) StartCoroutine(enemyTakeDamage(chosenEnemy));
+        else StartCoroutine(allEnemyTakeDamage(allEnemys));
 
         yield return new WaitForSeconds(1f);
 
-        if(mainPlayerStatus.playerPhysicalAttack <= chosenEnemy.enemyPhysicalDefense){
-            chosenEnemy.enemyCurrentHp--;
-            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に 1 " + "のダメージ！" + "</color>";
-        }
-        else{
-            chosenEnemy.enemyCurrentHp -= mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense;
-            if(chosenEnemy.enemyCurrentHp < 0)chosenEnemy.enemyCurrentHp = 0;
-            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + (mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense) + " のダメージ！" + "</color>";
-        }
-
-        yield return new WaitForSeconds(0.4f);
-        //adjust health bar
-        if(chosenEnemy == enemy1Status){
-            enemy1HP.value = chosenEnemy.enemyCurrentHp;
-        }
-        else if(chosenEnemy == enemy2Status){
-            enemy2HP.value = chosenEnemy.enemyCurrentHp;
-        }
-        else if(chosenEnemy == enemy3Status){
-            enemy3HP.value = chosenEnemy.enemyCurrentHp;
-        }
-
-        if(chosenEnemy.enemyCurrentHp == 0) {
-            chosenEnemy.enemyImage.color = invisible;
-            if(chosenEnemy == enemy1Status) {
-                enemy1HPSliderBGImage.color = invisible;
-                enemy1HPSliderBorderImage.color = invisible;
-            } 
-            if(chosenEnemy == enemy2Status) {
-                enemy2HPSliderBGImage.color = invisible;
-                enemy2HPSliderBorderImage.color = invisible;
+        if(!usingSkill.isSkillTargetMultiple){
+            if(mainPlayerStatus.playerPhysicalAttack <= chosenEnemy.enemyPhysicalDefense){
+                chosenEnemy.enemyCurrentHp--;
+                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に 1 " + "のダメージ！" + "</color>";
             }
-            if(chosenEnemy == enemy3Status) {
-                enemy3HPSliderBGImage.color = invisible;
-                enemy3HPSliderBorderImage.color = invisible;
+            else{
+                chosenEnemy.enemyCurrentHp -= mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense;
+                if(chosenEnemy.enemyCurrentHp < 0)chosenEnemy.enemyCurrentHp = 0;
+                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + (mainPlayerStatus.playerPhysicalAttack - chosenEnemy.enemyPhysicalDefense) + " のダメージ！" + "</color>";
+            }
+        }
+        else {
+            string battleTextTmp = "";
+            for(int i=0; i<remainingEnemyNumber; i++){
+                if(mainPlayerStatus.playerPhysicalAttack <= allEnemys[i].enemyPhysicalDefense){
+                    allEnemys[i].enemyCurrentHp--;
+                    battleTextTmp += "<color=#ffffffff>" + allEnemys[i].enemyName + "に 1 " + "のダメージ！\n" + "</color>";
+                }
+                else{
+                    allEnemys[i].enemyCurrentHp -= mainPlayerStatus.playerPhysicalAttack - allEnemys[i].enemyPhysicalDefense;
+                    if(allEnemys[i].enemyCurrentHp < 0)allEnemys[i].enemyCurrentHp = 0;
+                    battleTextTmp += "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + (mainPlayerStatus.playerPhysicalAttack - allEnemys[i].enemyPhysicalDefense) + " のダメージ！\n" + "</color>";
+                }
+            }
+            battleText.text = battleTextTmp;
+        }
+ 
+        //adjust health bar
+        enemy1HP.value = enemy1Status.enemyCurrentHp;
+        enemy2HP.value = enemy2Status.enemyCurrentHp;
+        enemy3HP.value = enemy3Status.enemyCurrentHp;
+
+        yield return new WaitForSeconds(1f);
+
+        string tmpBattleText = "";
+        if(usingSkill.isSkillTargetMultiple){
+            for(int i=0; i<remainingEnemyNumber; i++){
+                if(allEnemys[i].enemyCurrentHp == 0){
+                    tmpBattleText += "<color=#ffffffff>" + allEnemys[i].enemyName + "を倒した\n" + "</color>";
+                    allEnemys[i].enemyImage.color = invisible;
+                    if(allEnemys[i] == enemy1Status) {
+                        enemy1HPSliderBGImage.color = invisible;
+                        enemy1HPSliderBorderImage.color = invisible;
+                    } 
+                    if(allEnemys[i] == enemy2Status) {
+                        enemy2HPSliderBGImage.color = invisible;
+                        enemy2HPSliderBorderImage.color = invisible;
+                    }
+                    if(allEnemys[i] == enemy3Status) {
+                        enemy3HPSliderBGImage.color = invisible;
+                        enemy3HPSliderBorderImage.color = invisible;
+                    }
+                }
+            }
+        }
+        else {
+            if(chosenEnemy.enemyCurrentHp == 0){
+                tmpBattleText += "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した\n" + "</color>";
+                chosenEnemy.enemyImage.color = invisible;
+                if(chosenEnemy == enemy1Status) {
+                    enemy1HPSliderBGImage.color = invisible;
+                    enemy1HPSliderBorderImage.color = invisible;
+                } 
+                if(chosenEnemy == enemy2Status) {
+                    enemy2HPSliderBGImage.color = invisible;
+                    enemy2HPSliderBorderImage.color = invisible;
+                }
+                if(chosenEnemy == enemy3Status) {
+                    enemy3HPSliderBGImage.color = invisible;
+                    enemy3HPSliderBorderImage.color = invisible;
+                }
             }
         }
 
         yield return new WaitForSeconds(1);
-        
-        if(chosenEnemy.enemyCurrentHp == 0) {
-            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した " + "</color>";
-            chosenEnemy = null;
+        if(!usingSkill.isSkillTargetMultiple){
+            if(chosenEnemy.enemyCurrentHp == 0) {
+                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した " + "</color>";
+                chosenEnemy = null;
+                yield return new WaitForSeconds(1);
+            }
+        }
+        else {
+            battleText.text = tmpBattleText;
             yield return new WaitForSeconds(1);
         }
 
-        if(!isEnemyAlive()){
+        remainingEnemyNumber = numberEnemyAlive();
+        Debug.Log(remainingEnemyNumber);
+
+        if(remainingEnemyNumber == 0){
             StartCoroutine(playerWinMotion());
         }
         else {
@@ -507,6 +574,7 @@ public class BattleControl : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(1);
+        setChooseAtionText();
         battleText.text = playerActions[0];
         battleStatus = BattleStatus.PLAYERTURN;
     }
@@ -580,22 +648,47 @@ public class BattleControl : MonoBehaviour
         enemy.enemyImage.color = normal;
     }
 
+    public IEnumerator allEnemyTakeDamage(EnemyStatus[] allEnemys){
+        yield return new WaitForSeconds(1f);
+        for(int i=0; i<remainingEnemyNumber; i++){
+            allEnemys[i].enemyImage.color = invisible;
+        }
+        yield return new WaitForSeconds(0.1f);
+        for(int i=0; i<remainingEnemyNumber; i++){
+            allEnemys[i].enemyImage.color = normal;
+        }
+        yield return new WaitForSeconds(0.1f);
+         for(int i=0; i<remainingEnemyNumber; i++){
+            allEnemys[i].enemyImage.color = invisible;
+        }
+        yield return new WaitForSeconds(0.1f);
+        for(int i=0; i<remainingEnemyNumber; i++){
+            allEnemys[i].enemyImage.color = normal;
+        }
+    }
 
     public IEnumerator wait(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
 
-    public bool isEnemyAlive(){
+    public int numberEnemyAlive(){
         if(enemyNumber == 1){
-            return enemy1Status.enemyCurrentHp > 0 ? true : false; 
+            return enemy1Status.enemyCurrentHp > 0 ? 1 : 0; 
         }
         else if(enemyNumber == 2){
-            return enemy1Status.enemyCurrentHp > 0 || enemy2Status.enemyCurrentHp > 0 ? true : false;
+            int enemyNumber = 0;
+            if(enemy1Status.enemyCurrentHp > 0) enemyNumber++;
+            if(enemy2Status.enemyCurrentHp > 0) enemyNumber++;
+            return enemyNumber;
         }
         else if(enemyNumber == 3){
-            return enemy1Status.enemyCurrentHp > 0 || enemy2Status.enemyCurrentHp > 0 || enemy3Status.enemyCurrentHp > 0 ? true : false;
+            int enemyNumber = 0;
+            if(enemy1Status.enemyCurrentHp > 0) enemyNumber++;
+            if(enemy2Status.enemyCurrentHp > 0) enemyNumber++;
+            if(enemy3Status.enemyCurrentHp > 0) enemyNumber++;
+            return enemyNumber;
         }
-        else return false;
+        else return 0;
     }
 }
