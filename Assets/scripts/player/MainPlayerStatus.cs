@@ -29,11 +29,11 @@ public class MainPlayerStatus : MonoBehaviour
     public int playerMaxMp = 20;
     public int playerCurrentMp = 20;
 
-    public int playerPhysicalDefense = 10;
-    public int playerMagicalDefense = 10;
+    public int playerPhysicalDefense = 5;
+    public int playerMagicalDefense = 5;
 
-    public int playerPhysicalAttack = 10;
-    public int playerMagicalAttack = 10;
+    public int playerPhysicalAttack = 5;
+    public int playerMagicalAttack = 5;
 
     public int playerSpeed = 10;
 

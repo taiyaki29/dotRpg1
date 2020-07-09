@@ -16018,6 +16018,8 @@ MonoBehaviour:
   enemyName: "\u30C6\u30B9\u30C8\u6575"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
+  SkillsGameObject: {fileID: 1070861420}
+  skills: {fileID: 0}
   enemyLevel: 1
   enemyExperience: 10
   enemyCurrentHp: 20
@@ -16028,6 +16030,10 @@ MonoBehaviour:
   enemyMagicalDefense: 10
   enemyPhysicalAttack: 10
   enemyMagicalAttack: 10
+  enemySkill_1: {fileID: 0}
+  enemySkill_2: {fileID: 0}
+  enemySkill_3: {fileID: 0}
+  enemySkill_4: {fileID: 0}
   enemySpeed: 10
 --- !u!114 &335881794
 MonoBehaviour:
@@ -17751,6 +17757,8 @@ MonoBehaviour:
   enemyName: "\u30C6\u30B9\u30C8\u6575"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
+  SkillsGameObject: {fileID: 1070861420}
+  skills: {fileID: 0}
   enemyLevel: 1
   enemyExperience: 10
   enemyCurrentHp: 20
@@ -17761,6 +17769,10 @@ MonoBehaviour:
   enemyMagicalDefense: 10
   enemyPhysicalAttack: 10
   enemyMagicalAttack: 10
+  enemySkill_1: {fileID: 0}
+  enemySkill_2: {fileID: 0}
+  enemySkill_3: {fileID: 0}
+  enemySkill_4: {fileID: 0}
   enemySpeed: 10
 --- !u!114 &1020285094
 MonoBehaviour:
@@ -19645,6 +19657,8 @@ MonoBehaviour:
   enemyName: "\u30C6\u30B9\u30C8\u65752"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
+  SkillsGameObject: {fileID: 1070861420}
+  skills: {fileID: 0}
   enemyLevel: 1
   enemyExperience: 10
   enemyCurrentHp: 20
@@ -19655,6 +19669,10 @@ MonoBehaviour:
   enemyMagicalDefense: 10
   enemyPhysicalAttack: 10
   enemyMagicalAttack: 10
+  enemySkill_1: {fileID: 0}
+  enemySkill_2: {fileID: 0}
+  enemySkill_3: {fileID: 0}
+  enemySkill_4: {fileID: 0}
   enemySpeed: 10
 --- !u!114 &1564746717
 MonoBehaviour:
@@ -20272,6 +20290,7 @@ MonoBehaviour:
   - 
   actionNumber: 0
   skillNumber: 0
+  playerAlive: 1
 --- !u!4 &1714904974
 Transform:
   m_ObjectHideFlags: 0

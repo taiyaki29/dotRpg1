@@ -21,7 +21,7 @@ public class Skills : MonoBehaviour {
 
     public float healMultiplyer = 1f;
 
-    public void useSkill(int skillNumber){
+    public void setSkill(int skillNumber){
         if(skillNumber == 0){
             skillName = "攻撃";
             isSkillTargetMultiple = false;

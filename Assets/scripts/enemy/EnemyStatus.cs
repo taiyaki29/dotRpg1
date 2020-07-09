@@ -12,27 +12,37 @@ public class EnemyStatus : MonoBehaviour
 
     public SpriteRenderer enemyImage;
     public Sprite enemySprite;
+
+    public GameObject SkillsGameObject;
+    public Skills skills;
     　
     public int enemyLevel = 10;
 
     public int enemyExperience = 10;
+    public int enemyGold = 10;
 
     public int enemyCurrentHp = 20;
     public int enemyMaxHp = 20;
     public int enemyCurrentMp = 20;
     public int enemyMaxMp = 20;
 
-    public int enemyPhysicalDefense = 10;
-    public int enemyMagicalDefense = 10;
+    public int enemyPhysicalDefense = 5;
+    public int enemyMagicalDefense = 5;
 
-    public int enemyPhysicalAttack = 10;
-    public int enemyMagicalAttack = 10;
+    public int enemyPhysicalAttack = 5;
+    public int enemyMagicalAttack = 5;
+
+    public Skills enemySkill_1;
+    public Skills enemySkill_2;
+    public Skills enemySkill_3;
+    public Skills enemySkill_4;
 
     public int enemySpeed = 10;
 
     void Start()
     {
         battleControl = battleController.GetComponent<BattleControl>();
+        skills = SkillsGameObject.GetComponent<Skills>();
     }
 
     void Update()
@@ -41,31 +51,44 @@ public class EnemyStatus : MonoBehaviour
     }
 
     public void chooseEnemy(){
-        if(battleControl.chosenEnemy == this){
-            battleControl.chosenEnemy = null;
-            battleControl.chosen1.SetActive(false);
-            battleControl.chosen2.SetActive(false);
-            battleControl.chosen3.SetActive(false);
+        if(battleControl.battleStatus == BattleStatus.PLAYERTURN || battleControl.battleStatus == BattleStatus.PLAYERTURNSKILL){
+            if(battleControl.chosenEnemy == this){
+                battleControl.chosenEnemy = null;
+                battleControl.chosen1.SetActive(false);
+                battleControl.chosen2.SetActive(false);
+                battleControl.chosen3.SetActive(false);
+            }
+            else {
+                battleControl.chosenEnemy = this;
+            }
+            if(battleControl.chosenEnemy == battleControl.enemy1Status){
+                battleControl.chosen1.SetActive(true);
+                battleControl.chosen2.SetActive(false);
+                battleControl.chosen3.SetActive(false);
+            }
+            else if(battleControl.chosenEnemy == battleControl.enemy2Status){
+                battleControl.chosen1.SetActive(false);
+                battleControl.chosen2.SetActive(true);
+                battleControl.chosen3.SetActive(false);
+            }
+            else if(battleControl.chosenEnemy == battleControl.enemy3Status){
+                battleControl.chosen1.SetActive(false);
+                battleControl.chosen2.SetActive(false);
+                battleControl.chosen3.SetActive(true);
+            }
         }
-        else {
-            battleControl.chosenEnemy = this;
-        }
-        if(battleControl.chosenEnemy == battleControl.enemy1Status){
-            battleControl.chosen1.SetActive(true);
-            battleControl.chosen2.SetActive(false);
-            battleControl.chosen3.SetActive(false);
-        }
-        else if(battleControl.chosenEnemy == battleControl.enemy2Status){
-            battleControl.chosen1.SetActive(false);
-            battleControl.chosen2.SetActive(true);
-            battleControl.chosen3.SetActive(false);
-        }
-        else if(battleControl.chosenEnemy == battleControl.enemy3Status){
-            battleControl.chosen1.SetActive(false);
-            battleControl.chosen2.SetActive(false);
-            battleControl.chosen3.SetActive(true);
-        }
-        Debug.Log(battleControl.chosenEnemy); //error when chosen enemy is unchosen  during attack
+    }
+
+    public void getSkillsReady(){
+        enemySkill_1 = SkillsGameObject.GetComponent<Skills>();
+        enemySkill_2 = SkillsGameObject.GetComponent<Skills>();
+        enemySkill_3 = SkillsGameObject.GetComponent<Skills>();
+        enemySkill_4 = SkillsGameObject.GetComponent<Skills>();
+        // normal attack
+        enemySkill_1.setSkill(0);
+        enemySkill_2.setSkill(0);
+        enemySkill_3.setSkill(0);
+        enemySkill_4.setSkill(0);
     }
 
     public void spawnEnemy(int stageNumber){
@@ -87,6 +110,7 @@ public class EnemyStatus : MonoBehaviour
         enemyImage.sprite = enemySprite;
 
         enemyExperience = 10;
+        enemyGold = 10;
         
         enemyCurrentHp = enemyMaxHp = 10;
         enemyCurrentMp = enemyMaxMp = 10;
@@ -96,6 +120,9 @@ public class EnemyStatus : MonoBehaviour
 
         enemyPhysicalAttack = 1;
         enemyMagicalAttack = 1;
+
+        getSkillsReady();
+        enemySkill_2.setSkill(1);
 
         enemySpeed = 1;
     }
@@ -107,6 +134,7 @@ public class EnemyStatus : MonoBehaviour
         enemyImage.sprite = enemySprite;
 
         enemyExperience = 15;
+        enemyGold = 15;
         
         enemyCurrentHp = enemyMaxHp = 15;
         enemyCurrentMp = enemyMaxMp = 15;
@@ -114,8 +142,11 @@ public class EnemyStatus : MonoBehaviour
         enemyPhysicalDefense = 7;
         enemyMagicalDefense = 7;
 
-        enemyPhysicalAttack = 5;
-        enemyMagicalAttack = 5;
+        enemyPhysicalAttack = 6;
+        enemyMagicalAttack = 6;
+
+        getSkillsReady();
+        enemySkill_2.setSkill(2);
 
         enemySpeed = 5;
     }

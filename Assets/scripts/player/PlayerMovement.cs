@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate(){ 
         //called every 0.05 seconds
-        // Debug.Log(playerPos);
         if(holdMoveUp){
             MoveUp();
         }

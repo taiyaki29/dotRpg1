@@ -30,7 +30,7 @@ public class BattleControl : MonoBehaviour
 
     public GameObject skill;
     Skills skills;
-    Skills useSkill;
+    Skills usePlayerSkill;
     Skills enemySkill;
 
     public GameObject enemy1HPSlider;
@@ -98,6 +98,8 @@ public class BattleControl : MonoBehaviour
 
     public int skillNumber = 0;
 
+    public bool playerAlive = true;
+
     Color invisible;
     Color normal;
     
@@ -110,7 +112,7 @@ public class BattleControl : MonoBehaviour
         mainRpgcontroller = mainRpgcontrol.GetComponent<MainRpgController>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         skills = skill.GetComponent<Skills>();
-        useSkill = skill.GetComponent<Skills>();
+        usePlayerSkill = skill.GetComponent<Skills>();
         enemySkill = skill.GetComponent<Skills>();
 
         battleText = battleTextGameObject.GetComponent<Text>();
@@ -167,6 +169,7 @@ public class BattleControl : MonoBehaviour
         if(battleStatus == BattleStatus.LOSE){
             StartCoroutine(playerLoseMotion());
         }
+
     }
 
     public void startBattle(){
@@ -241,18 +244,17 @@ public class BattleControl : MonoBehaviour
                 battleText.text = "<color=#ffffffff>" + enemy1Status.enemyName + "達と\n" + enemy2Status.enemyName + "が襲いかかってきた。"+ "</color>";
             }
         }
-        Debug.Log(enemy1Status.enemyLevel);
+
         yield return new WaitForSeconds(1.5f);
         battleText.text = playerActions[0];
         battleStatus = BattleStatus.PLAYERTURN;
-        Debug.Log("end wait");
     }
 
     public void chooseAction(){
         // attack
         if(actionNumber == 0){
-            useSkill.useSkill(0);
-            StartCoroutine(playerAttackMotion(useSkill));
+            usePlayerSkill.setSkill(0);
+            StartCoroutine(playerAttackMotion(usePlayerSkill));
         }
         // skill
         else if(actionNumber == 1){
@@ -270,9 +272,9 @@ public class BattleControl : MonoBehaviour
     }
 
     public void chooseSkill(){
-        useSkill.useSkill(mainPlayerStatus.playerSkills[skillNumber]);
-        if(useSkill.MpCost <= mainPlayerStatus.playerCurrentMp){
-            StartCoroutine(playerAttackMotion(useSkill));
+        usePlayerSkill.setSkill(mainPlayerStatus.playerSkills[skillNumber]);
+        if(usePlayerSkill.MpCost <= mainPlayerStatus.playerCurrentMp){
+            StartCoroutine(playerAttackMotion(usePlayerSkill));
         }
         else{
             StartCoroutine(notEnoughMP());
@@ -409,8 +411,7 @@ public class BattleControl : MonoBehaviour
         }
 
         battleText.text = "<color=#ffffffff>" + mainPlayerStatus.playerName + "の" + usingSkill.skillName + "！\n" + "</color>";
-        mainPlayerStatus.playerCurrentMp -= useSkill.MpCost;
-        Debug.Log(mainPlayerStatus.playerCurrentMp);
+        mainPlayerStatus.playerCurrentMp -= usingSkill.MpCost;
 
         if(!usingSkill.isSkillTargetMultiple) StartCoroutine(enemyTakeDamage(chosenEnemy));
         else StartCoroutine(allEnemyTakeDamage(allEnemys));
@@ -506,97 +507,32 @@ public class BattleControl : MonoBehaviour
         }
 
         remainingEnemyNumber = numberEnemyAlive();
-        Debug.Log(remainingEnemyNumber);
 
         if(chosenEnemy.enemyCurrentHp == 0) {
             chosenEnemy = null;
         }
 
         if(remainingEnemyNumber == 0){
-            StartCoroutine(playerWinMotion());
+            StartCoroutine(playerWinMotion(enemy1Status, enemy2Status, enemy3Status));
         }
         else {
             battleStatus = BattleStatus.ENEMYTURN;
             StartCoroutine(enemyTurn());
-            Debug.Log("enemy turn");
         }
     }
 
     public IEnumerator enemyTurn(){
-        // enemyChoice = 0 enemy normal attack
-        // enemyChoice = 1 enemy skill
-        bool playerAlive = true;
         if(enemy1Status.enemyCurrentHp > 0){
-            int enemyChoice = UnityEngine.Random.Range(0,2);
-            enemyChoice = 0; //tmp!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            if(enemyChoice == 0){
-                enemySkill.useSkill(0);
-                battleText.text = "<color=#ffffffff>" + enemy1Status.enemyName + "の" + enemySkill.skillName + "</color>";
-                yield return new WaitForSeconds(1);
-                StartCoroutine(enemyAttackMotion(enemy1Transform));
-                yield return new WaitForSeconds(0.6f);
-
-                int damage = calculateDamage(mainPlayerStatus, enemy1Status, enemySkill, false);
-                mainPlayerStatus.playerCurrentHp -= damage;
-                battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
-                if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
-
-                if(!isPlayerAlive()) playerAlive = false;
-
-            }
-            else if(enemyChoice == 1){
-
-            }
+            StartCoroutine(enemyAttackCheck(enemy1Status, enemy1Transform));
+            yield return new WaitForSeconds(2.5f);
         }
         if(playerAlive && enemyNumber > 1 && enemy2Status.enemyCurrentHp > 0){
-            int enemyChoice = UnityEngine.Random.Range(0,2);
-            enemyChoice = 0; //tmp!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-            if(enemy2Status.enemyCurrentHp > 0){
-                if(enemyChoice == 0){
-                    enemySkill.useSkill(0);
-                    battleText.text = "<color=#ffffffff>" + enemy2Status.enemyName + "の" + enemySkill.skillName + "</color>";
-                    yield return new WaitForSeconds(1);
-                    StartCoroutine(enemyAttackMotion(enemy2Transform));
-                    yield return new WaitForSeconds(0.6f);
-
-                    int damage = calculateDamage(mainPlayerStatus, enemy2Status, enemySkill, false);
-                    mainPlayerStatus.playerCurrentHp -= damage;
-                    battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
-                    if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
-
-                    if(!isPlayerAlive()) playerAlive = false;
-
-                }
-                else if(enemyChoice == 1){
-
-                }
-            }
+            StartCoroutine(enemyAttackCheck(enemy2Status, enemy2Transform));
+            yield return new WaitForSeconds(2.5f);
         }
         if(playerAlive && enemyNumber > 2 && enemy3Status.enemyCurrentHp > 0){
-            int enemyChoice = UnityEngine.Random.Range(0,2);
-            enemyChoice = 0; //tmp!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-            if(enemy3Status.enemyCurrentHp > 0){
-                if(enemyChoice == 0){
-                    enemySkill.useSkill(0);
-                    battleText.text = "<color=#ffffffff>" + enemy3Status.enemyName + "の" + enemySkill.skillName + "</color>";
-                    yield return new WaitForSeconds(1);
-                    StartCoroutine(enemyAttackMotion(enemy3Transform));
-                    yield return new WaitForSeconds(0.6f);
-
-                    int damage = calculateDamage(mainPlayerStatus, enemy3Status, enemySkill, false);
-                    mainPlayerStatus.playerCurrentHp -= damage;
-                    battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
-                    if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
-
-                    if(!isPlayerAlive()) playerAlive = false;
-
-                }
-                else if(enemyChoice == 1){
-
-                }
-            }
+            StartCoroutine(enemyAttackCheck(enemy3Status, enemy3Transform));
+            yield return new WaitForSeconds(2.5f);
         }
         yield return new WaitForSeconds(1);
         setChooseAtionText();
@@ -610,14 +546,38 @@ public class BattleControl : MonoBehaviour
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
+
     public IEnumerator playerDefendMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
+
     public IEnumerator playerFleeMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
         yield return new WaitForSeconds(seconds);
     }
+
+    public IEnumerator enemyAttackCheck(EnemyStatus attackingEnemy, RectTransform attackingEnemyTransform) {
+        int enemyChoice = UnityEngine.Random.Range(0,4);
+        
+        if(enemyChoice == 0) enemySkill = attackingEnemy.enemySkill_1;
+        else if(enemyChoice == 1) enemySkill = attackingEnemy.enemySkill_2;
+        else if(enemyChoice == 2) enemySkill = attackingEnemy.enemySkill_3;
+        else if(enemyChoice == 3) enemySkill = attackingEnemy.enemySkill_4;
+
+        battleText.text = "<color=#ffffffff>" + attackingEnemy.enemyName + "の" + enemySkill.skillName + "</color>";
+        yield return new WaitForSeconds(1);
+        StartCoroutine(enemyAttackMotion(attackingEnemyTransform));
+        yield return new WaitForSeconds(0.6f);
+
+        int damage = calculateDamage(mainPlayerStatus, attackingEnemy, enemySkill, false);
+        mainPlayerStatus.playerCurrentHp -= damage;
+        battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
+        if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
+
+        if(!isPlayerAlive()) playerAlive = false;
+    }
+
     public IEnumerator enemyAttackMotion(RectTransform enemy){
         Vector3 enemyTmp = enemy.position;
         enemyTmp.y -= 0.5f;
@@ -648,14 +608,45 @@ public class BattleControl : MonoBehaviour
         playerControllerTransform.position = playerControllerTransformTmp;
         battleTextHolderTransform.position = battleTextHolderTransformTmp;
     }
-    public IEnumerator playerWinMotion(){
+
+    public IEnumerator playerWinMotion(EnemyStatus enemy1, EnemyStatus enemy2, EnemyStatus enemy3){
+        int gainExperience = enemy1.enemyExperience;
+        int getGold = enemy1.enemyGold;
+        if(enemyNumber > 1) {
+            gainExperience += enemy2.enemyExperience;
+            getGold += enemy2.enemyGold;
+        }
+        if(enemyNumber > 2) {
+            gainExperience += enemy3.enemyExperience;
+            getGold += enemy3.enemyGold;
+        }
+
+        battleText.text = "<color=#ffffffff>戦いに勝った！\n獲得EXP　" + gainExperience + "\n獲得ゴールド　" + getGold + "</color>";
         yield return new WaitForSeconds(1);
 
+        // if(getNewSkill()){
+
+        // }
+
+        // if(enemyDropItem() {
+        //     battleText.text = "<color=#ffffffff>何々ゲット！</color>"; 
+        //     yield return new WaitForSeconds(1);
+        // }
+        
+        // if(mainPlayerStatus.didPlayerLevelUp()){
+        //     battleText.text = "<color=#ffffffff>レベルアップ！</color>"; 
+        //     yield return new WaitForSeconds(1);
+        // }
+
+        
+
     }
+
     public IEnumerator playerLoseMotion(){
         yield return new WaitForSeconds(1);
 
     }
+
     public bool isPlayerAlive(){
         if(mainPlayerStatus.playerCurrentHp < 0){
             mainPlayerStatus.playerCurrentHp = 0;
@@ -736,8 +727,6 @@ public class BattleControl : MonoBehaviour
         }
         else {
             if(skill.isPhysicalAttack){
-                Debug.Log(enemy.enemyPhysicalAttack);
-                Debug.Log(skill.physicalAttackMultiplyer);
                 attack = (int)Convert.ToSingle(Math.Round(enemy.enemyPhysicalAttack * skill.physicalAttackMultiplyer));
                 attack -= player.playerPhysicalDefense;
                 if(attack <= 0) attack = 1;
