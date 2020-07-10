@@ -13,6 +13,20 @@ public class MainPlayerStatus : MonoBehaviour
     public GameObject StepsLimit;
     public GameObject Skills;
 
+    public GameObject playerSkill1GameObject;
+    public GameObject playerSkill2GameObject;
+    public GameObject playerSkill3GameObject;
+    public GameObject playerSkill4GameObject;
+    public GameObject playerSkill5GameObject;
+    public GameObject playerSkill6GameObject;
+
+    public Skills playerSkill1;
+    public Skills playerSkill2;
+    public Skills playerSkill3;
+    public Skills playerSkill4;
+    public Skills playerSkill5;
+    public Skills playerSkill6;
+
     Skills skills;
 
     public string playerName = "テスト勇者";
@@ -50,7 +64,7 @@ public class MainPlayerStatus : MonoBehaviour
 
     public string playerWeapon = "null";
 
-    public int[] playerSkills = new int[] {-1, -1, -1, -1, -1, -1};
+    // public int[] playerSkills = new int[] {-1, -1, -1, -1, -1, -1};
     public int playerSkillCount = 0;
 
     Text NameStatusText;
@@ -71,6 +85,13 @@ public class MainPlayerStatus : MonoBehaviour
         StepsLimitText = StepsLimit.GetComponent<Text>();
         skills = Skills.GetComponent<Skills>();
 
+        playerSkill1 = playerSkill1GameObject.GetComponent<Skills>();
+        playerSkill2 = playerSkill2GameObject.GetComponent<Skills>();
+        playerSkill3 = playerSkill3GameObject.GetComponent<Skills>();
+        playerSkill4 = playerSkill4GameObject.GetComponent<Skills>();
+        playerSkill5 = playerSkill5GameObject.GetComponent<Skills>();
+        playerSkill6 = playerSkill6GameObject.GetComponent<Skills>();
+
         NameStatusText.text = "<color=#ffffffff>" + playerName + "</color>";
         HpStatusText.text = "<color=#00ff00ff>HP: " + playerCurrentHp.ToString() +"</color>";
         MpStatusText.text = "<color=#00ffffff>MP: " + playerCurrentMp.ToString() + "</color>";
@@ -82,10 +103,10 @@ public class MainPlayerStatus : MonoBehaviour
         Debug.Log("start");
 
         // temporary
-        playerSkills[0] = 0;
-        playerSkills[1] = 1;
-        playerSkills[2] = 2;
-        playerSkills[3] = 3;
+        playerSkill1.setSkill(0);
+        playerSkill2.setSkill(1);
+        playerSkill3.setSkill(2);
+        playerSkill4.setSkill(3);
         playerSkillCount++;
         playerSkillCount++;
         playerSkillCount++;

@@ -21,6 +21,8 @@ public class MainRpgController : MonoBehaviour
 
     public int stageNumber = 1;
 
+    public float gameTextSpeed = 0.7f;
+
     void Start(){
         mainRpgStatus = MainRpgStatus.WALK;
         battleScreen.SetActive(false);

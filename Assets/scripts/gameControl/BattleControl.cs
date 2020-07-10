@@ -30,7 +30,6 @@ public class BattleControl : MonoBehaviour
 
     public GameObject skill;
     Skills skills;
-    Skills usePlayerSkill;
     Skills enemySkill;
 
     public GameObject enemy1HPSlider;
@@ -86,13 +85,6 @@ public class BattleControl : MonoBehaviour
     string actionDefend = "<color=#ffffffff>攻撃\nスキル\n▶︎防御\n逃げる</color>";
     string actionFlee = "<color=#ffffffff>攻撃\nスキル\n防御\n▶︎逃げる</color>";
 
-    string skill_0;
-    string skill_1;
-    string skill_2;
-    string skill_3;
-    string skill_4;
-    string skill_5;
-
     public string[] playerActions = new string[6]; 
     public int actionNumber = 0;
 
@@ -112,7 +104,6 @@ public class BattleControl : MonoBehaviour
         mainRpgcontroller = mainRpgcontrol.GetComponent<MainRpgController>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         skills = skill.GetComponent<Skills>();
-        usePlayerSkill = skill.GetComponent<Skills>();
         enemySkill = skill.GetComponent<Skills>();
 
         battleText = battleTextGameObject.GetComponent<Text>();
@@ -245,7 +236,7 @@ public class BattleControl : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
         battleText.text = playerActions[0];
         battleStatus = BattleStatus.PLAYERTURN;
     }
@@ -253,8 +244,8 @@ public class BattleControl : MonoBehaviour
     public void chooseAction(){
         // attack
         if(actionNumber == 0){
-            usePlayerSkill.setSkill(0);
-            StartCoroutine(playerAttackMotion(usePlayerSkill));
+            // usePlayerSkill.setSkill(0);
+            StartCoroutine(playerAttackMotion(mainPlayerStatus.playerSkill1));
         }
         // skill
         else if(actionNumber == 1){
@@ -272,9 +263,15 @@ public class BattleControl : MonoBehaviour
     }
 
     public void chooseSkill(){
-        usePlayerSkill.setSkill(mainPlayerStatus.playerSkills[skillNumber]);
-        if(usePlayerSkill.MpCost <= mainPlayerStatus.playerCurrentMp){
-            StartCoroutine(playerAttackMotion(usePlayerSkill));
+        Skills playerSkill = mainPlayerStatus.playerSkill1;
+        if(skillNumber == 0) playerSkill = mainPlayerStatus.playerSkill1;
+        else if(skillNumber == 1) playerSkill = mainPlayerStatus.playerSkill2;
+        else if(skillNumber == 2) playerSkill = mainPlayerStatus.playerSkill3;
+        else if(skillNumber == 3) playerSkill = mainPlayerStatus.playerSkill4;
+        else if(skillNumber == 4) playerSkill = mainPlayerStatus.playerSkill5;
+        else if(skillNumber == 5) playerSkill = mainPlayerStatus.playerSkill6;
+        if(playerSkill.MpCost <= mainPlayerStatus.playerCurrentMp){
+            StartCoroutine(playerAttackMotion(playerSkill));
         }
         else{
             StartCoroutine(notEnoughMP());
@@ -284,7 +281,7 @@ public class BattleControl : MonoBehaviour
     public IEnumerator notEnoughMP(){
         battleStatus = BattleStatus.WAIT;
         battleText.text = "<color=#ffffffff>MPが足りない！</color>";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
         setChooseSkillText();
         battleStatus= BattleStatus.PLAYERTURNSKILL;
     }
@@ -304,13 +301,6 @@ public class BattleControl : MonoBehaviour
     }
 
     public void setChooseSkillText(){
-        if(mainPlayerStatus.playerSkills[0] != -1) skill_0 = skills.returnSkillName(mainPlayerStatus.playerSkills[0]);
-        if(mainPlayerStatus.playerSkills[1] != -1) skill_1 = skills.returnSkillName(mainPlayerStatus.playerSkills[1]);
-        if(mainPlayerStatus.playerSkills[2] != -1) skill_2 = skills.returnSkillName(mainPlayerStatus.playerSkills[2]);
-        if(mainPlayerStatus.playerSkills[3] != -1) skill_3 = skills.returnSkillName(mainPlayerStatus.playerSkills[3]);
-        if(mainPlayerStatus.playerSkills[4] != -1) skill_4 = skills.returnSkillName(mainPlayerStatus.playerSkills[4]);
-        if(mainPlayerStatus.playerSkills[5] != -1) skill_5 = skills.returnSkillName(mainPlayerStatus.playerSkills[5]);
-
         if(mainPlayerStatus.playerSkillCount == 0){
             playerActions[0] = "";
             playerActions[1] = "";
@@ -320,7 +310,7 @@ public class BattleControl : MonoBehaviour
             playerActions[5] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 1){
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "</color>";
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkill1.skillName + "</color>";
             playerActions[1] = "";
             playerActions[2] = "";
             playerActions[3] = "";
@@ -328,44 +318,44 @@ public class BattleControl : MonoBehaviour
             playerActions[5] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 2){
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "</color>";
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill2.skillName + "</color>";
             playerActions[2] = "";
             playerActions[3] = "";
             playerActions[4] = "";
             playerActions[5] = "";
         }
          else if(mainPlayerStatus.playerSkillCount == 3){
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 + "</color>";
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "</color>";
+            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill3.skillName + "</color>";
             playerActions[3] = "";
             playerActions[4] = "";
             playerActions[5] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 4){
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 +  "\n" + skill_3 +"</color>";
-            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 +  "\n" + skill_3 +"</color>";
-            playerActions[3] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 +  "\n" + "▶︎" + skill_3 +"</color>";
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName +  "\n" + mainPlayerStatus.playerSkill4.skillName +"</color>";
+            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill3.skillName +  "\n" + mainPlayerStatus.playerSkill4.skillName +"</color>";
+            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkill4.skillName +"</color>";
             playerActions[4] = "";
             playerActions[5] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 5){
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 + "\n" + skill_3 + "\n" + skill_4 + "</color>";
-            playerActions[3] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + "▶︎" + skill_3 + "\n" + skill_4 + "</color>";
-            playerActions[4] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + "▶︎" + skill_4 + "</color>";
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName + "</color>";
+            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName + "</color>";
+            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName + "</color>";
+            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill5.skillName + "</color>";
             playerActions[5] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 6){
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + skill_0 + "\n" + "▶︎" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + "▶︎" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
-            playerActions[3] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + "▶︎" + skill_3 + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
-            playerActions[4] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "▶︎" + "\n" + skill_4 +  "\n" + skill_5 + "</color>";
-            playerActions[5] = "<color=#ffffffff>" + skill_0 + "\n" + skill_1 + "\n" + skill_2 + "\n" + skill_3 + "\n" + skill_4 +  "\n" + "▶︎" + skill_5 + "</color>";
+            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName +  "\n" + mainPlayerStatus.playerSkill6.skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName +  "\n" + mainPlayerStatus.playerSkill6.skillName + "</color>";
+            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName +  "\n" + mainPlayerStatus.playerSkill6.skillName + "</color>";
+            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName +  "\n" + mainPlayerStatus.playerSkill6.skillName + "</color>";
+            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "▶︎" + "\n" + mainPlayerStatus.playerSkill5.skillName +  "\n" + mainPlayerStatus.playerSkill6.skillName + "</color>";
+            playerActions[5] = "<color=#ffffffff>" + mainPlayerStatus.playerSkill1.skillName + "\n" + mainPlayerStatus.playerSkill2.skillName + "\n" + mainPlayerStatus.playerSkill3.skillName + "\n" + mainPlayerStatus.playerSkill4.skillName + "\n" + mainPlayerStatus.playerSkill5.skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkill6 .skillName+ "</color>";
         }
     }
 
@@ -378,7 +368,6 @@ public class BattleControl : MonoBehaviour
         }
 
         remainingEnemyNumber = numberEnemyAlive();
-        // yield return new WaitForSeconds(1);
 
         //choose enemy
         if(!chosenEnemy){
@@ -416,7 +405,7 @@ public class BattleControl : MonoBehaviour
         if(!usingSkill.isSkillTargetMultiple) StartCoroutine(enemyTakeDamage(chosenEnemy));
         else StartCoroutine(allEnemyTakeDamage(allEnemys));
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
 
         if(!usingSkill.isSkillTargetMultiple){
             int damage = calculateDamage(mainPlayerStatus, chosenEnemy, usingSkill, true);
@@ -440,7 +429,7 @@ public class BattleControl : MonoBehaviour
         enemy2HP.value = enemy2Status.enemyCurrentHp;
         enemy3HP.value = enemy3Status.enemyCurrentHp;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
 
         string tmpBattleText = "";
         if(usingSkill.isSkillTargetMultiple){
@@ -494,16 +483,16 @@ public class BattleControl : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         if(!usingSkill.isSkillTargetMultiple){
             if(chosenEnemy.enemyCurrentHp == 0) {
                 battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "を倒した " + "</color>";
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
             }
         }
         else {
             battleText.text = tmpBattleText;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         }
 
         remainingEnemyNumber = numberEnemyAlive();
@@ -524,17 +513,17 @@ public class BattleControl : MonoBehaviour
     public IEnumerator enemyTurn(){
         if(enemy1Status.enemyCurrentHp > 0){
             StartCoroutine(enemyAttackCheck(enemy1Status, enemy1Transform));
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2.5f * mainRpgcontroller.gameTextSpeed);
         }
         if(playerAlive && enemyNumber > 1 && enemy2Status.enemyCurrentHp > 0){
             StartCoroutine(enemyAttackCheck(enemy2Status, enemy2Transform));
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2.5f * mainRpgcontroller.gameTextSpeed);
         }
         if(playerAlive && enemyNumber > 2 && enemy3Status.enemyCurrentHp > 0){
             StartCoroutine(enemyAttackCheck(enemy3Status, enemy3Transform));
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2.5f * mainRpgcontroller.gameTextSpeed);
         }
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         setChooseAtionText();
         battleText.text = playerActions[0];
         skillNumber = 0;
@@ -544,17 +533,17 @@ public class BattleControl : MonoBehaviour
 
     public IEnumerator playerSkillMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
     }
 
     public IEnumerator playerDefendMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
     }
 
     public IEnumerator playerFleeMotion(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
     }
 
     public IEnumerator enemyAttackCheck(EnemyStatus attackingEnemy, RectTransform attackingEnemyTransform) {
@@ -566,9 +555,9 @@ public class BattleControl : MonoBehaviour
         else if(enemyChoice == 3) enemySkill = attackingEnemy.enemySkill_4;
 
         battleText.text = "<color=#ffffffff>" + attackingEnemy.enemyName + "の" + enemySkill.skillName + "</color>";
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         StartCoroutine(enemyAttackMotion(attackingEnemyTransform));
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.6f * mainRpgcontroller.gameTextSpeed);
 
         int damage = calculateDamage(mainPlayerStatus, attackingEnemy, enemySkill, false);
         mainPlayerStatus.playerCurrentHp -= damage;
@@ -582,7 +571,7 @@ public class BattleControl : MonoBehaviour
         Vector3 enemyTmp = enemy.position;
         enemyTmp.y -= 0.5f;
         enemy.position = enemyTmp;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.2f * mainRpgcontroller.gameTextSpeed);
         enemyTmp.y += 0.5f;
         enemy.position = enemyTmp;
 
@@ -594,7 +583,7 @@ public class BattleControl : MonoBehaviour
         playerControllerTransformTmp.y -= 0.2f;
         battleTextHolderTransformTmp.y -= 0.2f;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.2f * mainRpgcontroller.gameTextSpeed);
         otherButtonsTransform.position = otherButtonsTransformTmp;
         playerControllerTransform.position = playerControllerTransformTmp;
         battleTextHolderTransform.position = battleTextHolderTransformTmp;
@@ -603,7 +592,7 @@ public class BattleControl : MonoBehaviour
         playerControllerTransformTmp.y += 0.2f;
         battleTextHolderTransformTmp.y += 0.2f;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.2f * mainRpgcontroller.gameTextSpeed);
         otherButtonsTransform.position = otherButtonsTransformTmp;
         playerControllerTransform.position = playerControllerTransformTmp;
         battleTextHolderTransform.position = battleTextHolderTransformTmp;
@@ -621,29 +610,31 @@ public class BattleControl : MonoBehaviour
             getGold += enemy3.enemyGold;
         }
 
-        battleText.text = "<color=#ffffffff>戦いに勝った！\n獲得EXP　" + gainExperience + "\n獲得ゴールド　" + getGold + "</color>";
-        yield return new WaitForSeconds(1);
+        battleText.text = "<color=#ffffffff>戦いに勝った！\n獲得EXP　" + gainExperience + "exp\n獲得ゴールド　" + getGold + "g</color>";
+        yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
 
-        // if(getNewSkill()){
+        bool getSkillChance = enemyNumber >= UnityEngine.Random.Range(0,10); // 10 - 30 %
 
+        // if(getSkillChance){
+        //     StartCoroutine(chooseNewSkill());
         // }
 
         // if(enemyDropItem() {
         //     battleText.text = "<color=#ffffffff>何々ゲット！</color>"; 
-        //     yield return new WaitForSeconds(1);
+        //     yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         // }
         
         // if(mainPlayerStatus.didPlayerLevelUp()){
         //     battleText.text = "<color=#ffffffff>レベルアップ！</color>"; 
-        //     yield return new WaitForSeconds(1);
+        //     yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         // }
 
-        
+
 
     }
 
     public IEnumerator playerLoseMotion(){
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
 
     }
 
@@ -655,31 +646,32 @@ public class BattleControl : MonoBehaviour
         }
         return true;
     }
+
     public IEnumerator enemyTakeDamage(EnemyStatus enemy){
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
         enemy.enemyImage.color = invisible;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.1f * mainRpgcontroller.gameTextSpeed);
         enemy.enemyImage.color = normal;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.1f * mainRpgcontroller.gameTextSpeed);
         enemy.enemyImage.color = invisible;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.1f * mainRpgcontroller.gameTextSpeed);
         enemy.enemyImage.color = normal;
     }
 
     public IEnumerator allEnemyTakeDamage(EnemyStatus[] allEnemys){
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
         for(int i=0; i<remainingEnemyNumber; i++){
             allEnemys[i].enemyImage.color = invisible;
         }
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.1f * mainRpgcontroller.gameTextSpeed);
         for(int i=0; i<remainingEnemyNumber; i++){
             allEnemys[i].enemyImage.color = normal;
         }
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.1f * mainRpgcontroller.gameTextSpeed);
          for(int i=0; i<remainingEnemyNumber; i++){
             allEnemys[i].enemyImage.color = invisible;
         }
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.1f * mainRpgcontroller.gameTextSpeed);
         for(int i=0; i<remainingEnemyNumber; i++){
             allEnemys[i].enemyImage.color = normal;
         }
@@ -687,8 +679,26 @@ public class BattleControl : MonoBehaviour
 
     public IEnumerator wait(int seconds){
         battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
     }
+
+    // public IEnumerator chooseNewSkill(){
+    //     battleStatus = BattleStatus.chooseNewSkill; 
+    //     yield return new WaitForSeconds(1.0f * mainRpgcontroller.gameTextSpeed);
+    //     battleText.text = "<color=#ffffffff>敵の技を見切った。　" + gainExperience + "exp\n獲得ゴールド　" + getGold + "g</color>";
+
+    // }
+
+    // public int[] possibleNewSkills(){
+    //     for(int i=0; i<6; i++){
+    //       if(enemy1Status.enemySkill_1.skillName != mainPlayerStatus.usePlayerSkill)
+            
+    //     }
+    //     if(enemyNumber > 1){
+
+    //     }
+
+    // }
 
     public int numberEnemyAlive(){
         if(enemyNumber == 1){
