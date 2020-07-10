@@ -54,12 +54,9 @@ public class CharacterCreateController : MonoBehaviour
 
         mainPlayerStatus.playerWeapon = data.playerWeapon;
 
-        mainPlayerStatus.playerSkill1 = data.playerSkill1;
-        mainPlayerStatus.playerSkill2 = data.playerSkill2;
-        mainPlayerStatus.playerSkill1 = data.playerSkill3;
-        mainPlayerStatus.playerSkill1 = data.playerSkill4;
-        mainPlayerStatus.playerSkill1 = data.playerSkill5;
-        mainPlayerStatus.playerSkill1 = data.playerSkill6;
+        for(int i=0; i<6; i++){
+            mainPlayerStatus.playerSkills[i] = data.playerSkills[i];
+        }
 
         Vector3 position;
         position.x = data.playerPosition[0];

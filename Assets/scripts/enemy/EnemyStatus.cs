@@ -34,10 +34,7 @@ public class EnemyStatus : MonoBehaviour
     public int enemyPhysicalAttack = 5;
     public int enemyMagicalAttack = 5;
 
-    public Skills enemySkill_1;
-    public Skills enemySkill_2;
-    public Skills enemySkill_3;
-    public Skills enemySkill_4;
+    public Skills[] enemySkills =new Skills[3];
 
     public int enemySpeed = 10;
 
@@ -81,15 +78,12 @@ public class EnemyStatus : MonoBehaviour
     }
 
     public void getSkillsReady(){
-        enemySkill_1 = SkillsGameObject1.GetComponent<Skills>();
-        enemySkill_2 = SkillsGameObject2.GetComponent<Skills>();
-        enemySkill_3 = SkillsGameObject3.GetComponent<Skills>();
-        enemySkill_4 = SkillsGameObject4.GetComponent<Skills>();
+        enemySkills[0] = SkillsGameObject1.GetComponent<Skills>();
+        enemySkills[1] = SkillsGameObject2.GetComponent<Skills>();
+        enemySkills[2] = SkillsGameObject3.GetComponent<Skills>();
+        enemySkills[3] = SkillsGameObject4.GetComponent<Skills>();
         // normal attack
-        enemySkill_1.setSkill(0);
-        enemySkill_2.setSkill(0);
-        enemySkill_3.setSkill(0);
-        enemySkill_4.setSkill(0);
+        for(int i=0; i<4; i++) enemySkills[i].setSkill(0);
     }
 
     public void spawnEnemy(int stageNumber){
@@ -123,7 +117,7 @@ public class EnemyStatus : MonoBehaviour
         enemyMagicalAttack = 1;
 
         getSkillsReady();
-        enemySkill_2.setSkill(1);
+        enemySkills[2].setSkill(1);
 
         enemySpeed = 1;
     }
@@ -147,7 +141,7 @@ public class EnemyStatus : MonoBehaviour
         enemyMagicalAttack = 6;
 
         getSkillsReady();
-        enemySkill_2.setSkill(2);
+        enemySkills[2].setSkill(2);
 
         enemySpeed = 5;
     }

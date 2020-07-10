@@ -40,12 +40,7 @@ public class MainPlayerData {
 
     public string playerWeapon;
 
-    public Skills playerSkill1;
-    public Skills playerSkill2;
-    public Skills playerSkill3;
-    public Skills playerSkill4;
-    public Skills playerSkill5;
-    public Skills playerSkill6;
+    public Skills[] playerSkills = new Skills[6];
 
     public float[] playerPosition;
 
@@ -85,12 +80,9 @@ public class MainPlayerData {
 
         playerWeapon = mainPlayerStatus.playerWeapon;
 
-        playerSkill1 = mainPlayerStatus.playerSkill1;
-        playerSkill2 = mainPlayerStatus.playerSkill2;
-        playerSkill3 = mainPlayerStatus.playerSkill3;
-        playerSkill4 = mainPlayerStatus.playerSkill4;
-        playerSkill5 = mainPlayerStatus.playerSkill5;
-        playerSkill6 = mainPlayerStatus.playerSkill6;
+        for(int i=0; i<6; i++){
+            playerSkills[i] = mainPlayerStatus.playerSkills[i];
+        }
 
         playerPosition = new float[3];
         playerPosition[0] = playerMovement.playerPosition.position.x;

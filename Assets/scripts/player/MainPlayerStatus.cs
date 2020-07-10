@@ -20,12 +20,7 @@ public class MainPlayerStatus : MonoBehaviour
     public GameObject playerSkill5GameObject;
     public GameObject playerSkill6GameObject;
 
-    public Skills playerSkill1;
-    public Skills playerSkill2;
-    public Skills playerSkill3;
-    public Skills playerSkill4;
-    public Skills playerSkill5;
-    public Skills playerSkill6;
+    public Skills[] playerSkills = new Skills[6];
 
     Skills skills;
 
@@ -85,12 +80,12 @@ public class MainPlayerStatus : MonoBehaviour
         StepsLimitText = StepsLimit.GetComponent<Text>();
         skills = Skills.GetComponent<Skills>();
 
-        playerSkill1 = playerSkill1GameObject.GetComponent<Skills>();
-        playerSkill2 = playerSkill2GameObject.GetComponent<Skills>();
-        playerSkill3 = playerSkill3GameObject.GetComponent<Skills>();
-        playerSkill4 = playerSkill4GameObject.GetComponent<Skills>();
-        playerSkill5 = playerSkill5GameObject.GetComponent<Skills>();
-        playerSkill6 = playerSkill6GameObject.GetComponent<Skills>();
+        playerSkills[0] = playerSkill1GameObject.GetComponent<Skills>();
+        playerSkills[1] = playerSkill2GameObject.GetComponent<Skills>();
+        playerSkills[2] = playerSkill3GameObject.GetComponent<Skills>();
+        playerSkills[3] = playerSkill4GameObject.GetComponent<Skills>();
+        playerSkills[4] = playerSkill5GameObject.GetComponent<Skills>();
+        playerSkills[5] = playerSkill6GameObject.GetComponent<Skills>();
 
         NameStatusText.text = "<color=#ffffffff>" + playerName + "</color>";
         HpStatusText.text = "<color=#00ff00ff>HP: " + playerCurrentHp.ToString() +"</color>";
@@ -103,10 +98,7 @@ public class MainPlayerStatus : MonoBehaviour
         Debug.Log("start");
 
         // temporary
-        playerSkill1.setSkill(0);
-        playerSkill2.setSkill(1);
-        playerSkill3.setSkill(2);
-        playerSkill4.setSkill(3);
+        for(int i=0; i<4; i++) playerSkills[i].setSkill(i);
         playerSkillCount++;
         playerSkillCount++;
         playerSkillCount++;
