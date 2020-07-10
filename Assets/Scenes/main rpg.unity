@@ -121,6 +121,126 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1873131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1873132}
+  - component: {fileID: 1873133}
+  m_Layer: 5
+  m_Name: enemySkill2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1873132
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873131}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 335881791}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.833333, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1873133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!1 &4829666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4829668}
+  - component: {fileID: 4829667}
+  m_Layer: 5
+  m_Name: enemySkill3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &4829667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4829666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &4829668
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4829666}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 1564746714}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.8333336, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &38718780
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +623,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131216639}
   m_CullTransparentMesh: 0
+--- !u!1 &134177363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134177365}
+  - component: {fileID: 134177364}
+  m_Layer: 5
+  m_Name: enemySkill4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &134177364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134177363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &134177365
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134177363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1020285091}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &204255284
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +784,66 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 100
   m_TargetDisplay: 0
+--- !u!1 &206717256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206717258}
+  - component: {fileID: 206717257}
+  m_Layer: 5
+  m_Name: enemySkill1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &206717257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206717256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &206717258
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206717256}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 1564746714}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.8333336, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &213855834
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +1207,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236378485}
   m_CullTransparentMesh: 0
+--- !u!1 &242591332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 242591334}
+  - component: {fileID: 242591333}
+  m_Layer: 5
+  m_Name: enemySkill1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &242591333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242591332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &242591334
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242591332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1020285091}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &268855613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268855614}
+  - component: {fileID: 268855615}
+  m_Layer: 5
+  m_Name: enemySkill4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &268855614
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268855613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 335881791}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.833333, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &268855615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268855613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
 --- !u!1 &269214732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1447,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269214732}
   m_CullTransparentMesh: 0
+--- !u!1 &295283728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295283730}
+  - component: {fileID: 295283729}
+  m_Layer: 5
+  m_Name: enemySkill3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &295283729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295283728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1.06
+--- !u!224 &295283730
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295283728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1020285091}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &296572554
 GameObject:
   m_ObjectHideFlags: 0
@@ -15944,6 +16364,10 @@ RectTransform:
   m_Children:
   - {fileID: 874260426}
   - {fileID: 213855835}
+  - {fileID: 1717375503}
+  - {fileID: 1873132}
+  - {fileID: 1979002570}
+  - {fileID: 268855614}
   m_Father: {fileID: 368681024}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16018,10 +16442,13 @@ MonoBehaviour:
   enemyName: "\u30C6\u30B9\u30C8\u6575"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
-  SkillsGameObject: {fileID: 1070861420}
-  skills: {fileID: 0}
+  SkillsGameObject1: {fileID: 1717375502}
+  SkillsGameObject2: {fileID: 1873131}
+  SkillsGameObject3: {fileID: 1979002569}
+  SkillsGameObject4: {fileID: 268855613}
   enemyLevel: 1
   enemyExperience: 10
+  enemyGold: 10
   enemyCurrentHp: 20
   enemyMaxHp: 20
   enemyCurrentMp: 20
@@ -16717,6 +17144,186 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1001
   m_TargetDisplay: 0
+--- !u!1 &536328950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536328952}
+  - component: {fileID: 536328951}
+  m_Layer: 5
+  m_Name: enemySkill2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &536328951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536328950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &536328952
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536328950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 1564746714}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.8333336, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &576353183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576353185}
+  - component: {fileID: 576353184}
+  m_Layer: 5
+  m_Name: enemySkill2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &576353184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576353183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &576353185
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576353183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1020285091}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &597878322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 597878324}
+  - component: {fileID: 597878323}
+  m_Layer: 5
+  m_Name: enemySkill4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &597878323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597878322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
+--- !u!224 &597878324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597878322}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 1564746714}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.8333336, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &616920053
 GameObject:
   m_ObjectHideFlags: 0
@@ -17683,6 +18290,10 @@ RectTransform:
   m_Children:
   - {fileID: 2117255144}
   - {fileID: 2000353519}
+  - {fileID: 242591334}
+  - {fileID: 576353185}
+  - {fileID: 295283730}
+  - {fileID: 134177365}
   m_Father: {fileID: 368681024}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17757,10 +18368,13 @@ MonoBehaviour:
   enemyName: "\u30C6\u30B9\u30C8\u6575"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
-  SkillsGameObject: {fileID: 1070861420}
-  skills: {fileID: 0}
+  SkillsGameObject1: {fileID: 242591332}
+  SkillsGameObject2: {fileID: 576353183}
+  SkillsGameObject3: {fileID: 295283728}
+  SkillsGameObject4: {fileID: 134177363}
   enemyLevel: 1
   enemyExperience: 10
+  enemyGold: 10
   enemyCurrentHp: 20
   enemyMaxHp: 20
   enemyCurrentMp: 20
@@ -17920,6 +18534,7 @@ GameObject:
   - component: {fileID: 1028102689}
   - component: {fileID: 1028102686}
   - component: {fileID: 1028102690}
+  - component: {fileID: 1028102691}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -18071,7 +18686,7 @@ MonoBehaviour:
   LvStatus: {fileID: 512988414}
   GoldStatus: {fileID: 619559553}
   StepsLimit: {fileID: 1160320947}
-  Skills: {fileID: 1070861420}
+  Skills: {fileID: 1028102684}
   playerName: "\u30C6\u30B9\u30C8\u52C7\u8005"
   playerLevel: 1
   playerExperience: 0
@@ -18081,8 +18696,8 @@ MonoBehaviour:
   playerCurrentHp: 20
   playerMaxMp: 20
   playerCurrentMp: 20
-  playerPhysicalDefense: 10
-  playerMagicalDefense: 10
+  playerPhysicalDefense: 5
+  playerMagicalDefense: 5
   playerPhysicalAttack: 10
   playerMagicalAttack: 10
   playerSpeed: 10
@@ -18097,44 +18712,13 @@ MonoBehaviour:
   playerWeapon: null
   playerSkills: ffffffffffffffffffffffffffffffffffffffffffffffff
   playerSkillCount: 0
---- !u!1 &1070861420
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1070861421}
-  - component: {fileID: 1070861422}
-  m_Layer: 0
-  m_Name: Skills
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1070861421
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070861420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1216396262}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1070861422
+--- !u!114 &1028102691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070861420}
+  m_GameObject: {fileID: 1028102684}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
@@ -18537,7 +19121,7 @@ Transform:
   m_LocalPosition: {x: 1.4728465, y: 0.01991539, z: -43.376953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1070861421}
+  - {fileID: 1372705592}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18941,6 +19525,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369885467}
   m_CullTransparentMesh: 0
+--- !u!1 &1372705591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1372705592}
+  - component: {fileID: 1372705593}
+  m_Layer: 0
+  m_Name: Skills
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1372705592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372705591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1216396262}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372705593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372705591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
 --- !u!1 &1445640893
 GameObject:
   m_ObjectHideFlags: 0
@@ -19583,6 +20222,10 @@ RectTransform:
   m_Children:
   - {fileID: 1445640896}
   - {fileID: 727542837}
+  - {fileID: 206717258}
+  - {fileID: 536328952}
+  - {fileID: 4829668}
+  - {fileID: 597878324}
   m_Father: {fileID: 368681024}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19657,10 +20300,13 @@ MonoBehaviour:
   enemyName: "\u30C6\u30B9\u30C8\u65752"
   enemyImage: {fileID: 0}
   enemySprite: {fileID: 0}
-  SkillsGameObject: {fileID: 1070861420}
-  skills: {fileID: 0}
+  SkillsGameObject1: {fileID: 206717256}
+  SkillsGameObject2: {fileID: 536328950}
+  SkillsGameObject3: {fileID: 4829666}
+  SkillsGameObject4: {fileID: 597878322}
   enemyLevel: 1
   enemyExperience: 10
+  enemyGold: 10
   enemyCurrentHp: 20
   enemyMaxHp: 20
   enemyCurrentMp: 20
@@ -20260,7 +20906,7 @@ MonoBehaviour:
   battleTextGameObject: {fileID: 1742536386}
   mainRpgcontrol: {fileID: 1179888419}
   player: {fileID: 1028102684}
-  skill: {fileID: 1070861420}
+  skill: {fileID: 1372705591}
   enemy1HPSlider: {fileID: 2000353518}
   enemy2HPSlider: {fileID: 727542836}
   enemy3HPSlider: {fileID: 213855834}
@@ -20305,6 +20951,66 @@ Transform:
   m_Father: {fileID: 1585714928}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1717375502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717375503}
+  - component: {fileID: 1717375504}
+  m_Layer: 5
+  m_Name: enemySkill1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1717375503
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717375502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 335881791}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.833333, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1717375504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717375502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
 --- !u!1 &1742536386
 GameObject:
   m_ObjectHideFlags: 0
@@ -20777,6 +21483,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898045440}
   m_CullTransparentMesh: 0
+--- !u!1 &1979002569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979002570}
+  - component: {fileID: 1979002571}
+  m_Layer: 5
+  m_Name: enemySkill3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1979002570
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979002569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 16191.756}
+  m_LocalScale: {x: 1, y: 1, z: 1.0002908}
+  m_Children: []
+  m_Father: {fileID: 335881791}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.833333, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1979002571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979002569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u30B9\u30AD\u30EB\uFF11"
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
 --- !u!1 &2000353518
 GameObject:
   m_ObjectHideFlags: 0

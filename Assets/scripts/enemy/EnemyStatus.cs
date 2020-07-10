@@ -13,8 +13,10 @@ public class EnemyStatus : MonoBehaviour
     public SpriteRenderer enemyImage;
     public Sprite enemySprite;
 
-    public GameObject SkillsGameObject;
-    public Skills skills;
+    public GameObject SkillsGameObject1;
+    public GameObject SkillsGameObject2;
+    public GameObject SkillsGameObject3;
+    public GameObject SkillsGameObject4;
     　
     public int enemyLevel = 10;
 
@@ -42,7 +44,6 @@ public class EnemyStatus : MonoBehaviour
     void Start()
     {
         battleControl = battleController.GetComponent<BattleControl>();
-        skills = SkillsGameObject.GetComponent<Skills>();
     }
 
     void Update()
@@ -80,10 +81,10 @@ public class EnemyStatus : MonoBehaviour
     }
 
     public void getSkillsReady(){
-        enemySkill_1 = SkillsGameObject.GetComponent<Skills>();
-        enemySkill_2 = SkillsGameObject.GetComponent<Skills>();
-        enemySkill_3 = SkillsGameObject.GetComponent<Skills>();
-        enemySkill_4 = SkillsGameObject.GetComponent<Skills>();
+        enemySkill_1 = SkillsGameObject1.GetComponent<Skills>();
+        enemySkill_2 = SkillsGameObject2.GetComponent<Skills>();
+        enemySkill_3 = SkillsGameObject3.GetComponent<Skills>();
+        enemySkill_4 = SkillsGameObject4.GetComponent<Skills>();
         // normal attack
         enemySkill_1.setSkill(0);
         enemySkill_2.setSkill(0);
