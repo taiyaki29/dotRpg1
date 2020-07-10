@@ -17,7 +17,7 @@ public class MainRpgController : MonoBehaviour
     BattleControl battleControl;
 
     int playerStepsLimit = 0;
-    public int enemyEncounterSteps = 9;
+    public int enemyEncounterSteps = 0;
 
     public int stageNumber = 1;
 
@@ -40,7 +40,16 @@ public class MainRpgController : MonoBehaviour
 
     void FixedUpdate(){
         playerStepsLimit = playerMovement.playerStepsLimit;
-        if(mainRpgStatus != MainRpgStatus.BATTLE && playerStepsLimit % enemyEncounterSteps == 0) startBattle();
+        if(mainRpgStatus != MainRpgStatus.BATTLE &&  enemyEncounterSteps == 9) {
+            playerMovement.holdMoveUp = false;
+            playerMovement.holdMoveDown = false;
+            playerMovement.holdMoveLeft = false;
+            playerMovement.holdMoveRight = false;
+            playerMovement.walkingAnimator.SetBool("moving", false);
+            playerMovement.walkingAnimator.SetBool("lookDown", true);
+            startBattle();
+            enemyEncounterSteps = 0;
+        }
     }
 
     public void startBattle(){
@@ -48,5 +57,11 @@ public class MainRpgController : MonoBehaviour
         mainRpgStatus = MainRpgStatus.BATTLE;
         battleScreen.SetActive(true);
         battleControl.startBattle();
+    }
+
+    public void endBattle(){
+        // playerMovement.setPlayerStepCountToZero();
+        mainRpgStatus = MainRpgStatus.WALK;
+        battleScreen.SetActive(false);
     }
 }

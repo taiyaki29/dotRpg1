@@ -98,10 +98,12 @@ public class MainPlayerStatus : MonoBehaviour
         Debug.Log("start");
 
         // temporary
-        for(int i=0; i<4; i++) playerSkills[i].setSkill(i);
-        playerSkillCount++;
-        playerSkillCount++;
-        playerSkillCount++;
+        // for(int i=0; i<4; i++) playerSkills[i].setSkill(i);
+        // playerSkillCount++;
+        // playerSkillCount++;
+        // playerSkillCount++;
+        // playerSkillCount++;
+        playerSkills[0].setSkill(0);
         playerSkillCount++;
     }
 

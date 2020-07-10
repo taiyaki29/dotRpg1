@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Skills : MonoBehaviour {
     public string skillName = "スキル１";
+    public int skillNumber = 0;
     public bool isSkillTargetMultiple = false;
     public bool isPhysicalAttack = true;
     public bool isHeal = false;
@@ -21,9 +22,11 @@ public class Skills : MonoBehaviour {
 
     public float healMultiplyer = 1f;
 
-    public void setSkill(int skillNumber){
-        if(skillNumber == 0){
+    public void setSkill(int chosenSkillNumber){
+        if(chosenSkillNumber == 0){
             skillName = "攻撃";
+            skillNumber = chosenSkillNumber;
+
             isSkillTargetMultiple = false;
             isPhysicalAttack = true;
             isHeal = false;
@@ -39,8 +42,10 @@ public class Skills : MonoBehaviour {
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
         }
-        else if(skillNumber == 1){
+        else if(chosenSkillNumber == 1){
             skillName = "強打１";
+            skillNumber = chosenSkillNumber;
+
             isSkillTargetMultiple = false;
             isPhysicalAttack = true;
             isHeal = false;
@@ -56,8 +61,10 @@ public class Skills : MonoBehaviour {
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
         }
-        else if(skillNumber == 2){
+        else if(chosenSkillNumber == 2){
             skillName = "強打２";
+            skillNumber = chosenSkillNumber;
+
             isSkillTargetMultiple = false;
             isPhysicalAttack = true;
             isHeal = false;

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-public enum BattleStatus { START, PLAYERTURN, PLAYERTURNSKILL, PLAYERMOTION, ENEMYTURN, WIN, LOSE, NO_BATTLE, WAIT }
+public enum BattleStatus { START, PLAYERTURN, PLAYERTURNSKILL, PLAYERMOTION, ENEMYTURN, WIN, LOSE, NO_BATTLE, WAIT, CHOOSENEWSKILL }
 
 public class BattleControl : MonoBehaviour
 {
@@ -89,11 +89,14 @@ public class BattleControl : MonoBehaviour
     public int actionNumber = 0;
 
     public int skillNumber = 0;
+    public int newSkillNumber = 0;
+    public int chosenNewSkillNumber = 0;
 
     public bool playerAlive = true;
 
     Color invisible;
     Color normal;
+    Color black;
     
     void Start(){
         setChooseAtionText();
@@ -139,6 +142,7 @@ public class BattleControl : MonoBehaviour
 
         invisible = new Color(1.0f, 1.0f, 1.0f, 0f);
         normal = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        black = new Color(0f, 0f, 0f, 1.0f);
     }
 
     // Update is called once per frame
@@ -156,6 +160,9 @@ public class BattleControl : MonoBehaviour
         else if(battleStatus == BattleStatus.PLAYERTURNSKILL && mainRpgcontroller.mainRpgStatus == MainRpgStatus.BATTLE){
             battleText.text = playerActions[skillNumber];
         }
+        else if(battleStatus == BattleStatus.CHOOSENEWSKILL && mainRpgcontroller.mainRpgStatus == MainRpgStatus.BATTLE){
+            battleText.text = playerActions[newSkillNumber];
+        }
 
         if(battleStatus == BattleStatus.LOSE){
             StartCoroutine(playerLoseMotion());
@@ -171,6 +178,11 @@ public class BattleControl : MonoBehaviour
         enemyNumber = UnityEngine.Random.Range(1,4);
         if(enemyNumber == 1){
             enemy1Status.spawnEnemy(stageNumber);
+
+            enemy1Status.enemyImage.color = normal;
+            enemy1HPSliderBGImage.color = normal;
+            enemy1HPSliderBorderImage.color = black;
+
             enemy1HP.maxValue = enemy1Status.enemyMaxHp;
 
             enemy1HP.value = enemy1Status.enemyMaxHp;
@@ -184,6 +196,14 @@ public class BattleControl : MonoBehaviour
         else if(enemyNumber == 2){
             enemy1Status.spawnEnemy(stageNumber);
             enemy2Status.spawnEnemy(stageNumber);
+
+            enemy1Status.enemyImage.color = normal;
+            enemy2Status.enemyImage.color = normal;
+
+            enemy1HPSliderBGImage.color = normal;
+            enemy1HPSliderBorderImage.color = black;
+            enemy2HPSliderBGImage.color = normal;
+            enemy2HPSliderBorderImage.color = black;
 
             enemy1HP.maxValue = enemy1Status.enemyMaxHp;
             enemy2HP.maxValue = enemy2Status.enemyMaxHp;
@@ -206,6 +226,17 @@ public class BattleControl : MonoBehaviour
             enemy1Status.spawnEnemy(stageNumber);
             enemy2Status.spawnEnemy(stageNumber);
             enemy3Status.spawnEnemy(stageNumber);
+
+            enemy1Status.enemyImage.color = normal;
+            enemy2Status.enemyImage.color = normal;
+            enemy3Status.enemyImage.color = normal;
+
+            enemy1HPSliderBGImage.color = normal;
+            enemy1HPSliderBorderImage.color = black;
+            enemy2HPSliderBGImage.color = normal;
+            enemy2HPSliderBorderImage.color = black;
+            enemy3HPSliderBGImage.color = normal;
+            enemy3HPSliderBorderImage.color = black;
 
             enemy1HP.maxValue = enemy1Status.enemyMaxHp;
             enemy2HP.maxValue = enemy2Status.enemyMaxHp;
@@ -466,19 +497,19 @@ public class BattleControl : MonoBehaviour
                     enemy1HPSliderBGImage.color = invisible;
                     enemy1HPSliderBorderImage.color = invisible;
                     chosen1.SetActive(false);
-                    enemy1.SetActive(false);
+                    // enemy1.SetActive(false);
                 } 
                 if(chosenEnemy == enemy2Status) {
                     enemy2HPSliderBGImage.color = invisible;
                     enemy2HPSliderBorderImage.color = invisible;
                     chosen2.SetActive(false);
-                    enemy2.SetActive(false);
+                    // enemy2.SetActive(false);
                 }
                 if(chosenEnemy == enemy3Status) {
                     enemy3HPSliderBGImage.color = invisible;
                     enemy3HPSliderBorderImage.color = invisible;
                     chosen3.SetActive(false);
-                    enemy3.SetActive(false);
+                    // enemy3.SetActive(false);
                 }
             }
         }
@@ -614,27 +645,29 @@ public class BattleControl : MonoBehaviour
         battleText.text = "<color=#ffffffff>戦いに勝った！\n獲得EXP　" + gainExperience + "exp\n獲得ゴールド　" + getGold + "g</color>";
         yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
 
-        // Skills newSkill = possibleNewSkill();
-
-        // if(newSkill){
-        //     bool getSkillChance = enemyNumber >= UnityEngine.Random.Range(0,10); // 10 - 30 %
-
-        //     if(getSkillChance){
-        //         StartCoroutine(chooseNewSkill(newSkill));
-        //     }
-        // }
-
-        // if(enemyDropItem() {
-        //     battleText.text = "<color=#ffffffff>何々ゲット！</color>"; 
-        //     yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
-        // }
-        
         // if(mainPlayerStatus.didPlayerLevelUp()){
         //     battleText.text = "<color=#ffffffff>レベルアップ！</color>"; 
         //     yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         // }
 
+        Skills newSkill = possibleNewSkill();
 
+        bool getSkillChance = enemyNumber >= UnityEngine.Random.Range(0,10); // 10 - 30 %
+        bool getItemChance = enemyNumber >= UnityEngine.Random.Range(0,10);
+
+        if(newSkill){
+            chosenNewSkillNumber = newSkill.skillNumber;
+            if(getSkillChance){
+                StartCoroutine(chooseNewSkill(newSkill));
+            }
+            else mainRpgcontroller.endBattle();
+        }
+        else mainRpgcontroller.endBattle();
+
+        // if(enemyDropItem() {
+        //     battleText.text = "<color=#ffffffff>何々ゲット！</color>"; 
+        //     yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
+        // }
 
     }
 
@@ -687,27 +720,76 @@ public class BattleControl : MonoBehaviour
         yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
     }
 
-    // public IEnumerator chooseNewSkill(Skills newSkill){
-    //     battleStatus = BattleStatus.chooseNewSkill; 
-    //     yield return new WaitForSeconds(1.0f * mainRpgcontroller.gameTextSpeed);
-    //     battleText.text = "<color=#ffffffff>敵の技を見切った。　" + gainExperience + "exp\n獲得ゴールド　" + getGold + "g</color>";
+    public IEnumerator chooseNewSkill(Skills newSkill){
+        if(mainPlayerStatus.playerSkillCount < 6) {
+            battleText.text = "<color=#ffffffff>敵の技を見切った。\n" + newSkill.skillName + "　を覚えた</color>";
+            mainPlayerStatus.playerSkills[mainPlayerStatus.playerSkillCount].setSkill(newSkill.skillNumber);
+            mainPlayerStatus.playerSkillCount++;
+            yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
+            mainRpgcontroller.endBattle();
+        }
+        else {
+            battleStatus = BattleStatus.CHOOSENEWSKILL; 
+            playerActions[0] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[1] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[2] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[3] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[4] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "▶︎" + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "を忘れる\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[5] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "　を忘れる\n覚えない</color>";
+            playerActions[6] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "　\n▶︎覚えない</color>";
+        }
+        
+        yield return new WaitForSeconds(0f * mainRpgcontroller.gameTextSpeed);
+    }
 
-    // }
+    public void tradeNewSkill(){
+        if(newSkillNumber != 6) mainPlayerStatus.playerSkills[newSkillNumber].setSkill(chosenNewSkillNumber);
+        mainRpgcontroller.endBattle();
+    }
 
-    // public Skills possibleNewSkill(){
-    //     // enemy 1 enemySkill1 = 0, .... ,enemy2 enemySkill1 = 4,.... enemy3 enemySkill1 = 8
-    //     bool allPossibleSkills = new bool[12];
-    //     for(int i=0; i<12; i++) allPossibleSkills[i] = false;
-    //     if(mainPlayerStatus.playerSkills[1].skillName != enemy1Status.enemySkills[0]) allPossibleSkills[0] = true;
-    //     if(mainPlayerStatus.playerSkills[2].skillName != enemy1Status.enemySkills[0]) allPossibleSkills[0] = true;
-    //     if(mainPlayerStatus.playerSkills[3].skillName != enemy1Status.enemySkills[0]) allPossibleSkills[0] = true;
-    //     if(mainPlayerStatus.playerSkills[4].skillName != enemy1Status.enemySkills[0]) allPossibleSkills[0] = true;
-    //     if(mainPlayerStatus.playerSkills[5].skillName != enemy1Status.enemySkills[0]) allPossibleSkills[0] = true;
-    //     if(enemyNumber > 1){
+    public Skills possibleNewSkill(){
+        // enemy 1 enemySkill1 = 0, .... ,enemy2 enemySkill1 = 4,.... enemy3 enemySkill1 = 8
+        EnemyStatus enemy = enemy1Status;
+        int possibleNewSkillNumber = 0;
+        int enemySkillNumber = 0;
+        int[] possibleNewSkills = new int[12];
 
-    //     }
+        for(int i=0; i<enemyNumber; i++){
+            if(i == 0) enemy = enemy1Status;
+            if(i == 1) enemy = enemy2Status;
+            if(i == 2) enemy = enemy3Status;
+            for(int j=0; j<4; j++){
+                bool differentFound = true;
+                for(int k=0; k<6; k++){
+                    if(enemy.enemySkills[j].skillName == mainPlayerStatus.playerSkills[k].skillName) differentFound = false;
+                }
+                if(differentFound) {
+                    possibleNewSkills[possibleNewSkillNumber] = enemySkillNumber;
+                    possibleNewSkillNumber++;
+                }
+                enemySkillNumber++;
+            }
+        }
 
-    // }
+        if(possibleNewSkillNumber == 0)return null;
+        int randomSkillNumber = UnityEngine.Random.Range(0,possibleNewSkillNumber);
+        
+        if(possibleNewSkills[randomSkillNumber] == 0) return enemy1Status.enemySkills[0];
+        else if(possibleNewSkills[randomSkillNumber] == 1) return enemy1Status.enemySkills[1];
+        else if(possibleNewSkills[randomSkillNumber] == 2) return enemy1Status.enemySkills[2];
+        else if(possibleNewSkills[randomSkillNumber] == 3) return enemy1Status.enemySkills[3];
+
+        else if(possibleNewSkills[randomSkillNumber] == 4) return enemy2Status.enemySkills[0];
+        else if(possibleNewSkills[randomSkillNumber] == 5) return enemy2Status.enemySkills[1];
+        else if(possibleNewSkills[randomSkillNumber] == 6) return enemy2Status.enemySkills[2];
+        else if(possibleNewSkills[randomSkillNumber] == 7) return enemy2Status.enemySkills[3];
+
+        else if(possibleNewSkills[randomSkillNumber] == 8) return enemy3Status.enemySkills[0];
+        else if(possibleNewSkills[randomSkillNumber] == 9) return enemy3Status.enemySkills[1];
+        else if(possibleNewSkills[randomSkillNumber] == 10) return enemy3Status.enemySkills[2];
+        else if(possibleNewSkills[randomSkillNumber] == 11) return enemy3Status.enemySkills[3];
+        else return null;
+    }
 
     public int numberEnemyAlive(){
         if(enemyNumber == 1){

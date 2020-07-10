@@ -55,6 +55,9 @@ public class UIButtonControls : MonoBehaviour
             else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
                 battleController.chooseSkill();
             }
+            else if(battleController.battleStatus == BattleStatus.CHOOSENEWSKILL){
+                battleController.tradeNewSkill();
+            }
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
             

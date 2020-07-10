@@ -59,17 +59,17 @@ public class EnemyStatus : MonoBehaviour
             else {
                 battleControl.chosenEnemy = this;
             }
-            if(battleControl.chosenEnemy == battleControl.enemy1Status){
+            if(battleControl.chosenEnemy == battleControl.enemy1Status && battleControl.enemy1Status.enemyCurrentHp > 0){
                 battleControl.chosen1.SetActive(true);
                 battleControl.chosen2.SetActive(false);
                 battleControl.chosen3.SetActive(false);
             }
-            else if(battleControl.chosenEnemy == battleControl.enemy2Status){
+            else if(battleControl.chosenEnemy == battleControl.enemy2Status && battleControl.enemy2Status.enemyCurrentHp > 0){
                 battleControl.chosen1.SetActive(false);
                 battleControl.chosen2.SetActive(true);
                 battleControl.chosen3.SetActive(false);
             }
-            else if(battleControl.chosenEnemy == battleControl.enemy3Status){
+            else if(battleControl.chosenEnemy == battleControl.enemy3Status && battleControl.enemy3Status.enemyCurrentHp > 0){
                 battleControl.chosen1.SetActive(false);
                 battleControl.chosen2.SetActive(false);
                 battleControl.chosen3.SetActive(true);
@@ -117,7 +117,7 @@ public class EnemyStatus : MonoBehaviour
         enemyMagicalAttack = 1;
 
         getSkillsReady();
-        enemySkills[2].setSkill(1);
+        enemySkills[1].setSkill(1);
 
         enemySpeed = 1;
     }
@@ -141,7 +141,7 @@ public class EnemyStatus : MonoBehaviour
         enemyMagicalAttack = 6;
 
         getSkillsReady();
-        enemySkills[2].setSkill(2);
+        enemySkills[1].setSkill(2);
 
         enemySpeed = 5;
     }

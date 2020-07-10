@@ -25,10 +25,10 @@ public class PlayerMovement : MonoBehaviour
     bool playerMovingLeft =false;
     bool playerMovingRight =false;
 
-    bool holdMoveUp =false;
-    bool holdMoveDown =false;
-    bool holdMoveLeft =false;
-    bool holdMoveRight =false;
+    public bool holdMoveUp =false;
+    public bool holdMoveDown =false;
+    public bool holdMoveLeft =false;
+    public bool holdMoveRight =false;
 
     public int playerStepsLimit = 200;
 
@@ -110,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
     public void checkNextMove(){
         if(playerPosition.position == nextPosition) {
             playerStepsLimit--;
+            mainRpgController.enemyEncounterSteps++;
             if(playerMovingUp){
                 playerMovingUp = false;
                 if(!isPointerDown()){
@@ -167,7 +168,12 @@ public class PlayerMovement : MonoBehaviour
                 if(battleController.skillNumber > 0) battleController.skillNumber--;
                 else if(battleController.skillNumber == 0) battleController.skillNumber = mainPlayerStatus.playerSkillCount - 1;
             }
+            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+                if(battleController.newSkillNumber > 0) battleController.newSkillNumber--;
+                else if(battleController.skillNumber == 0) battleController.newSkillNumber = 6;
+            }
         }
+       
     }
     public void MoveUpPointerUp(){
         if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
@@ -186,6 +192,10 @@ public class PlayerMovement : MonoBehaviour
             else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
                 if(battleController.skillNumber < mainPlayerStatus.playerSkillCount - 1) battleController.skillNumber++;
                 else if(battleController.skillNumber == mainPlayerStatus.playerSkillCount - 1) battleController.skillNumber = 0;
+            }
+            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+                if(battleController.newSkillNumber < 6) battleController.newSkillNumber--;
+                else if(battleController.skillNumber == 6) battleController.newSkillNumber = 0;
             }
         }
     }
