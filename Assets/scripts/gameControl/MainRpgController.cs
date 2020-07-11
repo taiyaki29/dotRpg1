@@ -10,11 +10,15 @@ public class MainRpgController : MonoBehaviour
     
     public MainRpgStatus mainRpgStatus;
     public GameObject battleScreen;
+    public GameObject rpgMenuScreen;
+    public GameObject rpgMenuControl;
     public GameObject battleController;
     public GameObject player;
 
     PlayerMovement playerMovement;
     BattleControl battleControl;
+
+    RpgMenuController rpgMenuController;
 
     int playerStepsLimit = 0;
     public int enemyEncounterSteps = 0;
@@ -31,7 +35,7 @@ public class MainRpgController : MonoBehaviour
         playerStepsLimit = playerMovement.playerStepsLimit;
 
         battleControl = battleController.GetComponent<BattleControl>();
-
+        rpgMenuController = rpgMenuControl.GetComponent<RpgMenuController>();
     }
 
     void Update(){
@@ -53,15 +57,24 @@ public class MainRpgController : MonoBehaviour
     }
 
     public void startBattle(){
-        // playerMovement.setPlayerStepCountToZero();
         mainRpgStatus = MainRpgStatus.BATTLE;
         battleScreen.SetActive(true);
         battleControl.startBattle();
     }
 
     public void endBattle(){
-        // playerMovement.setPlayerStepCountToZero();
         mainRpgStatus = MainRpgStatus.WALK;
         battleScreen.SetActive(false);
+    }
+
+    public void openMenu(){
+        mainRpgStatus = MainRpgStatus.MENU;
+        rpgMenuScreen.SetActive(true);
+        rpgMenuController.openMenu();
+    }
+
+    public void closeMenu(){
+        mainRpgStatus = MainRpgStatus.WALK;
+        rpgMenuScreen.SetActive(false);
     }
 }

@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject mainRpgControl;
     MainRpgController mainRpgController;
 
+    public GameObject rpgMenuControl;
+    RpgMenuController rpgMenuController;
+
     public GameObject battleControl;
     BattleControl battleController;
 
@@ -36,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
         battleController = battleControl.GetComponent<BattleControl>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
+        rpgMenuController = rpgMenuControl.GetComponent<RpgMenuController>();
     }
 
     void Update(){
@@ -173,6 +177,27 @@ public class PlayerMovement : MonoBehaviour
                 else if(battleController.newSkillNumber == 0) battleController.newSkillNumber = 6;
             }
         }
+        else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
+            if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPEN){
+                if(rpgMenuController.mainActionNumber > 0) rpgMenuController.mainActionNumber--;
+                else if(rpgMenuController.mainActionNumber == 0) rpgMenuController.mainActionNumber = 5;
+            }
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENITEM){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENARMOUR){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSETTINGS){
+
+            }
+        }
        
     }
     public void MoveUpPointerUp(){
@@ -196,6 +221,27 @@ public class PlayerMovement : MonoBehaviour
             else if(battleController.battleStatus == BattleStatus.CHOOSENEWSKILL){
                 if(battleController.newSkillNumber < 6) battleController.newSkillNumber++;
                 else if(battleController.newSkillNumber == 6) battleController.newSkillNumber = 0;
+            }
+        }
+        else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
+            if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPEN){
+                if(rpgMenuController.mainActionNumber < 5) rpgMenuController.mainActionNumber++;
+                else if(rpgMenuController.mainActionNumber == 5) rpgMenuController.mainActionNumber = 0;
+            }
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENITEM){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENARMOUR){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSETTINGS){
+
             }
         }
     }

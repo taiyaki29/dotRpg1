@@ -11,6 +11,9 @@ public class UIButtonControls : MonoBehaviour
     public GameObject battleControl;
     BattleControl battleController;
 
+    public GameObject rpgMenuControl;
+    RpgMenuController rpgMenuController;
+
     public GameObject BButton;
     Text bButtonText;
 
@@ -19,6 +22,7 @@ public class UIButtonControls : MonoBehaviour
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
         battleController = battleControl.GetComponent<BattleControl>();
         bButtonText = BButton.GetComponent<Text>();
+        rpgMenuController = rpgMenuControl.GetComponent<RpgMenuController>();
     }
 
     void Update(){
@@ -40,7 +44,7 @@ public class UIButtonControls : MonoBehaviour
             
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
-            
+            bButtonText.text = "<b>戻る</b>";
         }
     }
 
@@ -66,13 +70,30 @@ public class UIButtonControls : MonoBehaviour
             
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
-            
+            if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPEN){
+                
+            }
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENITEM){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENARMOUR){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSETTINGS){
+
+            }
         }
     }
 
     public void B_Button(){
         if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
-
+            mainRpgController.openMenu();
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
             if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
@@ -86,7 +107,24 @@ public class UIButtonControls : MonoBehaviour
             
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
-            
+            if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPEN){
+                mainRpgController.closeMenu();
+            }
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENITEM){
+                
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENARMOUR){
+
+            } 
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSETTINGS){
+
+            }
         }
     }
 
