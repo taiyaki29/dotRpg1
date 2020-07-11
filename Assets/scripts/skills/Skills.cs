@@ -80,8 +80,10 @@ public class Skills : MonoBehaviour {
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
         }
-        else if(skillNumber == 3){
+        else if(chosenSkillNumber == 3){
             skillName = "大振り";
+            skillNumber = chosenSkillNumber;
+
             isSkillTargetMultiple = true;
             isPhysicalAttack = true;
             isHeal = false;
@@ -97,21 +99,81 @@ public class Skills : MonoBehaviour {
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
         }
-    }
+        else if(chosenSkillNumber == 4){
+            skillName = "大振り1";
+            skillNumber = chosenSkillNumber;
 
-    public string returnSkillName(int skillNumber){
-        if(skillNumber == 0){
-            return "攻撃";
+            isSkillTargetMultiple = true;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 20;
+
+            physicalAttackMultiplyer = 1f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
-        else if(skillNumber == 1){
-            return "強打1";
+        else if(chosenSkillNumber == 5){
+            skillName = "大振り2";
+            skillNumber = chosenSkillNumber;
+
+            isSkillTargetMultiple = true;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 20;
+
+            physicalAttackMultiplyer = 1f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
-        else if(skillNumber == 2){
-            return "強打2";
+        else if(chosenSkillNumber == 6){
+            skillName = "大振り3";
+            skillNumber = chosenSkillNumber;
+
+            isSkillTargetMultiple = true;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 20;
+
+            physicalAttackMultiplyer = 1f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
-        else if(skillNumber == 3){
-            return "大振り";
+        else if(chosenSkillNumber == 7){
+            skillName = "大振り4";
+            skillNumber = chosenSkillNumber;
+
+            isSkillTargetMultiple = true;
+            isPhysicalAttack = true;
+            isHeal = false;
+
+            MpCost = 20;
+
+            physicalAttackMultiplyer = 1f;
+            magicalAttackMultiplyer = 1f;
+
+            physicalDefenseMultiplyer = 1f;
+            magicalDefenseMultiplyer = 1f;
+
+            criticalChanceMultiplyer = 1f;
+            criticalDamageMultiplyer = 1f;
         }
-        else return "error";
     }
 }

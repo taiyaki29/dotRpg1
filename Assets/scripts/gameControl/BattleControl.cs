@@ -29,6 +29,7 @@ public class BattleControl : MonoBehaviour
     MainPlayerStatus mainPlayerStatus;
 
     public GameObject skill;
+    public GameObject tmpSkill;
     Skills skills;
     Skills enemySkill;
 
@@ -85,10 +86,10 @@ public class BattleControl : MonoBehaviour
     string actionDefend = "<color=#ffffffff>攻撃\nスキル\n▶︎防御\n逃げる</color>";
     string actionFlee = "<color=#ffffffff>攻撃\nスキル\n防御\n▶︎逃げる</color>";
 
-    public string[] playerActions = new string[6]; 
-    public int actionNumber = 0;
+    public string[] playerActions = new string[7]; 
+    public int actionNumber = 0; // player choice
 
-    public int skillNumber = 0;
+    public int skillNumber = 0; // player choice
     public int newSkillNumber = 0;
     public int chosenNewSkillNumber = 0;
 
@@ -99,8 +100,6 @@ public class BattleControl : MonoBehaviour
     Color black;
     
     void Start(){
-        setChooseAtionText();
-
         battleStatus = BattleStatus.NO_BATTLE;
         Debug.Log("battle start");
         
@@ -175,6 +174,9 @@ public class BattleControl : MonoBehaviour
     }
 
     public IEnumerator setStartBattle(){
+        actionNumber = 0;
+        skillNumber = 0;
+        setChooseAtionText();
         enemyNumber = UnityEngine.Random.Range(1,4);
         if(enemyNumber == 1){
             enemy1Status.spawnEnemy(stageNumber);
@@ -323,15 +325,18 @@ public class BattleControl : MonoBehaviour
     }
 
     public void setChooseAtionText(){
+        actionNumber = 0;
         playerActions[0] = actionAttack;
         playerActions[1] = actionSkill;
         playerActions[2] = actionDefend;
         playerActions[3] = actionFlee;
         playerActions[4] = "";
         playerActions[5] = "";
+        playerActions[6] = "";
     }
 
     public void setChooseSkillText(){
+        skillNumber = 0;
         if(mainPlayerStatus.playerSkillCount == 0){
             playerActions[0] = "";
             playerActions[1] = "";
@@ -339,6 +344,7 @@ public class BattleControl : MonoBehaviour
             playerActions[3] = "";
             playerActions[4] = "";
             playerActions[5] = "";
+            playerActions[6] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 1){
             playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "</color>";
@@ -347,6 +353,7 @@ public class BattleControl : MonoBehaviour
             playerActions[3] = "";
             playerActions[4] = "";
             playerActions[5] = "";
+            playerActions[6] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 2){
             playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "</color>";
@@ -355,6 +362,7 @@ public class BattleControl : MonoBehaviour
             playerActions[3] = "";
             playerActions[4] = "";
             playerActions[5] = "";
+            playerActions[6] = "";
         }
          else if(mainPlayerStatus.playerSkillCount == 3){
             playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "</color>";
@@ -362,6 +370,7 @@ public class BattleControl : MonoBehaviour
             playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "</color>";
             playerActions[3] = "";
             playerActions[4] = "";
+            playerActions[6] = "";
             playerActions[5] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 4){
@@ -371,6 +380,7 @@ public class BattleControl : MonoBehaviour
             playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName +"</color>";
             playerActions[4] = "";
             playerActions[5] = "";
+            playerActions[6] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 5){
             playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
@@ -379,14 +389,16 @@ public class BattleControl : MonoBehaviour
             playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
             playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
             playerActions[5] = "";
+            playerActions[6] = "";
         }
         else if(mainPlayerStatus.playerSkillCount == 6){
             playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
             playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
             playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
             playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "▶︎" + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
+            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName  + "\n"+ "▶︎" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
             playerActions[5] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "</color>";
+            playerActions[6] = "";
         }
     }
 
@@ -729,21 +741,33 @@ public class BattleControl : MonoBehaviour
             mainRpgcontroller.endBattle();
         }
         else {
+            newSkillNumber = 0;
             battleStatus = BattleStatus.CHOOSENEWSKILL; 
-            playerActions[0] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[1] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[2] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[3] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[4] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "▶︎" + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "を忘れる\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[5] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "　を忘れる\n覚えない</color>";
-            playerActions[6] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて　" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "　\n▶︎覚えない</color>";
+            playerActions[0] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて\n" + newSkill.skillName + "　を覚えますか？\n" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
+            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
+            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[4].skillName +  "を忘れる\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
+            playerActions[5] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "　を忘れる\n覚えない</color>";
+            playerActions[6] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5] .skillName+ "　\n▶︎覚えない</color>";
         }
         
         yield return new WaitForSeconds(0f * mainRpgcontroller.gameTextSpeed);
     }
 
     public void tradeNewSkill(){
-        if(newSkillNumber != 6) mainPlayerStatus.playerSkills[newSkillNumber].setSkill(chosenNewSkillNumber);
+        if(newSkillNumber != 6) {
+            Skills newSkill = tmpSkill.GetComponent<Skills>();
+            newSkill.setSkill(chosenNewSkillNumber);
+            StartCoroutine(tradeNewSkillMotion(mainPlayerStatus.playerSkills[newSkillNumber], newSkill));
+            mainPlayerStatus.playerSkills[newSkillNumber].setSkill(chosenNewSkillNumber);
+        }
+    }
+
+    public IEnumerator tradeNewSkillMotion(Skills oldSkill, Skills newSkill){
+        battleStatus = BattleStatus.WAIT;
+        battleText.text = "<color=#ffffffff>" + oldSkill.skillName + " を忘れて\n" + newSkill.skillName + "　を覚えた！</color>";
+        yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
         mainRpgcontroller.endBattle();
     }
 

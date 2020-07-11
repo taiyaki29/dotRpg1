@@ -168,9 +168,9 @@ public class PlayerMovement : MonoBehaviour
                 if(battleController.skillNumber > 0) battleController.skillNumber--;
                 else if(battleController.skillNumber == 0) battleController.skillNumber = mainPlayerStatus.playerSkillCount - 1;
             }
-            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
+            else if(battleController.battleStatus == BattleStatus.CHOOSENEWSKILL){
                 if(battleController.newSkillNumber > 0) battleController.newSkillNumber--;
-                else if(battleController.skillNumber == 0) battleController.newSkillNumber = 6;
+                else if(battleController.newSkillNumber == 0) battleController.newSkillNumber = 6;
             }
         }
        
@@ -193,9 +193,9 @@ public class PlayerMovement : MonoBehaviour
                 if(battleController.skillNumber < mainPlayerStatus.playerSkillCount - 1) battleController.skillNumber++;
                 else if(battleController.skillNumber == mainPlayerStatus.playerSkillCount - 1) battleController.skillNumber = 0;
             }
-            else if(battleController.battleStatus == BattleStatus.PLAYERTURNSKILL){
-                if(battleController.newSkillNumber < 6) battleController.newSkillNumber--;
-                else if(battleController.skillNumber == 6) battleController.newSkillNumber = 0;
+            else if(battleController.battleStatus == BattleStatus.CHOOSENEWSKILL){
+                if(battleController.newSkillNumber < 6) battleController.newSkillNumber++;
+                else if(battleController.newSkillNumber == 6) battleController.newSkillNumber = 0;
             }
         }
     }

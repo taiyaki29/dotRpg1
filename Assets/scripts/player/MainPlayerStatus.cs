@@ -98,13 +98,13 @@ public class MainPlayerStatus : MonoBehaviour
         Debug.Log("start");
 
         // temporary
-        // for(int i=0; i<4; i++) playerSkills[i].setSkill(i);
+        for(int i=0; i<6; i++) {
+            playerSkills[i].setSkill(i);
+            playerSkillCount++;
+            Debug.Log(playerSkills[i].skillName);
+        }
+        // playerSkills[0].setSkill(0);
         // playerSkillCount++;
-        // playerSkillCount++;
-        // playerSkillCount++;
-        // playerSkillCount++;
-        playerSkills[0].setSkill(0);
-        playerSkillCount++;
     }
 
     void FixedUpdate(){

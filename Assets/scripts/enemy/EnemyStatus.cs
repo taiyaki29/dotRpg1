@@ -117,7 +117,7 @@ public class EnemyStatus : MonoBehaviour
         enemyMagicalAttack = 1;
 
         getSkillsReady();
-        enemySkills[1].setSkill(1);
+        enemySkills[1].setSkill(7);
 
         enemySpeed = 1;
     }
@@ -141,7 +141,7 @@ public class EnemyStatus : MonoBehaviour
         enemyMagicalAttack = 6;
 
         getSkillsReady();
-        enemySkills[1].setSkill(2);
+        enemySkills[1].setSkill(7);
 
         enemySpeed = 5;
     }
