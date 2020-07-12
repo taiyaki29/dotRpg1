@@ -17,11 +17,15 @@ public class UIButtonControls : MonoBehaviour
     public GameObject BButton;
     Text bButtonText;
 
+    public GameObject AButton;
+    Text aButtonText;
+
     void Start()
     {
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
         battleController = battleControl.GetComponent<BattleControl>();
         bButtonText = BButton.GetComponent<Text>();
+        aButtonText = AButton.GetComponent<Text>();
         rpgMenuController = rpgMenuControl.GetComponent<RpgMenuController>();
     }
 
@@ -33,9 +37,11 @@ public class UIButtonControls : MonoBehaviour
     {
         if(mainRpgController.mainRpgStatus == MainRpgStatus.WALK){
             bButtonText.text = "<b>メニュー</b>";
+            aButtonText.text = "";
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BATTLE){
             bButtonText.text = "<b>戻る</b>";
+            aButtonText.text = "";
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.BOSS){
             
@@ -44,7 +50,24 @@ public class UIButtonControls : MonoBehaviour
             
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
-            bButtonText.text = "<b>戻る</b>";
+            if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPEN) {
+                bButtonText.text = "<b>戻る</b>";
+                aButtonText.text = "";
+            }
+            else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS) {
+                if(rpgMenuController.statusActionNumber == 10 || rpgMenuController.statusActionNumber == 9) {
+                    bButtonText.text = "<b>戻る</b>";
+                    aButtonText.text = "<b>決定</b>";
+                }
+                // else if(rpgMenuController.statusActionNumber == 11){
+                //     bButtonText.text = "<b>戻る</b>";
+                //     aButtonText.text = "<b>決定</b>";
+                // }
+                else {
+                    bButtonText.text = "<b>下げる</b>";
+                    aButtonText.text = "<b>上げる</b>";
+                }
+            }
         }
     }
 
@@ -71,13 +94,13 @@ public class UIButtonControls : MonoBehaviour
         }
         else if(mainRpgController.mainRpgStatus == MainRpgStatus.MENU){
             if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPEN){
-                
+                rpgMenuController.chooseAction();
             }
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENITEM){
 
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
-
+                rpgMenuController.chooseStatusAction(true);
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
 
@@ -111,10 +134,10 @@ public class UIButtonControls : MonoBehaviour
                 mainRpgController.closeMenu();
             }
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENITEM){
-                
+                rpgMenuController.goBack();
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
-
+                rpgMenuController.chooseStatusAction(false);
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
 

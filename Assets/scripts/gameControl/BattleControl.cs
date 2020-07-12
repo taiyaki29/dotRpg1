@@ -653,14 +653,16 @@ public class BattleControl : MonoBehaviour
             gainExperience += enemy3.enemyExperience;
             getGold += enemy3.enemyGold;
         }
+        mainPlayerStatus.playerExperience += gainExperience;
+        mainPlayerStatus.playerGold += getGold;
 
         battleText.text = "<color=#ffffffff>戦いに勝った！\n獲得EXP　" + gainExperience + "exp\n獲得ゴールド　" + getGold + "g</color>";
         yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
 
-        // if(mainPlayerStatus.didPlayerLevelUp()){
-        //     battleText.text = "<color=#ffffffff>レベルアップ！</color>"; 
-        //     yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
-        // }
+        if(mainPlayerStatus.didPlayerLevelUp()){
+            battleText.text = "<color=#ffffffff>レベルアップ！</color>"; 
+            yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
+        }
 
         Skills newSkill = possibleNewSkill();
 

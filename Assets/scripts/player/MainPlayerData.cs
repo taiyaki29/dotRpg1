@@ -9,6 +9,7 @@ public class MainPlayerData {
     　
     public int playerLevel;
     public int playerExperience;
+    public int playerStatusPoints;
 
     public int playerGold;
 
@@ -49,6 +50,7 @@ public class MainPlayerData {
         
         playerLevel = mainPlayerStatus.playerLevel;
         playerExperience = mainPlayerStatus.playerExperience;
+        playerStatusPoints = mainPlayerStatus.playerStatusPoints;
         
         playerGold = mainPlayerStatus.playerGold;
 

@@ -23,6 +23,7 @@ public class CharacterCreateController : MonoBehaviour
         
         mainPlayerStatus.playerLevel = data.playerLevel;
         mainPlayerStatus.playerExperience = data.playerExperience;
+        mainPlayerStatus.playerStatusPoints = data.playerStatusPoints;
         
         mainPlayerStatus.playerGold = data.playerGold;
 

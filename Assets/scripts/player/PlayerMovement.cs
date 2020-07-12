@@ -186,7 +186,8 @@ public class PlayerMovement : MonoBehaviour
 
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
-
+                if(rpgMenuController.statusActionNumber > 0) rpgMenuController.statusActionNumber--;
+                else if(rpgMenuController.statusActionNumber == 0) rpgMenuController.statusActionNumber = 10;
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
 
@@ -232,7 +233,8 @@ public class PlayerMovement : MonoBehaviour
 
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
-
+                if(rpgMenuController.statusActionNumber < 10) rpgMenuController.statusActionNumber++;
+                else if(rpgMenuController.statusActionNumber == 10) rpgMenuController.statusActionNumber = 0;
             } 
             else if(rpgMenuController.rpgMenuStatus == RpgMenuStatus.OPENSKILL){
 

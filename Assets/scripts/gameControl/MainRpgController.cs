@@ -15,10 +15,13 @@ public class MainRpgController : MonoBehaviour
     public GameObject battleController;
     public GameObject player;
 
+    public GameObject exclamationPoint;
+
     PlayerMovement playerMovement;
     BattleControl battleControl;
 
     RpgMenuController rpgMenuController;
+    MainPlayerStatus mainPlayerStatus;
 
     int playerStepsLimit = 0;
     public int enemyEncounterSteps = 0;
@@ -30,12 +33,17 @@ public class MainRpgController : MonoBehaviour
     void Start(){
         mainRpgStatus = MainRpgStatus.WALK;
         battleScreen.SetActive(false);
+        rpgMenuScreen.SetActive(false);
 
         playerMovement = player.GetComponent<PlayerMovement>();
         playerStepsLimit = playerMovement.playerStepsLimit;
 
         battleControl = battleController.GetComponent<BattleControl>();
         rpgMenuController = rpgMenuControl.GetComponent<RpgMenuController>();
+        mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
+
+        if(mainRpgStatus == MainRpgStatus.WALK && mainPlayerStatus.playerStatusPoints > 0) exclamationPoint.SetActive(true);
+        else exclamationPoint.SetActive(false);
     }
 
     void Update(){
@@ -54,6 +62,10 @@ public class MainRpgController : MonoBehaviour
             startBattle();
             enemyEncounterSteps = 0;
         }
+        if(mainRpgStatus == MainRpgStatus.WALK && !exclamationPoint.active && mainPlayerStatus.playerStatusPoints > 0){
+            exclamationPoint.SetActive(true);
+        }
+        else if(mainRpgStatus != MainRpgStatus.WALK) exclamationPoint.SetActive(false);
     }
 
     public void startBattle(){

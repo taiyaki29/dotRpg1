@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class MainPlayerStatus : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class MainPlayerStatus : MonoBehaviour
     　
     public int playerLevel = 1;
     public int playerExperience = 0;
+    public int playerStatusPoints = 0;
 
     public int playerGold = 0;
 
@@ -117,5 +119,26 @@ public class MainPlayerStatus : MonoBehaviour
         playerStepsLimit = playerMovement.playerStepsLimit;
         StepsLimitText.text = "<color=#fffffff>魔王が来るまで...\n" + "<size=80>" + playerStepsLimit.ToString()+ "</size>" + "歩</color>";
     }
+
+    public bool didPlayerLevelUp(){
+        int potentialNewLevel = experienceLevelConversion();
+        if(playerLevel < experienceLevelConversion()) {
+            playerStatusPoints += 10 * (potentialNewLevel - playerLevel);
+            playerLevel = potentialNewLevel;
+            return true;
+        }
+        return false;
+    }
+    
+    public int experienceLevelConversion(){
+        int experience = 0;
+        for(int i=1; i<100000; i++){
+            experience += i + 30 + (int)Math.Pow((double)i, 1.25);
+            if(experience > playerExperience) return i;
+            Debug.Log(experience);
+        }
+        return 9999999;
+    }
+    
 
 }
