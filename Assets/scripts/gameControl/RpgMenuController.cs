@@ -167,7 +167,7 @@ public class RpgMenuController : MonoBehaviour
         extraMenuInfo[5] = "<color=#ffffffff>敵の魔法攻撃から受けるダメージが軽減されます。</color>";
         extraMenuInfo[6] = "<color=#ffffffff>敵にクリティカルダメージを与える確率が上昇します。</color>";
         extraMenuInfo[7] = "<color=#ffffffff>敵に与えるクリティカルダメージ倍率が上昇します。</color>";
-        extraMenuInfo[8] = "<color=#ffffffff>敵から受ける攻撃を交わす確率が上がります。\n敵に攻撃をかわされる確率が下がります。\n敵から逃げられる確率が上がります。</color>";
+        extraMenuInfo[8] = "<color=#ffffffff>敵から受ける攻撃をかわす確率が上がります。\n敵に攻撃をかわされる確率が下がります。\n敵から逃げられる確率が上がります。</color>";
     }
 
     public void chooseAction(){

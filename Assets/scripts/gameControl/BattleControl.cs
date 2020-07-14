@@ -455,16 +455,26 @@ public class BattleControl : MonoBehaviour
 
         if(!usingSkill.isSkillTargetMultiple){
             int damage = calculateDamage(mainPlayerStatus, chosenEnemy, usingSkill, true);
-            chosenEnemy.enemyCurrentHp -= damage;
-            battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + damage + " のダメージ！" + "</color>";
+            if(damage == 0){
+                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "にかわされた" + "</color>";
+            }
+            else {
+                chosenEnemy.enemyCurrentHp -= damage;
+                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + damage + " のダメージ！" + "</color>";
+            }
             if(chosenEnemy.enemyCurrentHp < 0)chosenEnemy.enemyCurrentHp = 0;
         }
         else {
             string battleTextTmp = "";
             for(int i=0; i<remainingEnemyNumber; i++){
                 int damage = calculateDamage(mainPlayerStatus, allEnemys[i], usingSkill, true);
-                allEnemys[i].enemyCurrentHp -= damage;
-                battleTextTmp += "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + damage + " のダメージ！\n" + "</color>";
+                if(damage == 0){
+                    battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "にかわされた" + "</color>";
+                }
+                else {
+                    allEnemys[i].enemyCurrentHp -= damage;
+                    battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + damage + " のダメージ！" + "</color>";
+                }
                 if(allEnemys[i].enemyCurrentHp < 0)allEnemys[i].enemyCurrentHp = 0;
             }
             battleText.text = battleTextTmp;
@@ -608,8 +618,13 @@ public class BattleControl : MonoBehaviour
         yield return new WaitForSeconds(0.6f * mainRpgcontroller.gameTextSpeed);
 
         int damage = calculateDamage(mainPlayerStatus, attackingEnemy, enemySkill, false);
-        mainPlayerStatus.playerCurrentHp -= damage;
-        battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
+        if(damage == 0){
+            battleText.text = "<color=#ffffffff>敵の攻撃をかわした</color>";
+        }
+        else {
+            mainPlayerStatus.playerCurrentHp -= damage;
+            battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
+        }
         if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
 
         if(!isPlayerAlive()) playerAlive = false;
@@ -846,18 +861,30 @@ public class BattleControl : MonoBehaviour
     public int calculateDamage(MainPlayerStatus player, EnemyStatus enemy, Skills skill, bool isPlayerAttack){
         int attack;
         if(isPlayerAttack){
+            int noDamageChance = player.playerSpeed < enemy.enemySpeed ? enemy.enemySpeed - player.playerSpeed : 0;
+            bool noDamage = UnityEngine.Random.Range(1,100) < noDamageChance;
+            if(noDamage) return 0;
+            int criticalChance = player.playerCriticalChance;
+            bool critical = UnityEngine.Random.Range(1, criticalChanceAdjuster) < criticalChance;
             if(skill.isPhysicalAttack){
-                attack = (int)Convert.ToSingle(Math.Round(player.playerPhysicalAttack * skill.physicalAttackMultiplyer));
+                int playerPower = player.playerPhysicalAttack;
+                if(critical) (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
+                attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.physicalAttackMultiplyer));
                 attack -= enemy.enemyPhysicalDefense;
                 if(attack <= 0) attack = 1;
             }
             else {
-                attack = (int)Convert.ToSingle(Math.Round(player.playerMagicalAttack * skill.magicalAttackMultiplyer));
+                int playerPower = player.playerMagicalAttack;
+                if(critical) (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
+                attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.magicalAttackMultiplyer));
                 attack -= enemy.enemyMagicalDefense;
                 if(attack <= 0) attack = 1;
             }
         }
         else {
+            int noDamageChance = player.playerSpeed > enemy.enemySpeed ? player.enemySpeed - enemy.playerSpeed : 0;
+            bool noDamage = UnityEngine.Random.Range(1,100) < noDamageChance;
+            if(noDamage) return 0;
             if(skill.isPhysicalAttack){
                 attack = (int)Convert.ToSingle(Math.Round(enemy.enemyPhysicalAttack * skill.physicalAttackMultiplyer));
                 attack -= player.playerPhysicalDefense;

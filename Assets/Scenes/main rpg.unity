@@ -20798,6 +20798,7 @@ Transform:
   m_Children:
   - {fileID: 1372705592}
   - {fileID: 632290606}
+  - {fileID: 1964998737}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21194,8 +21195,23 @@ MonoBehaviour:
   mainRpgController: {fileID: 0}
   player: {fileID: 1028102684}
   mainPlayerStatus: {fileID: 0}
+  extraInfoTextHolder: {fileID: 848638040}
+  extraInfoTextGameObject: {fileID: 1273728681}
+  extraInfoText: {fileID: 0}
   menuAction:
   - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  extraMenuInfo:
   - 
   - 
   - 
@@ -23032,6 +23048,7 @@ MonoBehaviour:
   player: {fileID: 1028102684}
   skill: {fileID: 1372705591}
   tmpSkill: {fileID: 632290605}
+  normalAttack: {fileID: 1964998736}
   enemy1HPSlider: {fileID: 2000353518}
   enemy2HPSlider: {fileID: 727542836}
   enemy3HPSlider: {fileID: 213855834}
@@ -23687,6 +23704,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906607942}
   m_CullTransparentMesh: 0
+--- !u!1 &1964998736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964998737}
+  - component: {fileID: 1964998738}
+  m_Layer: 0
+  m_Name: Normal attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964998737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964998736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1216396262}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964998738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964998736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82b99159de53433bb12eb566defa9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: "\u653B\u6483"
+  skillNumber: 0
+  isSkillTargetMultiple: 0
+  isPhysicalAttack: 1
+  isHeal: 0
+  MpCost: 10
+  physicalAttackMultiplyer: 1
+  magicalAttackMultiplyer: 1
+  physicalDefenseMultiplyer: 1
+  magicalDefenseMultiplyer: 1
+  criticalChanceMultiplyer: 1
+  criticalDamageMultiplyer: 1
+  healMultiplyer: 1
 --- !u!1 &1979002569
 GameObject:
   m_ObjectHideFlags: 0
