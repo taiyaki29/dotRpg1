@@ -30,8 +30,10 @@ public class BattleControl : MonoBehaviour
 
     public GameObject skill;
     public GameObject tmpSkill;
+    public GameObject normalAttack;
     Skills skills;
     Skills enemySkill;
+    Skills normalAttackSkill;
 
     public GameObject enemy1HPSlider;
     public GameObject enemy2HPSlider;
@@ -107,6 +109,7 @@ public class BattleControl : MonoBehaviour
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         skills = skill.GetComponent<Skills>();
         enemySkill = skill.GetComponent<Skills>();
+        normalAttackSkill = normalAttack.GetComponent<Skills>();
 
         battleText = battleTextGameObject.GetComponent<Text>();
         enemy1Status = enemy1.GetComponent<EnemyStatus>();
@@ -278,7 +281,7 @@ public class BattleControl : MonoBehaviour
         // attack
         if(actionNumber == 0){
             // usePlayerSkill.setSkill(0);
-            StartCoroutine(playerAttackMotion(mainPlayerStatus.playerSkills[0]));
+            StartCoroutine(playerAttackMotion(normalAttackSkill));
         }
         // skill
         else if(actionNumber == 1){
@@ -591,12 +594,13 @@ public class BattleControl : MonoBehaviour
     }
 
     public IEnumerator enemyAttackCheck(EnemyStatus attackingEnemy, RectTransform attackingEnemyTransform) {
-        int enemyChoice = UnityEngine.Random.Range(0,4);
+        int enemyChoice = UnityEngine.Random.Range(0,5);
         
-        if(enemyChoice == 0) enemySkill = attackingEnemy.enemySkills[0];
-        else if(enemyChoice == 1) enemySkill = attackingEnemy.enemySkills[1];
-        else if(enemyChoice == 2) enemySkill = attackingEnemy.enemySkills[2];
-        else if(enemyChoice == 3) enemySkill = attackingEnemy.enemySkills[3];
+        if(enemyChoice == 0) enemySkill = normalAttackSkill;
+        else if(enemyChoice == 1) enemySkill = attackingEnemy.enemySkills[0];
+        else if(enemyChoice == 2) enemySkill = attackingEnemy.enemySkills[1];
+        else if(enemyChoice == 3) enemySkill = attackingEnemy.enemySkills[2];
+        else if(enemyChoice == 4) enemySkill = attackingEnemy.enemySkills[3];
 
         battleText.text = "<color=#ffffffff>" + attackingEnemy.enemyName + "の" + enemySkill.skillName + "</color>";
         yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
@@ -787,6 +791,7 @@ public class BattleControl : MonoBehaviour
             for(int j=0; j<4; j++){
                 bool differentFound = true;
                 for(int k=0; k<6; k++){
+                    if(enemy.enemySkills[j].skillNumber == 0) differentFound = false;
                     if(enemy.enemySkills[j].skillName == mainPlayerStatus.playerSkills[k].skillName) differentFound = false;
                 }
                 if(differentFound) {
