@@ -78,6 +78,8 @@ public class BattleControl : MonoBehaviour
     public EnemyStatus chosenEnemy;
     public EnemyStatus[] allEnemys;
 
+    public int criticalChanceAdjuster = 1000;
+
     int enemyNumber;
     int remainingEnemyNumber;
 
@@ -868,21 +870,21 @@ public class BattleControl : MonoBehaviour
             bool critical = UnityEngine.Random.Range(1, criticalChanceAdjuster) < criticalChance;
             if(skill.isPhysicalAttack){
                 int playerPower = player.playerPhysicalAttack;
-                if(critical) (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
+                if(critical) playerPower = (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
                 attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.physicalAttackMultiplyer));
                 attack -= enemy.enemyPhysicalDefense;
                 if(attack <= 0) attack = 1;
             }
             else {
                 int playerPower = player.playerMagicalAttack;
-                if(critical) (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
+                if(critical) playerPower = (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
                 attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.magicalAttackMultiplyer));
                 attack -= enemy.enemyMagicalDefense;
                 if(attack <= 0) attack = 1;
             }
         }
         else {
-            int noDamageChance = player.playerSpeed > enemy.enemySpeed ? player.enemySpeed - enemy.playerSpeed : 0;
+            int noDamageChance = player.playerSpeed > enemy.enemySpeed ? player.playerSpeed - enemy.enemySpeed : 0;
             bool noDamage = UnityEngine.Random.Range(1,100) < noDamageChance;
             if(noDamage) return 0;
             if(skill.isPhysicalAttack){
