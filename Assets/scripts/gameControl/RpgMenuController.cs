@@ -17,7 +17,12 @@ public class RpgMenuController : MonoBehaviour
     public GameObject player;
     public MainPlayerStatus mainPlayerStatus;
 
+    public GameObject extraInfoTextHolder;
+    public GameObject extraInfoTextGameObject;
+    public Text extraInfoText;
+
     public string[] menuAction = new string[12];
+    public string[] extraMenuInfo = new string[11];
     public int mainActionNumber = 0;
     public int itemActionNumber = 0;
     public int statusActionNumber = 0;
@@ -41,6 +46,8 @@ public class RpgMenuController : MonoBehaviour
         rpgMenuText = rpgMenuTextholder.GetComponent<Text>();
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
+        extraInfoText = extraInfoTextGameObject.GetComponent<Text>();
+        setExtraInfoText();
     }
 
     void Update(){
@@ -52,6 +59,11 @@ public class RpgMenuController : MonoBehaviour
         }
         else if(rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
             rpgMenuText.text = menuAction[statusActionNumber];
+            if(statusActionNumber < 9){
+                extraInfoTextHolder.SetActive(true);
+                extraInfoText.text = extraMenuInfo[statusActionNumber];
+            }
+            else extraInfoTextHolder.SetActive(false);
         }
         else if(rpgMenuStatus == RpgMenuStatus.OPENSKILL){
             
@@ -65,19 +77,30 @@ public class RpgMenuController : MonoBehaviour
         else if(rpgMenuStatus == RpgMenuStatus.GOTBACKTOHOME){
             
         }
+        if(rpgMenuStatus != RpgMenuStatus.OPENSTATUS && statusActionNumber >= 9) extraInfoTextHolder.SetActive(false);
     }
 
-    public void setMenuText(){Debug.Log("set");
+    public void setMenuText(){
         mainActionNumber = 0;
-        menuAction[0] = "<color=#ffffffff>▶︎アイテム\nステータス\nスキル\n装備\n設定\nメインメニューに戻る</color>";
-        menuAction[1] = "<color=#ffffffff>アイテム\n▶︎ステータス\nスキル\n装備\n設定\nメインメニューに戻る</color>";
-        menuAction[2] = "<color=#ffffffff>アイテム\nステータス\n▶︎スキル\n装備\n設定\nメインメニューに戻る</color>";
-        menuAction[3] = "<color=#ffffffff>アイテム\nステータス\nスキル\n▶︎装備\n設定\nメインメニューに戻る</color>";
-        menuAction[4] = "<color=#ffffffff>アイテム\nステータス\nスキル\n装備\n▶︎設定\nメインメニューに戻る</color>";
-        menuAction[5] = "<color=#ffffffff>アイテム\nステータス\nスキル\n装備\n設定\n▶︎メインメニューに戻る</color>";
+        if(mainPlayerStatus.playerStatusPoints > 0){
+            menuAction[0] = "<color=#ffffffff>▶︎アイテム\nステータス !\nスキル\n装備\n設定\nメインメニューに戻る</color>";
+            menuAction[1] = "<color=#ffffffff>アイテム\n▶︎ステータス !\nスキル\n装備\n設定\nメインメニューに戻る</color>";
+            menuAction[2] = "<color=#ffffffff>アイテム\nステータス !\n▶︎スキル\n装備\n設定\nメインメニューに戻る</color>";
+            menuAction[3] = "<color=#ffffffff>アイテム\nステータス !\nスキル\n▶︎装備\n設定\nメインメニューに戻る</color>";
+            menuAction[4] = "<color=#ffffffff>アイテム\nステータス !\nスキル\n装備\n▶︎設定\nメインメニューに戻る</color>";
+            menuAction[5] = "<color=#ffffffff>アイテム\nステータス !\nスキル\n装備\n設定\n▶︎メインメニューに戻る</color>";
+        }
+        else {
+            menuAction[0] = "<color=#ffffffff>▶︎アイテム\nステータス\nスキル\n装備\n設定\nメインメニューに戻る</color>";
+            menuAction[1] = "<color=#ffffffff>アイテム\n▶︎ステータス\nスキル\n装備\n設定\nメインメニューに戻る</color>";
+            menuAction[2] = "<color=#ffffffff>アイテム\nステータス\n▶︎スキル\n装備\n設定\nメインメニューに戻る</color>";
+            menuAction[3] = "<color=#ffffffff>アイテム\nステータス\nスキル\n▶︎装備\n設定\nメインメニューに戻る</color>";
+            menuAction[4] = "<color=#ffffffff>アイテム\nステータス\nスキル\n装備\n▶︎設定\nメインメニューに戻る</color>";
+            menuAction[5] = "<color=#ffffffff>アイテム\nステータス\nスキル\n装備\n設定\n▶︎メインメニューに戻る</color>";
+        }
     }
 
-    public void setStatusText(){Debug.Log("setStatus");
+    public void setStatusText(){
         menuAction[0] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n▶︎最大HP　" 
             + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
             + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
@@ -135,6 +158,18 @@ public class RpgMenuController : MonoBehaviour
             + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n▶︎元に戻す</color>";
     }
 
+    public void setExtraInfoText(){
+        extraMenuInfo[0] = "<color=#ffffffff>最大HPが上昇します。</color>";
+        extraMenuInfo[1] = "<color=#ffffffff>最大MPが上昇します。\nMPはスキルを使うのに必要です。</color>";
+        extraMenuInfo[2] = "<color=#ffffffff>通常攻撃と物理攻撃を使用するスキルが強くなります。</color>";
+        extraMenuInfo[3] = "<color=#ffffffff>魔法攻撃を使用するスキルが強くなります。</color>";
+        extraMenuInfo[4] = "<color=#ffffffff>敵の物理攻撃と通常攻撃から受けるダメージが軽減されます。</color>";
+        extraMenuInfo[5] = "<color=#ffffffff>敵の魔法攻撃から受けるダメージが軽減されます。</color>";
+        extraMenuInfo[6] = "<color=#ffffffff>敵にクリティカルダメージを与える確率が上昇します。</color>";
+        extraMenuInfo[7] = "<color=#ffffffff>敵に与えるクリティカルダメージ倍率が上昇します。</color>";
+        extraMenuInfo[8] = "<color=#ffffffff>敵から受ける攻撃を交わす確率が上がります。\n敵に攻撃をかわされる確率が下がります。\n敵から逃げられる確率が上がります。</color>";
+    }
+
     public void chooseAction(){
         if(mainActionNumber == 0){
             openMenu();
@@ -158,8 +193,6 @@ public class RpgMenuController : MonoBehaviour
 
     public void chooseStatusAction(bool aButton){
         bool isStatusPointRemaining = statusPointsDiff > 0;
-        Debug.Log(mainPlayerStatus.playerStatusPoints);
-        Debug.Log(statusPointsDiff);
         bool decreaseable = false;
         if(statusActionNumber == 0){
             decreaseable = maxHPDiff > 0 && mainPlayerStatus.playerStatusPoints > statusPointsDiff;
@@ -347,7 +380,9 @@ public class RpgMenuController : MonoBehaviour
     public void applyDiffs(){
         mainPlayerStatus.playerStatusPoints = statusPointsDiff;
         mainPlayerStatus.playerMaxHp += maxHPDiff; 
+        mainPlayerStatus.playerCurrentHp += maxHPDiff; 
         mainPlayerStatus.playerMaxMp += maxMPDiff;
+        mainPlayerStatus.playerCurrentMp += maxMPDiff;
         mainPlayerStatus.playerPhysicalAttack += physicalAttackDiff;
         mainPlayerStatus.playerMagicalAttack += magicalAttackDiff;
         mainPlayerStatus.playerPhysicalDefense += physicalDefenseDiff;
