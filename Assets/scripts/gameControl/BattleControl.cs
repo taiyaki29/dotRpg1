@@ -601,8 +601,27 @@ public class BattleControl : MonoBehaviour
     }
 
     public IEnumerator playerFleeMotion(int seconds){
-        battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
+        battleStatus =　BattleStatus.PLAYERMOTION;
+        int enemyFastestSpeed = enemy1Status.enemySpeed;
+        if(enemyNumber > 1 && enemy2Status.enemySpeed > enemyFastestSpeed) enemyFastestSpeed = enemy2Status.enemySpeed;
+        if(enemyNumber > 2 && enemy3Status.enemySpeed > enemyFastestSpeed) enemyFastestSpeed = enemy3Status.enemySpeed;
+        bool canFlee;
+        if(mainPlayerStatus.playerSpeed < enemyFastestSpeed) canFlee = false;
+        else canFlee = UnityEngine.Random.Range(-100,100) < mainPlayerStatus.playerSpeed - enemyFastestSpeed;
+
+        battleText.text = "<color=#ffffffff>敵から逃げようとした！</color>";
+        yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
+        if(canFlee) {
+            battleText.text = "<color=#ffffffff>逃げ切った！</color>";
+            yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
+            mainRpgcontroller.endBattle();
+        }
+        else {
+            battleText.text = "<color=#ffffffff>敵に回り込まれてしまった。</color>";
+            yield return new WaitForSeconds(1.5f * mainRpgcontroller.gameTextSpeed);
+            battleStatus = BattleStatus.ENEMYTURN;
+            StartCoroutine(enemyTurn());
+        }
     }
 
     public IEnumerator enemyAttackCheck(EnemyStatus attackingEnemy, RectTransform attackingEnemyTransform) {
