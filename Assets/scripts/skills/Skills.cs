@@ -7,6 +7,7 @@ public class Skills : MonoBehaviour {
     public int skillNumber = 0;
     public bool isSkillTargetMultiple = false;
     public bool isPhysicalAttack = true;
+    public bool isAttack = true;
     public bool isHeal = false;
 
     public int MpCost = 10;
@@ -29,6 +30,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = false;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 0;
@@ -41,6 +43,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+
+            healMultiplyer = 1f;
         }
         else if(chosenSkillNumber == 1){
             skillName = "強打１";
@@ -48,6 +52,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = false;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 10;
@@ -60,6 +65,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+
+            healMultiplyer = 1f;
         }
         else if(chosenSkillNumber == 2){
             skillName = "強打２";
@@ -67,6 +74,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = false;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 15;
@@ -79,6 +87,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+
+            healMultiplyer = 1f;
         }
         else if(chosenSkillNumber == 3){
             skillName = "大振り";
@@ -86,6 +96,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = true;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 20;
@@ -105,6 +116,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = true;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 20;
@@ -117,6 +129,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+
+            healMultiplyer = 1f;
         }
         else if(chosenSkillNumber == 5){
             skillName = "大振り2";
@@ -124,6 +138,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = true;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 20;
@@ -136,6 +151,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+
+            healMultiplyer = 1f;
         }
         else if(chosenSkillNumber == 6){
             skillName = "大振り3";
@@ -143,6 +160,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = true;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 20;
@@ -155,6 +173,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+
+            healMultiplyer = 1f;
         }
         else if(chosenSkillNumber == 7){
             skillName = "大振り4";
@@ -162,6 +182,7 @@ public class Skills : MonoBehaviour {
 
             isSkillTargetMultiple = true;
             isPhysicalAttack = true;
+            isAttack = true;
             isHeal = false;
 
             MpCost = 20;
@@ -174,6 +195,8 @@ public class Skills : MonoBehaviour {
 
             criticalChanceMultiplyer = 1f;
             criticalDamageMultiplyer = 1f;
+            
+            healMultiplyer = 1f;
         }
     }
 }

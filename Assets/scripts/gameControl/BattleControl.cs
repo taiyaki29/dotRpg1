@@ -455,31 +455,42 @@ public class BattleControl : MonoBehaviour
 
         yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
 
-        if(!usingSkill.isSkillTargetMultiple){
-            int damage = calculateDamage(mainPlayerStatus, chosenEnemy, usingSkill, true);
-            if(damage == 0){
-                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "にかわされた" + "</color>";
-            }
-            else {
-                chosenEnemy.enemyCurrentHp -= damage;
-                battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + damage + " のダメージ！" + "</color>";
-            }
-            if(chosenEnemy.enemyCurrentHp < 0)chosenEnemy.enemyCurrentHp = 0;
-        }
-        else {
-            string battleTextTmp = "";
-            for(int i=0; i<remainingEnemyNumber; i++){
-                int damage = calculateDamage(mainPlayerStatus, allEnemys[i], usingSkill, true);
+        int damage = 0;
+        if(usingSkill.isAttack){
+            if(!usingSkill.isSkillTargetMultiple){
+                damage = calculateDamage(mainPlayerStatus, chosenEnemy, usingSkill, true);
                 if(damage == 0){
-                    battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "にかわされた" + "</color>";
+                    battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "にかわされた" + "</color>";
                 }
                 else {
-                    allEnemys[i].enemyCurrentHp -= damage;
-                    battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + damage + " のダメージ！" + "</color>";
+                    chosenEnemy.enemyCurrentHp -= damage;
+                    battleText.text = "<color=#ffffffff>" + chosenEnemy.enemyName + "に " + damage + " のダメージ！" + "</color>";
                 }
-                if(allEnemys[i].enemyCurrentHp < 0)allEnemys[i].enemyCurrentHp = 0;
+                if(chosenEnemy.enemyCurrentHp < 0)chosenEnemy.enemyCurrentHp = 0;
             }
-            battleText.text = battleTextTmp;
+            else {
+                string battleTextTmp = "";
+                for(int i=0; i<remainingEnemyNumber; i++){
+                    damage = calculateDamage(mainPlayerStatus, allEnemys[i], usingSkill, true);
+                    if(damage == 0){
+                        battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "にかわされた" + "</color>";
+                    }
+                    else {
+                        allEnemys[i].enemyCurrentHp -= damage;
+                        battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + damage + " のダメージ！" + "</color>";
+                    }
+                    if(allEnemys[i].enemyCurrentHp < 0)allEnemys[i].enemyCurrentHp = 0;
+                }
+                battleText.text = battleTextTmp;
+            }
+
+        }
+        if(usingSkill.isHeal) {
+            yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
+            battleText.text = "<color=#ffffffff>HPを回復した！</color>";
+            int heal = calculateHeal(damage, usingSkill, mainPlayerStatus, enemy1Status, true);
+            if(mainPlayerStatus.playerCurrentHp + heal <= mainPlayerStatus.playerMaxHp) mainPlayerStatus.playerCurrentHp += heal;
+            else mainPlayerStatus.playerCurrentHp = mainPlayerStatus.playerMaxHp;
         }
  
         //adjust health bar
@@ -637,16 +648,26 @@ public class BattleControl : MonoBehaviour
         yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
         StartCoroutine(enemyAttackMotion(attackingEnemyTransform));
         yield return new WaitForSeconds(0.6f * mainRpgcontroller.gameTextSpeed);
-
-        int damage = calculateDamage(mainPlayerStatus, attackingEnemy, enemySkill, false);
-        if(damage == 0){
-            battleText.text = "<color=#ffffffff>敵の攻撃をかわした</color>";
+        
+        int damage = 0;
+        if(enemySkill.isAttack) {
+            damage = calculateDamage(mainPlayerStatus, attackingEnemy, enemySkill, false);
+            if(damage == 0){
+                battleText.text = "<color=#ffffffff>敵の攻撃をかわした</color>";
+            }
+            else {
+                mainPlayerStatus.playerCurrentHp -= damage;
+                battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
+            }
+            if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
         }
-        else {
-            mainPlayerStatus.playerCurrentHp -= damage;
-            battleText.text = "<color=#ffffffff>" + damage + " のダメージを受けた" + "</color>";
+        if(enemySkill.isHeal) {
+            yield return new WaitForSeconds(1 * mainRpgcontroller.gameTextSpeed);
+            battleText.text = "<color=#ffffffff>敵のHPが回復した。</color>";
+            int heal = calculateHeal(damage, enemySkill, mainPlayerStatus, attackingEnemy ,false);
+            if(attackingEnemy.enemyCurrentHp + heal <= attackingEnemy.enemyMaxHp)attackingEnemy.enemyCurrentHp += heal;
+            else attackingEnemy.enemyCurrentHp = attackingEnemy.enemyMaxHp;
         }
-        if(mainPlayerStatus.playerCurrentHp < 0)mainPlayerStatus.playerCurrentHp = 0;
 
         if(!isPlayerAlive()) playerAlive = false;
     }
@@ -918,5 +939,16 @@ public class BattleControl : MonoBehaviour
             }
         }
         return attack;
+    }
+
+    public int calculateHeal(int damage, Skills skill, MainPlayerStatus player, EnemyStatus enemy, bool isPlayerTurn){
+        int heal;
+        if(isPlayerTurn){
+            heal = (int)Convert.ToSingle(Math.Round((player.playerPhysicalDefense + player.playerMagicalDefense) * skill.healMultiplyer));
+        }
+        else {
+            heal = (int)Convert.ToSingle(Math.Round((enemy.enemyPhysicalDefense + enemy.enemyMagicalDefense) * skill.healMultiplyer));
+        }
+        return heal;
     }
 }
