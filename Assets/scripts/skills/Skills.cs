@@ -23,180 +23,56 @@ public class Skills : MonoBehaviour {
 
     public float healMultiplyer = 1f;
 
+    public void setSkillParameters(string name, int number, bool multiple, bool physical, bool attack, bool heal, int cost,
+        float PAMultiplyer, float MAMultiplyer, float PDMultiplyer, float MDMultiplyer, 
+        float CCMultiplyer, float CDMultiplyer, float HMultiplyer){
+    
+        skillName = name;
+        skillNumber = number;
+
+        isSkillTargetMultiple = multiple;
+        isPhysicalAttack = physical;
+        isAttack = attack;
+        isHeal = heal;
+
+        MpCost = cost;
+
+        physicalAttackMultiplyer = PAMultiplyer;
+        magicalAttackMultiplyer = MAMultiplyer;
+
+        physicalDefenseMultiplyer = PDMultiplyer;
+        magicalDefenseMultiplyer = MDMultiplyer;
+
+        criticalChanceMultiplyer = CCMultiplyer;
+        criticalDamageMultiplyer = CDMultiplyer;
+
+        healMultiplyer = HMultiplyer;
+    }
+
     public void setSkill(int chosenSkillNumber){
         if(chosenSkillNumber == 0){
-            skillName = "攻撃";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = false;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 0;
-
-            physicalAttackMultiplyer = 1f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-
-            healMultiplyer = 1f;
+            setSkillParameters("attack", 0, false, true, true, false, 0, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 1){
-            skillName = "強打１";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = false;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 10;
-
-            physicalAttackMultiplyer = 1.3f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-
-            healMultiplyer = 1f;
+            setSkillParameters("strong attack 1", 0, false, true, true, false, 0, 1.3f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 2){
-            skillName = "強打２";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = false;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 15;
-
-            physicalAttackMultiplyer = 1.5f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-
-            healMultiplyer = 1f;
+            setSkillParameters("strong attack 2", 0, false, true, true, false, 0, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 3){
-            skillName = "大振り";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = true;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 20;
-
-            physicalAttackMultiplyer = 1f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
+            setSkillParameters("all attack", 0, true, true, true, false, 0, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 4){
-            skillName = "大振り1";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = true;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 20;
-
-            physicalAttackMultiplyer = 1f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-
-            healMultiplyer = 1f;
+            setSkillParameters("all attack 2", 0, true, true, true, false, 0, 1.2f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 5){
-            skillName = "大振り2";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = true;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 20;
-
-            physicalAttackMultiplyer = 1f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-
-            healMultiplyer = 1f;
+            setSkillParameters("all attack 3", 0, true, true, true, false, 0, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 6){
-            skillName = "大振り3";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = true;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 20;
-
-            physicalAttackMultiplyer = 1f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-
-            healMultiplyer = 1f;
+            setSkillParameters("all attack 4", 0, true, true, true, false, 0, 2f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 7){
-            skillName = "大振り4";
-            skillNumber = chosenSkillNumber;
-
-            isSkillTargetMultiple = true;
-            isPhysicalAttack = true;
-            isAttack = true;
-            isHeal = false;
-
-            MpCost = 20;
-
-            physicalAttackMultiplyer = 1f;
-            magicalAttackMultiplyer = 1f;
-
-            physicalDefenseMultiplyer = 1f;
-            magicalDefenseMultiplyer = 1f;
-
-            criticalChanceMultiplyer = 1f;
-            criticalDamageMultiplyer = 1f;
-            
-            healMultiplyer = 1f;
+            setSkillParameters("all attack magic", 0, true, false, true, false, 0, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f);
         }
     }
 }
