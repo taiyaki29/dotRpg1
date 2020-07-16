@@ -45,19 +45,29 @@ public class CharacterCreateController : MonoBehaviour
         mainPlayerStatus.playerCriticalDamage = data.playerCriticalDamage;
         mainPlayerStatus.playerCriticalChance = data.playerCriticalChance;
 
-        mainPlayerStatus.playerArmourHead = data.playerArmourHead;
-        mainPlayerStatus.playerArmourBody = data.playerArmourBody;
-        mainPlayerStatus.playerArmourHand = data.playerArmourHand;
-        mainPlayerStatus.playerArmourFeet = data.playerArmourFeet;
+        mainPlayerStatus.playerArmourHeadNumber = data.playerArmourHeadNumber;
+        mainPlayerStatus.playerArmourBodyNumber = data.playerArmourBodyNumber;
+        mainPlayerStatus.playerArmourHandNumber = data.playerArmourHandNumber;
+        mainPlayerStatus.playerArmourFeetNumber = data.playerArmourFeetNumber;
 
-        mainPlayerStatus.playerNecklace = data.playerNecklace;
-        mainPlayerStatus.playerWristband = data.playerWristband;
+        mainPlayerStatus.playerNecklaceNumber = data.playerNecklaceNumber;
+        mainPlayerStatus.playerWristbandNumber = data.playerWristbandNumber;
 
-        mainPlayerStatus.playerWeapon = data.playerWeapon;
+        mainPlayerStatus.playerWeaponNumber = data.playerWeaponNumber;
 
         for(int i=0; i<6; i++){
-            mainPlayerStatus.playerSkills[i] = data.playerSkills[i];
+            mainPlayerStatus.playerSkillsNumber[i] = data.playerSkillsNumber[i];
+            mainPlayerStatus.playerSkills[i].setSkill(mainPlayerStatus.playerSkillsNumber[i]);
         }
+
+        mainPlayerStatus.playerArmourHead.setArmour(mainPlayerStatus.playerArmourHeadNumber, "head");
+        mainPlayerStatus.playerArmourBody.setArmour(mainPlayerStatus.playerArmourBodyNumber, "body");
+        mainPlayerStatus.playerArmourFeet.setArmour(mainPlayerStatus.playerArmourFeetNumber, "feet");
+        mainPlayerStatus.playerArmourHand.setArmour(mainPlayerStatus.playerArmourHandNumber, "hand");
+        mainPlayerStatus.playerNecklace.setArmour(mainPlayerStatus.playerNecklaceNumber, "necklace");
+        mainPlayerStatus.playerWristband.setArmour(mainPlayerStatus.playerWristbandNumber, "wristband");
+
+        mainPlayerStatus.playerWeapon.setweapon(mainPlayerStatus.playerWeaponNumber);
 
         Vector3 position;
         position.x = data.playerPosition[0];

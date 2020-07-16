@@ -51,28 +51,28 @@ public class Skills : MonoBehaviour {
 
     public void setSkill(int chosenSkillNumber){
         if(chosenSkillNumber == 0){
-            setSkillParameters("attack", 0, false, true, true, false, 0, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("attack", chosenSkillNumber, false, true, true, false, 0, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 1){
-            setSkillParameters("strong attack 1", 0, false, true, true, false, 0, 1.3f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("strong attack 1", chosenSkillNumber, false, true, true, false, 10, 1.3f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 2){
-            setSkillParameters("strong attack 2", 0, false, true, true, false, 0, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("strong attack 2", chosenSkillNumber, false, true, true, false, 10, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 3){
-            setSkillParameters("all attack", 0, true, true, true, false, 0, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("all attack", chosenSkillNumber, true, true, true, false, 10, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 4){
-            setSkillParameters("all attack 2", 0, true, true, true, false, 0, 1.2f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("all attack 2", chosenSkillNumber, true, true, true, false, 10, 1.2f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 5){
-            setSkillParameters("all attack 3", 0, true, true, true, false, 0, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("all attack 3", chosenSkillNumber, true, true, true, false, 10, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 6){
-            setSkillParameters("all attack 4", 0, true, true, true, false, 0, 2f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("all attack 4", chosenSkillNumber, true, true, true, false, 10, 2f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         else if(chosenSkillNumber == 7){
-            setSkillParameters("all attack magic", 0, true, false, true, false, 0, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f);
+            setSkillParameters("all attack magic", chosenSkillNumber, true, false, true, false, 10, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f);
         }
     }
 }

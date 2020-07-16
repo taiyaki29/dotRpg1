@@ -22,6 +22,32 @@ public class MainPlayerStatus : MonoBehaviour
     public GameObject playerSkill6GameObject;
 
     public Skills[] playerSkills = new Skills[6];
+    public int[] playerSkillsNumber = new int[6];
+
+    public GameObject playerWeaponGameObject;
+    public Weapon playerWeapon;
+    public int playerWeaponNumber = 0;
+
+    public GameObject playerArmourHeadGameObject;
+    public GameObject playerArmourBodyGameObject;
+    public GameObject playerArmourFeetGameObject;
+    public GameObject playerArmourHandGameObject;
+    public GameObject playerNecklaceGameObject;
+    public GameObject playerWristbandGameObject;
+
+    public Armour playerArmourHead;
+    public Armour playerArmourBody;
+    public Armour playerArmourFeet;
+    public Armour playerArmourHand;
+    public Armour playerNecklace;
+    public Armour playerWristband;
+
+    public int playerArmourHeadNumber = 0;
+    public int playerArmourBodyNumber = 0;
+    public int playerArmourFeetNumber = 0;
+    public int playerArmourHandNumber = 0;
+    public int playerNecklaceNumber = 0;
+    public int playerWristbandNumber = 0;
 
     Skills skills;
 
@@ -51,16 +77,6 @@ public class MainPlayerStatus : MonoBehaviour
     public int playerCriticalChance = 10;
     public int playerCriticalDamage = 10;
 
-    public string playerArmourHead = "null";
-    public string playerArmourBody = "null";
-    public string playerArmourHand = "null";
-    public string playerArmourFeet = "null";
-
-    public string playerNecklace = "null";
-    public string playerWristband = "null";
-
-    public string playerWeapon = "null";
-
     // public int[] playerSkills = new int[] {-1, -1, -1, -1, -1, -1};
     public int playerSkillCount = 0;
 
@@ -89,6 +105,15 @@ public class MainPlayerStatus : MonoBehaviour
         playerSkills[4] = playerSkill5GameObject.GetComponent<Skills>();
         playerSkills[5] = playerSkill6GameObject.GetComponent<Skills>();
 
+        playerArmourHead = playerArmourHeadGameObject.GetComponent<Armour>();
+        playerArmourBody = playerArmourBodyGameObject.GetComponent<Armour>();
+        playerArmourFeet = playerArmourFeetGameObject.GetComponent<Armour>();
+        playerArmourHand = playerArmourHandGameObject.GetComponent<Armour>();
+        playerNecklace = playerNecklaceGameObject.GetComponent<Armour>();
+        playerWristband = playerWristbandGameObject.GetComponent<Armour>();
+
+        playerWeapon = playerWeaponGameObject.GetComponent<Weapon>();
+
         NameStatusText.text = "<color=#ffffffff>" + playerName + "</color>";
         HpStatusText.text = "<color=#00ff00ff>HP: " + playerCurrentHp.ToString() +"</color>";
         MpStatusText.text = "<color=#00ffffff>MP: " + playerCurrentMp.ToString() + "</color>";
@@ -103,6 +128,7 @@ public class MainPlayerStatus : MonoBehaviour
         for(int i=0; i<6; i++) {
             playerSkills[i].setSkill(i);
             playerSkillCount++;
+            playerSkillsNumber[i] = i;
             Debug.Log(playerSkills[i].skillName);
         }
         // playerSkills[0].setSkill(0);

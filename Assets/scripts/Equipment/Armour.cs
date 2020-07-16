@@ -46,8 +46,8 @@ public class Armour : MonoBehaviour
             else if(armourType == "body") {
                 setArmourParameters("empty body", chosenArmourNumber, armourType, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
             }
-            else if(armourType == "shoes") {
-                setArmourParameters("empty shoes", chosenArmourNumber, armourType, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
+            else if(armourType == "feet") {
+                setArmourParameters("empty feet", chosenArmourNumber, armourType, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
             }
             else if(armourType == "hand") {
                 setArmourParameters("empty hand", chosenArmourNumber, armourType, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
@@ -66,8 +66,8 @@ public class Armour : MonoBehaviour
             else if(armourType == "body") {
                 setArmourParameters("test body", chosenArmourNumber, armourType, 1f, 1f, 1.2f, 1.2f, 1f, 1f, 1f);
             }
-            else if(armourType == "shoes") {
-                setArmourParameters("test shoes", chosenArmourNumber, armourType, 1f, 1f, 1.2f, 1.2f, 1f, 1f, 1f);
+            else if(armourType == "feet") {
+                setArmourParameters("test feet", chosenArmourNumber, armourType, 1f, 1f, 1.2f, 1.2f, 1f, 1f, 1f);
             }
             else if(armourType == "hand") {
                 setArmourParameters("test hand", chosenArmourNumber, armourType, 1f, 1f, 1.2f, 1.2f, 1f, 1f, 1f);

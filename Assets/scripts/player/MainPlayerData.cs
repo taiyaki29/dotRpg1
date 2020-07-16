@@ -31,17 +31,16 @@ public class MainPlayerData {
     public int playerCriticalChance;
     public int playerCriticalDamage;
 
-    public string playerArmourHead;
-    public string playerArmourBody;
-    public string playerArmourHand;
-    public string playerArmourFeet;
+    public int playerWeaponNumber;
 
-    public string playerNecklace;
-    public string playerWristband;
+    public int playerArmourHeadNumber;
+    public int playerArmourBodyNumber;
+    public int playerArmourFeetNumber;
+    public int playerArmourHandNumber;
+    public int playerNecklaceNumber;
+    public int playerWristbandNumber;
 
-    public string playerWeapon;
-
-    public Skills[] playerSkills = new Skills[6];
+    public int[] playerSkillsNumber = new int[6];
 
     public float[] playerPosition;
 
@@ -72,18 +71,17 @@ public class MainPlayerData {
         playerCriticalDamage = mainPlayerStatus.playerCriticalDamage;
         playerCriticalChance = mainPlayerStatus.playerCriticalChance;
 
-        playerArmourHead = mainPlayerStatus.playerArmourHead;
-        playerArmourBody = mainPlayerStatus.playerArmourBody;
-        playerArmourHand = mainPlayerStatus.playerArmourHand;
-        playerArmourFeet = mainPlayerStatus.playerArmourFeet;
+        playerArmourHeadNumber = mainPlayerStatus.playerArmourHeadNumber;
+        playerArmourBodyNumber = mainPlayerStatus.playerArmourBodyNumber;
+        playerArmourHandNumber = mainPlayerStatus.playerArmourHandNumber;
+        playerArmourFeetNumber = mainPlayerStatus.playerArmourFeetNumber;
+        playerNecklaceNumber = mainPlayerStatus.playerNecklaceNumber;
+        playerWristbandNumber = mainPlayerStatus.playerWristbandNumber;
 
-        playerNecklace = mainPlayerStatus.playerNecklace;
-        playerWristband = mainPlayerStatus.playerWristband;
-
-        playerWeapon = mainPlayerStatus.playerWeapon;
+        playerWeaponNumber = mainPlayerStatus.playerWeaponNumber;
 
         for(int i=0; i<6; i++){
-            playerSkills[i] = mainPlayerStatus.playerSkills[i];
+            playerSkillsNumber[i] = mainPlayerStatus.playerSkillsNumber[i];
         }
 
         playerPosition = new float[3];

@@ -473,11 +473,11 @@ public class BattleControl : MonoBehaviour
                 for(int i=0; i<remainingEnemyNumber; i++){
                     damage = calculateDamage(mainPlayerStatus, allEnemys[i], usingSkill, true);
                     if(damage == 0){
-                        battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "にかわされた" + "</color>";
+                        battleTextTmp += "<color=#ffffffff>" + allEnemys[i].enemyName + "にかわされた" + "</color>\n";
                     }
                     else {
                         allEnemys[i].enemyCurrentHp -= damage;
-                        battleText.text = "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + damage + " のダメージ！" + "</color>";
+                        battleTextTmp += "<color=#ffffffff>" + allEnemys[i].enemyName + "に " + damage + " のダメージ！" + "</color>\n";
                     }
                     if(allEnemys[i].enemyCurrentHp < 0)allEnemys[i].enemyCurrentHp = 0;
                 }
@@ -726,6 +726,7 @@ public class BattleControl : MonoBehaviour
         }
 
         Skills newSkill = possibleNewSkill();
+        Debug.Log(newSkill);
 
         bool getSkillChance = enemyNumber >= UnityEngine.Random.Range(0,10); // 10 - 30 %
         bool getItemChance = enemyNumber >= UnityEngine.Random.Range(0,10);
@@ -848,8 +849,13 @@ public class BattleControl : MonoBehaviour
             for(int j=0; j<4; j++){
                 bool differentFound = true;
                 for(int k=0; k<6; k++){
+                    Debug.Log(enemy.enemySkills[j].skillName);
+                    Debug.Log(k);
                     if(enemy.enemySkills[j].skillNumber == 0) differentFound = false;
+                    Debug.Log(differentFound);
+
                     if(enemy.enemySkills[j].skillName == mainPlayerStatus.playerSkills[k].skillName) differentFound = false;
+                    Debug.Log(differentFound);
                 }
                 if(differentFound) {
                     possibleNewSkills[possibleNewSkillNumber] = enemySkillNumber;
