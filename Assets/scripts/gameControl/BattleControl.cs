@@ -99,6 +99,8 @@ public class BattleControl : MonoBehaviour
 
     public bool playerAlive = true;
 
+    bool isPlayerDefending = false;
+
     Color invisible;
     Color normal;
     Color black;
@@ -147,6 +149,8 @@ public class BattleControl : MonoBehaviour
         invisible = new Color(1.0f, 1.0f, 1.0f, 0f);
         normal = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         black = new Color(0f, 0f, 0f, 1.0f);
+
+        isPlayerDefending = false;
     }
 
     // Update is called once per frame
@@ -487,10 +491,14 @@ public class BattleControl : MonoBehaviour
         }
         if(usingSkill.isHeal) {
             yield return new WaitForSeconds(1f * mainRpgcontroller.gameTextSpeed);
-            battleText.text = "<color=#ffffffff>HPを回復した！</color>";
             int heal = calculateHeal(damage, usingSkill, mainPlayerStatus, enemy1Status, true);
+            int beforeHeal = mainPlayerStatus.playerCurrentHp;
+
             if(mainPlayerStatus.playerCurrentHp + heal <= mainPlayerStatus.playerMaxHp) mainPlayerStatus.playerCurrentHp += heal;
             else mainPlayerStatus.playerCurrentHp = mainPlayerStatus.playerMaxHp;
+
+            int afterHeal = mainPlayerStatus.playerCurrentHp;
+            battleText.text = "<color=#ffffffff>HPを" + (afterHeal - beforeHeal) + "回復した！</color>";
         }
  
         //adjust health bar
@@ -601,14 +609,18 @@ public class BattleControl : MonoBehaviour
         battleStatus = BattleStatus.PLAYERTURN;
     }
 
-    public IEnumerator playerSkillMotion(int seconds){
-        battleStatus =BattleStatus.PLAYERMOTION; 
-        yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
-    }
+    // public IEnumerator playerSkillMotion(int seconds){
+    //     battleStatus =BattleStatus.PLAYERMOTION; 
+    //     yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
+    // }
 
     public IEnumerator playerDefendMotion(int seconds){
-        battleStatus =BattleStatus.PLAYERMOTION; 
+        isPlayerDefending = true;
+        battleStatus = BattleStatus.PLAYERMOTION; 
+        battleText.text = "<color=#ffffffff>防御の構えをとった！</color>";
         yield return new WaitForSeconds(seconds * mainRpgcontroller.gameTextSpeed);
+        battleStatus = BattleStatus.ENEMYTURN;
+        StartCoroutine(enemyTurn());
     }
 
     public IEnumerator playerFleeMotion(int seconds){
@@ -807,13 +819,13 @@ public class BattleControl : MonoBehaviour
         else {
             newSkillNumber = 0;
             battleStatus = BattleStatus.CHOOSENEWSKILL; 
-            playerActions[0] = "<color=#ffffffff>敵の技を見切った。スキルを一つ忘れて\n" + newSkill.skillName + "　を覚えますか？\n" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[4].skillName +  "を忘れる\n" + mainPlayerStatus.playerSkills[5].skillName + "\n覚えない</color>";
-            playerActions[5] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "　を忘れる\n覚えない</color>";
-            playerActions[6] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5] .skillName+ "　\n▶︎覚えない</color>";
+            playerActions[0] = "<color=#ffffffff>敵の技を見切った！スキルを一つ忘れて\n" + newSkill.skillName + "　を覚えますか？\n" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "</color>";
+            playerActions[1] = "<color=#ffffffff>敵の技を見切った！スキルを一つ忘れて\n" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "</color>";
+            playerActions[2] = "<color=#ffffffff>敵の技を見切った！スキルを一つ忘れて\n" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "　を忘れる\n" + mainPlayerStatus.playerSkills[3].skillName + "</color>";
+            playerActions[3] = "<color=#ffffffff>敵の技を見切った！スキルを一つ忘れて\n" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "　を忘れる</color>";
+            playerActions[4] = "<color=#ffffffff>" + newSkill.skillName + "　を覚えますか？\n" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + "▶︎" +  mainPlayerStatus.playerSkills[4].skillName +  "　を忘れる</color>";
+            playerActions[5] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName + "　を忘れる</color>";
+            playerActions[6] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "\n" + mainPlayerStatus.playerSkills[5].skillName + "　\n▶︎覚えない</color>";
         }
         
         yield return new WaitForSeconds(0f * mainRpgcontroller.gameTextSpeed);
@@ -914,17 +926,25 @@ public class BattleControl : MonoBehaviour
             if(noDamage) return 0;
             int criticalChance = player.playerCriticalChance;
             bool critical = UnityEngine.Random.Range(1, criticalChanceAdjuster) < criticalChance;
+
             if(skill.isPhysicalAttack){
                 int playerPower = player.playerPhysicalAttack;
+                float playerPhysicalMultiplyer = player.playerArmourHead.physicalAttackMultiplyer + player.playerArmourBody.physicalAttackMultiplyer 
+                    + player.playerArmourFeet.physicalAttackMultiplyer + player.playerArmourHand.physicalAttackMultiplyer + player.playerNecklace.physicalAttackMultiplyer
+                    + player.playerWristband.physicalAttackMultiplyer + player.playerWeapon.physicalAttackMultiplyer - 6f;
+                Debug.Log(playerPhysicalMultiplyer);
                 if(critical) playerPower = (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
-                attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.physicalAttackMultiplyer));
+                attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.physicalAttackMultiplyer * playerPhysicalMultiplyer));
                 attack -= enemy.enemyPhysicalDefense;
                 if(attack <= 0) attack = 1;
             }
             else {
                 int playerPower = player.playerMagicalAttack;
+                float playerMagicalMultiplyer = player.playerArmourHead.magicalAttackMultiplyer + player.playerArmourBody.magicalAttackMultiplyer 
+                    + player.playerArmourFeet.magicalAttackMultiplyer + player.playerArmourHand.magicalAttackMultiplyer + player.playerNecklace.magicalAttackMultiplyer
+                    + player.playerWristband.magicalAttackMultiplyer + player.playerWeapon.magicalAttackMultiplyer - 6f;
                 if(critical) playerPower = (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
-                attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.magicalAttackMultiplyer));
+                attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.magicalAttackMultiplyer * playerMagicalMultiplyer));
                 attack -= enemy.enemyMagicalDefense;
                 if(attack <= 0) attack = 1;
             }
@@ -932,14 +952,15 @@ public class BattleControl : MonoBehaviour
         else {
             int noDamageChance = player.playerSpeed > enemy.enemySpeed ? player.playerSpeed - enemy.enemySpeed : 0;
             bool noDamage = UnityEngine.Random.Range(1,100) < noDamageChance;
+            float playerDefending = isPlayerDefending ? 0.5f : 1f;
             if(noDamage) return 0;
             if(skill.isPhysicalAttack){
-                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyPhysicalAttack * skill.physicalAttackMultiplyer));
+                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyPhysicalAttack * skill.physicalAttackMultiplyer * playerDefending));
                 attack -= player.playerPhysicalDefense;
                 if(attack <= 0) attack = 1;
             }
             else {
-                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyMagicalAttack * skill.magicalAttackMultiplyer));
+                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyMagicalAttack * skill.magicalAttackMultiplyer * playerDefending));
                 attack -= player.playerMagicalDefense;
                 if(attack <= 0) attack = 1;
             }
@@ -950,7 +971,14 @@ public class BattleControl : MonoBehaviour
     public int calculateHeal(int damage, Skills skill, MainPlayerStatus player, EnemyStatus enemy, bool isPlayerTurn){
         int heal;
         if(isPlayerTurn){
-            heal = (int)Convert.ToSingle(Math.Round((player.playerPhysicalDefense + player.playerMagicalDefense) * skill.healMultiplyer));
+            float magicalDefenseMultiplyer = player.playerArmourHead.magicalDefenseMultiplyer + player.playerArmourBody.magicalDefenseMultiplyer 
+                + player.playerArmourFeet.magicalDefenseMultiplyer + player.playerArmourHand.magicalDefenseMultiplyer + player.playerNecklace.magicalDefenseMultiplyer
+                + player.playerWristband.magicalDefenseMultiplyer + player.playerWeapon.magicalDefenseMultiplyer - 6f;
+            float physicalDefenseMultiplyer = player.playerArmourHead.physicalDefenseMultiplyer + player.playerArmourBody.physicalDefenseMultiplyer 
+                + player.playerArmourFeet.physicalDefenseMultiplyer + player.playerArmourHand.physicalDefenseMultiplyer + player.playerNecklace.physicalDefenseMultiplyer
+                + player.playerWristband.physicalDefenseMultiplyer + player.playerWeapon.physicalDefenseMultiplyer - 6f;
+            heal = (int)Convert.ToSingle(Math.Round((player.playerPhysicalDefense * physicalDefenseMultiplyer 
+                + player.playerMagicalDefense * magicalDefenseMultiplyer) * skill.healMultiplyer));
         }
         else {
             heal = (int)Convert.ToSingle(Math.Round((enemy.enemyPhysicalDefense + enemy.enemyMagicalDefense) * skill.healMultiplyer));

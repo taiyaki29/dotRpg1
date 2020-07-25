@@ -67,7 +67,7 @@ public class CharacterCreateController : MonoBehaviour
         mainPlayerStatus.playerNecklace.setArmour(mainPlayerStatus.playerNecklaceNumber, "necklace");
         mainPlayerStatus.playerWristband.setArmour(mainPlayerStatus.playerWristbandNumber, "wristband");
 
-        mainPlayerStatus.playerWeapon.setweapon(mainPlayerStatus.playerWeaponNumber);
+        mainPlayerStatus.playerWeapon.setWeapon(mainPlayerStatus.playerWeaponNumber);
 
         Vector3 position;
         position.x = data.playerPosition[0];

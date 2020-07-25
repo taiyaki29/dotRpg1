@@ -20419,8 +20419,8 @@ MonoBehaviour:
   playerArmourBodyGameObject: {fileID: 989426877}
   playerArmourFeetGameObject: {fileID: 1035175229}
   playerArmourHandGameObject: {fileID: 1132352629}
-  playerNecklaceGameObject: {fileID: 0}
-  playerWristbandGameObject: {fileID: 1870902183}
+  playerNecklaceGameObject: {fileID: 1870902183}
+  playerWristbandGameObject: {fileID: 1637223329}
   playerArmourHead: {fileID: 0}
   playerArmourBody: {fileID: 0}
   playerArmourFeet: {fileID: 0}

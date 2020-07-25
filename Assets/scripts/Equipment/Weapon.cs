@@ -36,9 +36,9 @@ public class Weapon : MonoBehaviour
         healMultiplyer = HMulti;
     }
 
-    public void setweapon(int chosenweaponNumber){
+    public void setWeapon(int chosenweaponNumber){
         if(chosenweaponNumber == 0){
-            setweaponParameters("enmty weapon", chosenweaponNumber, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setweaponParameters("empty weapon", chosenweaponNumber, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
         if(chosenweaponNumber == 1){
             setweaponParameters("test sword", chosenweaponNumber, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);

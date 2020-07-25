@@ -74,5 +74,8 @@ public class Skills : MonoBehaviour {
         else if(chosenSkillNumber == 7){
             setSkillParameters("all attack magic", chosenSkillNumber, true, false, true, false, 10, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f);
         }
+        else if(chosenSkillNumber == 8){
+            setSkillParameters("recover attack", chosenSkillNumber, true, true, true, true, 10, 1f, 1.5f, 1f, 1f, 1f, 1f, 1.5f);
+        }
     }
 }

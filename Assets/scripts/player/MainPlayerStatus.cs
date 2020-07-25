@@ -124,13 +124,22 @@ public class MainPlayerStatus : MonoBehaviour
         playerMovement = this.GetComponent<PlayerMovement>();
         Debug.Log("start");
 
-        // temporary
+        // temporary // 
         for(int i=0; i<6; i++) {
             playerSkills[i].setSkill(i);
             playerSkillCount++;
             playerSkillsNumber[i] = i;
             Debug.Log(playerSkills[i].skillName);
         }
+        playerSkills[1].setSkill(8);
+        playerArmourHead.setArmour(1,"head");
+        playerArmourBody.setArmour(1,"body");
+        playerArmourFeet.setArmour(1,"feet");
+        playerArmourHand.setArmour(1,"hand");
+        playerNecklace.setArmour(1,"necklace");
+        playerWristband.setArmour(1,"wristband");
+
+        playerWeapon.setWeapon(1);
         // playerSkills[0].setSkill(0);
         // playerSkillCount++;
     }
