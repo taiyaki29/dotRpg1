@@ -17,6 +17,9 @@ public class RpgMenuController : MonoBehaviour
     public GameObject player;
     public MainPlayerStatus mainPlayerStatus;
 
+    public GameObject battleControlGameObject;
+    public BattleControl battleController;
+
     public GameObject extraInfoTextHolder;
     public GameObject extraInfoTextGameObject;
     public Text extraInfoText;
@@ -47,7 +50,7 @@ public class RpgMenuController : MonoBehaviour
         mainRpgController = mainRpgControl.GetComponent<MainRpgController>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         extraInfoText = extraInfoTextGameObject.GetComponent<Text>();
-        setExtraInfoText();
+        battleController = battleControlGameObject.GetComponent<BattleControl>();
     }
 
     void Update(){
@@ -59,6 +62,7 @@ public class RpgMenuController : MonoBehaviour
         }
         else if(rpgMenuStatus == RpgMenuStatus.OPENSTATUS){
             rpgMenuText.text = menuAction[statusActionNumber];
+            setStatusExtraInfoText();
             if(statusActionNumber < 9){
                 extraInfoTextHolder.SetActive(true);
                 extraInfoText.text = extraMenuInfo[statusActionNumber];
@@ -69,7 +73,7 @@ public class RpgMenuController : MonoBehaviour
             
         }
         else if(rpgMenuStatus == RpgMenuStatus.OPENARMOUR){
-            
+            rpgMenuText.text = menuAction[armourActionNumber];
         }
         else if(rpgMenuStatus == RpgMenuStatus.OPENSETTINGS){
             
@@ -158,7 +162,7 @@ public class RpgMenuController : MonoBehaviour
             + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n▶︎元に戻す</color>";
     }
 
-    public void setExtraInfoText(){
+    public void setStatusExtraInfoText(){
         extraMenuInfo[0] = "<color=#ffffffff>最大HPが上昇します。</color>";
         extraMenuInfo[1] = "<color=#ffffffff>最大MPが上昇します。\nMPはスキルを使うのに必要です。</color>";
         extraMenuInfo[2] = "<color=#ffffffff>通常攻撃と物理攻撃を使用するスキルが強くなります。</color>";
@@ -168,6 +172,47 @@ public class RpgMenuController : MonoBehaviour
         extraMenuInfo[6] = "<color=#ffffffff>敵にクリティカルダメージを与える確率が上昇します。</color>";
         extraMenuInfo[7] = "<color=#ffffffff>敵に与えるクリティカルダメージ倍率が上昇します。</color>";
         extraMenuInfo[8] = "<color=#ffffffff>敵から受ける攻撃をかわす確率が上がります。\n敵に攻撃をかわされる確率が下がります。\n敵から逃げられる確率が上がります。</color>";
+    }
+    
+    public void setArmourText() {
+        float physicalAttackMultiplyer = battleController.calculatePhysicalAttackMultiplyer(), magicalAttackMultiplyer = battleController.calculateMagicalAttackMultiplyer(),
+              physicalDefenseMultiplyer = battleController.calculatePhysicalDefenseMultiplyer(), magicalDefenseMultiplyer = battleController.calculateMagicalDefenseMultiplyer();
+        
+        menuAction[0] = "<color=#ffffffff>装備一覧\n▶︎頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        menuAction[1] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n▶︎体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        menuAction[2] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n▶︎手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        menuAction[3] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n▶︎足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        menuAction[4] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n▶︎装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        menuAction[5] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n▶︎装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        menuAction[6] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
+            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
+            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
+            + "\n▶︎武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ一覧\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
+            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
     }
 
     public void chooseAction(){
@@ -346,6 +391,8 @@ public class RpgMenuController : MonoBehaviour
         rpgMenuStatus = RpgMenuStatus.OPENSKILL;
     }
     public void openArmour(){
+        armourActionNumber = 0;
+        setArmourText();
         rpgMenuStatus = RpgMenuStatus.OPENARMOUR;
     }
     public void openSettings(){

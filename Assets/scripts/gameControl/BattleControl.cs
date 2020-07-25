@@ -929,9 +929,7 @@ public class BattleControl : MonoBehaviour
 
             if(skill.isPhysicalAttack){
                 int playerPower = player.playerPhysicalAttack;
-                float playerPhysicalMultiplyer = player.playerArmourHead.physicalAttackMultiplyer + player.playerArmourBody.physicalAttackMultiplyer 
-                    + player.playerArmourFeet.physicalAttackMultiplyer + player.playerArmourHand.physicalAttackMultiplyer + player.playerNecklace.physicalAttackMultiplyer
-                    + player.playerWristband.physicalAttackMultiplyer + player.playerWeapon.physicalAttackMultiplyer - 6f;
+                float playerPhysicalMultiplyer = calculatePhysicalAttackMultiplyer();
                 Debug.Log(playerPhysicalMultiplyer);
                 if(critical) playerPower = (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
                 attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.physicalAttackMultiplyer * playerPhysicalMultiplyer));
@@ -940,9 +938,7 @@ public class BattleControl : MonoBehaviour
             }
             else {
                 int playerPower = player.playerMagicalAttack;
-                float playerMagicalMultiplyer = player.playerArmourHead.magicalAttackMultiplyer + player.playerArmourBody.magicalAttackMultiplyer 
-                    + player.playerArmourFeet.magicalAttackMultiplyer + player.playerArmourHand.magicalAttackMultiplyer + player.playerNecklace.magicalAttackMultiplyer
-                    + player.playerWristband.magicalAttackMultiplyer + player.playerWeapon.magicalAttackMultiplyer - 6f;
+                float playerMagicalMultiplyer = calculateMagicalAttackMultiplyer();
                 if(critical) playerPower = (int)Convert.ToSingle(Math.Round(playerPower * (1 + (player.playerCriticalDamage * 0.1))));
                 attack = (int)Convert.ToSingle(Math.Round(playerPower * skill.magicalAttackMultiplyer * playerMagicalMultiplyer));
                 attack -= enemy.enemyMagicalDefense;
@@ -952,16 +948,18 @@ public class BattleControl : MonoBehaviour
         else {
             int noDamageChance = player.playerSpeed > enemy.enemySpeed ? player.playerSpeed - enemy.enemySpeed : 0;
             bool noDamage = UnityEngine.Random.Range(1,100) < noDamageChance;
-            float playerDefending = isPlayerDefending ? 0.5f : 1f;
+            float playerDefending = isPlayerDefending ? 2f : 1f;
             if(noDamage) return 0;
             if(skill.isPhysicalAttack){
-                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyPhysicalAttack * skill.physicalAttackMultiplyer * playerDefending));
-                attack -= player.playerPhysicalDefense;
+                float physicalDefenseMultiplyer = calculatePhysicalDefenseMultiplyer();
+                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyMagicalAttack * skill.magicalAttackMultiplyer));
+                attack -= (int)Convert.ToSingle(Math.Round(player.playerMagicalDefense * playerDefending * physicalDefenseMultiplyer));
                 if(attack <= 0) attack = 1;
             }
             else {
-                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyMagicalAttack * skill.magicalAttackMultiplyer * playerDefending));
-                attack -= player.playerMagicalDefense;
+                float magicalDefenseMultiplyer = calculateMagicalDefenseMultiplyer();
+                attack = (int)Convert.ToSingle(Math.Round(enemy.enemyMagicalAttack * skill.magicalAttackMultiplyer));
+                attack -= (int)Convert.ToSingle(Math.Round(player.playerMagicalDefense * playerDefending * magicalDefenseMultiplyer));
                 if(attack <= 0) attack = 1;
             }
         }
@@ -971,12 +969,8 @@ public class BattleControl : MonoBehaviour
     public int calculateHeal(int damage, Skills skill, MainPlayerStatus player, EnemyStatus enemy, bool isPlayerTurn){
         int heal;
         if(isPlayerTurn){
-            float magicalDefenseMultiplyer = player.playerArmourHead.magicalDefenseMultiplyer + player.playerArmourBody.magicalDefenseMultiplyer 
-                + player.playerArmourFeet.magicalDefenseMultiplyer + player.playerArmourHand.magicalDefenseMultiplyer + player.playerNecklace.magicalDefenseMultiplyer
-                + player.playerWristband.magicalDefenseMultiplyer + player.playerWeapon.magicalDefenseMultiplyer - 6f;
-            float physicalDefenseMultiplyer = player.playerArmourHead.physicalDefenseMultiplyer + player.playerArmourBody.physicalDefenseMultiplyer 
-                + player.playerArmourFeet.physicalDefenseMultiplyer + player.playerArmourHand.physicalDefenseMultiplyer + player.playerNecklace.physicalDefenseMultiplyer
-                + player.playerWristband.physicalDefenseMultiplyer + player.playerWeapon.physicalDefenseMultiplyer - 6f;
+            float magicalDefenseMultiplyer = calculateMagicalDefenseMultiplyer();
+            float physicalDefenseMultiplyer = calculatePhysicalDefenseMultiplyer();
             heal = (int)Convert.ToSingle(Math.Round((player.playerPhysicalDefense * physicalDefenseMultiplyer 
                 + player.playerMagicalDefense * magicalDefenseMultiplyer) * skill.healMultiplyer));
         }
@@ -984,5 +978,29 @@ public class BattleControl : MonoBehaviour
             heal = (int)Convert.ToSingle(Math.Round((enemy.enemyPhysicalDefense + enemy.enemyMagicalDefense) * skill.healMultiplyer));
         }
         return heal;
+    }
+
+    public float calculatePhysicalAttackMultiplyer() {
+        return mainPlayerStatus.playerArmourHead.physicalAttackMultiplyer + mainPlayerStatus.playerArmourBody.physicalAttackMultiplyer 
+            + mainPlayerStatus.playerArmourFeet.physicalAttackMultiplyer + mainPlayerStatus.playerArmourHand.physicalAttackMultiplyer + mainPlayerStatus.playerNecklace.physicalAttackMultiplyer
+            + mainPlayerStatus.playerWristband.physicalAttackMultiplyer + mainPlayerStatus.playerWeapon.physicalAttackMultiplyer - 6f;
+    }
+
+    public float calculateMagicalAttackMultiplyer() {
+        return mainPlayerStatus.playerArmourHead.magicalAttackMultiplyer + mainPlayerStatus.playerArmourBody.magicalAttackMultiplyer 
+            + mainPlayerStatus.playerArmourFeet.magicalAttackMultiplyer + mainPlayerStatus.playerArmourHand.magicalAttackMultiplyer + mainPlayerStatus.playerNecklace.magicalAttackMultiplyer
+            + mainPlayerStatus.playerWristband.magicalAttackMultiplyer + mainPlayerStatus.playerWeapon.magicalAttackMultiplyer - 6f;
+    }
+
+    public float calculatePhysicalDefenseMultiplyer() {
+        return mainPlayerStatus.playerArmourHead.physicalDefenseMultiplyer + mainPlayerStatus.playerArmourBody.physicalDefenseMultiplyer 
+            + mainPlayerStatus.playerArmourFeet.physicalDefenseMultiplyer + mainPlayerStatus.playerArmourHand.physicalDefenseMultiplyer + mainPlayerStatus.playerNecklace.physicalDefenseMultiplyer
+            + mainPlayerStatus.playerWristband.physicalDefenseMultiplyer + mainPlayerStatus.playerWeapon.physicalDefenseMultiplyer - 6f;
+    }
+
+    public float calculateMagicalDefenseMultiplyer() {
+        return mainPlayerStatus.playerArmourHead.magicalDefenseMultiplyer + mainPlayerStatus.playerArmourBody.magicalDefenseMultiplyer 
+            + mainPlayerStatus.playerArmourFeet.magicalDefenseMultiplyer + mainPlayerStatus.playerArmourHand.magicalDefenseMultiplyer + mainPlayerStatus.playerNecklace.magicalDefenseMultiplyer
+            + mainPlayerStatus.playerWristband.magicalDefenseMultiplyer + mainPlayerStatus.playerWeapon.magicalDefenseMultiplyer - 6f;
     }
 }
