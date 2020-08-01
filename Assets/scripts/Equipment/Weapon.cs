@@ -18,8 +18,10 @@ public class Weapon : MonoBehaviour
 
     public float healMultiplyer = 1f;                // 9
 
+    public float price = 1f;                         // 10
+
     public void setweaponParameters(string name, int number, float PAMulti, float MAMulti, float PDMulti,
-        float MDMulti, float CCMulti, float CDMulti, float HMulti) {
+        float MDMulti, float CCMulti, float CDMulti, float HMulti, int cost) {
         
         weaponName = name;
         weaponNumber = number;
@@ -34,17 +36,19 @@ public class Weapon : MonoBehaviour
         criticalDamageMultiplyer = CDMulti;
 
         healMultiplyer = HMulti;
+
+        price = cost;
     }
 
     public void setWeapon(int chosenweaponNumber) {
         if(chosenweaponNumber == 0) {
-            setweaponParameters("empty weapon", chosenweaponNumber, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setweaponParameters("empty weapon", chosenweaponNumber, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 0);
         }
         if(chosenweaponNumber == 1) {
-            setweaponParameters("test sword", chosenweaponNumber, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
+            setweaponParameters("test sword", chosenweaponNumber, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f, 100);
         }
         else if(chosenweaponNumber == 2) {
-            setweaponParameters("test staff", chosenweaponNumber, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f);
+            setweaponParameters("test staff", chosenweaponNumber, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f, 200);
         }
     }
 }

@@ -13,8 +13,11 @@ public class MainRpgController : MonoBehaviour
     public GameObject battleScreen;
     public GameObject rpgMenuScreen;
     public GameObject rpgMenuControl;
+    public GameObject shopControllerGameObject;
     public GameObject battleController;
     public GameObject player;
+
+    public Sprite shopSprite;
 
     public GameObject exclamationPoint;
 
@@ -23,8 +26,9 @@ public class MainRpgController : MonoBehaviour
 
     RpgMenuController rpgMenuController;
     MainPlayerStatus mainPlayerStatus;
+    ShopController shopController;
 
-    Tilemap tilemap;
+    public Tilemap tilemap;
 
     int playerStepsLimit = 0;
     public int enemyEncounterSteps = 0;
@@ -44,6 +48,7 @@ public class MainRpgController : MonoBehaviour
         battleControl = battleController.GetComponent<BattleControl>();
         rpgMenuController = rpgMenuControl.GetComponent<RpgMenuController>();
         mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
+        shopController = shopControllerGameObject.GetComponent<ShopController>();
 
         if(mainRpgStatus == MainRpgStatus.WALK && mainPlayerStatus.playerStatusPoints > 0) exclamationPoint.SetActive(true);
         else exclamationPoint.SetActive(false);
@@ -97,12 +102,15 @@ public class MainRpgController : MonoBehaviour
 
     public void openShop() {
         mainRpgStatus = MainRpgStatus.SHOP;
+        shopController.openShop();
         rpgMenuScreen.SetActive(true);
     }
 
     public void checkTile() {
-        var tile = tilemap.GetTile<Tile>(playerMovement.playerPos);
-        if(tile.sprite == "sprites/ground_tiles/ground_grass/BrightForest-A2_130") {
+        Vector3Int position = new Vector3Int((int)playerMovement.playerPos.x+1, (int)playerMovement.playerPos.y-1, 0);
+        var tile = tilemap.GetTile<Tile>(position);
+        Debug.Log(tile.sprite);
+        if(tile.sprite == shopSprite) {
             enemyEncounterSteps = 0;
             openShop();
         }
