@@ -93,79 +93,70 @@ public class RpgMenuController : MonoBehaviour
     public void setMenuText() {
         mainActionNumber = 0;
         if(mainPlayerStatus.playerStatusPoints > 0) {
-            menuAction[0] = "<color=#ffffffff>▶︎アイテム\nステータス !\nスキル\n装備\n設定\nメインメニューに戻る</color>";
-            menuAction[1] = "<color=#ffffffff>アイテム\n▶︎ステータス !\nスキル\n装備\n設定\nメインメニューに戻る</color>";
-            menuAction[2] = "<color=#ffffffff>アイテム\nステータス !\n▶︎スキル\n装備\n設定\nメインメニューに戻る</color>";
-            menuAction[3] = "<color=#ffffffff>アイテム\nステータス !\nスキル\n▶︎装備\n設定\nメインメニューに戻る</color>";
-            menuAction[4] = "<color=#ffffffff>アイテム\nステータス !\nスキル\n装備\n▶︎設定\nメインメニューに戻る</color>";
-            menuAction[5] = "<color=#ffffffff>アイテム\nステータス !\nスキル\n装備\n設定\n▶︎メインメニューに戻る</color>";
+            for(int i=0; i<6; i++) {
+                menuAction[i] = "<color=#ffffffff>";
+                if(i == 0) menuAction[i] += "▶︎";
+                menuAction[i] += "アイテム\n";
+                if(i == 1) menuAction[i] += "▶︎";
+                menuAction[i] += "ステータス !\n";
+                if(i == 2) menuAction[i] += "▶︎";
+                menuAction[i] += "スキル\n";
+                if(i == 3) menuAction[i] += "▶︎";
+                menuAction[i] += "装備\n";
+                if(i == 4) menuAction[i] += "▶︎";
+                menuAction[i] += "設定\n";
+                if(i == 5) menuAction[i] += "▶︎";
+                menuAction[i] += "メインメニューに戻る\n";
+                menuAction[i] += "</color>";
+            }
         }
         else {
-            menuAction[0] = "<color=#ffffffff>▶︎アイテム\nステータス\nスキル\n装備\n設定\nメインメニューに戻る</color>";
-            menuAction[1] = "<color=#ffffffff>アイテム\n▶︎ステータス\nスキル\n装備\n設定\nメインメニューに戻る</color>";
-            menuAction[2] = "<color=#ffffffff>アイテム\nステータス\n▶︎スキル\n装備\n設定\nメインメニューに戻る</color>";
-            menuAction[3] = "<color=#ffffffff>アイテム\nステータス\nスキル\n▶︎装備\n設定\nメインメニューに戻る</color>";
-            menuAction[4] = "<color=#ffffffff>アイテム\nステータス\nスキル\n装備\n▶︎設定\nメインメニューに戻る</color>";
-            menuAction[5] = "<color=#ffffffff>アイテム\nステータス\nスキル\n装備\n設定\n▶︎メインメニューに戻る</color>";
+            for(int i=0; i<6; i++) {
+                menuAction[i] = "<color=#ffffffff>";
+                if(i == 0) menuAction[i] += "▶︎";
+                menuAction[i] += "アイテム\n";
+                if(i == 1) menuAction[i] += "▶︎";
+                menuAction[i] += "ステータス\n";
+                if(i == 2) menuAction[i] += "▶︎";
+                menuAction[i] += "スキル\n";
+                if(i == 3) menuAction[i] += "▶︎";
+                menuAction[i] += "装備\n";
+                if(i == 4) menuAction[i] += "▶︎";
+                menuAction[i] += "設定\n";
+                if(i == 5) menuAction[i] += "▶︎";
+                menuAction[i] += "メインメニューに戻る\n";
+                menuAction[i] += "</color>";
+            }
         }
     }
 
     public void setStatusText() {
-        menuAction[0] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n▶︎最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[1] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n▶︎最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[2] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n▶︎物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[3] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n▶︎魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[4] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n▶︎物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[5] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n▶︎魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[6] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\n▶︎クリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[7] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\n▶︎クリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[8] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n▶︎速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n元に戻す</color>";
-        menuAction[9] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n▶︎決定\n元に戻す</color>";
-        menuAction[10] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n最大HP　" 
-            + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" 
-            + physicalAttackDiff + "\n魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff 
-            + "\n魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\nクリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" 
-            + criticalChanceDiff + "\nクリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n決定\n▶︎元に戻す</color>";
+        for(int i=0; i<11; i++) {
+            menuAction[i] = "<color=#ffffffff>" + mainPlayerStatus.playerName + "のステータス\n残りステータスポイント　" + statusPointsDiff + "\n\n";
+            if(i == 0) menuAction[i] += "▶︎";
+            menuAction[i] += "最大HP　" + mainPlayerStatus.playerMaxHp + " +" + maxHPDiff + "\n";
+            if(i == 1) menuAction[i] += "▶︎";
+            menuAction[i] += "最大MP　" + mainPlayerStatus.playerMaxMp + " +" + maxMPDiff + "\n";
+            if(i == 2) menuAction[i] += "▶︎";
+            menuAction[i] += "物理攻撃力　" + mainPlayerStatus.playerPhysicalAttack + " +" + physicalAttackDiff + "\n";
+            if(i == 3) menuAction[i] += "▶︎";
+            menuAction[i] += "魔法攻撃力　" + mainPlayerStatus.playerMagicalAttack + " +" + magicalAttackDiff + "\n";
+            if(i == 4) menuAction[i] += "▶︎";
+            menuAction[i] += "物理防御　" + mainPlayerStatus.playerPhysicalDefense + " +" + physicalDefenseDiff + "\n";
+            if(i == 5) menuAction[i] += "▶︎";
+            menuAction[i] += "魔法防御　" + mainPlayerStatus.playerMagicalDefense + " +" + magicalDefenseDiff + "\n";
+            if(i == 6) menuAction[i] += "▶︎";
+            menuAction[i] += "クリティカルチャンス　" + mainPlayerStatus.playerCriticalChance + " +" + criticalChanceDiff + "\n";
+            if(i == 7) menuAction[i] += "▶︎";
+            menuAction[i] += "クリティカル倍率　" + mainPlayerStatus.playerCriticalDamage + " +" + criticalDamageDiff + "\n";
+            if(i == 8) menuAction[i] += "▶︎";
+            menuAction[i] += "速度　" + mainPlayerStatus.playerSpeed + " +" + speedDiff + "\n";
+            if(i == 9) menuAction[i] += "▶︎";
+            menuAction[i] += "決定\n";
+            if(i == 10) menuAction[i] += "▶︎";
+            menuAction[i] += "元に戻す";
+            menuAction[i] += "</color>";
+        }
     }
 
     public void setStatusExtraInfoText() {
@@ -181,44 +172,29 @@ public class RpgMenuController : MonoBehaviour
     }
     
     public void setArmourText() {
-        float physicalAttackMultiplyer = battleController.calculatePhysicalAttackMultiplyer(), magicalAttackMultiplyer = battleController.calculateMagicalAttackMultiplyer(),
-              physicalDefenseMultiplyer = battleController.calculatePhysicalDefenseMultiplyer(), magicalDefenseMultiplyer = battleController.calculateMagicalDefenseMultiplyer();
-        
-        menuAction[0] = "<color=#ffffffff>装備一覧\n▶︎頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
-        menuAction[1] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n▶︎体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
-        menuAction[2] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n▶︎手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
-        menuAction[3] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n▶︎足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
-        menuAction[4] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n▶︎装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
-        menuAction[5] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n▶︎装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
-        menuAction[6] = "<color=#ffffffff>装備一覧\n頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n体　" + mainPlayerStatus.playerArmourBody.armourName
-            + "\n手　" + mainPlayerStatus.playerArmourHand.armourName + "\n足　" + mainPlayerStatus.playerArmourFeet.armourName 
-            + "\n装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n装飾品　" + mainPlayerStatus.playerWristband.armourName 
-            + "\n▶︎武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率" 
-            + magicalAttackMultiplyer + "\n物理防御上昇倍率" + physicalDefenseMultiplyer + "\n魔法防御上昇倍率" + magicalDefenseMultiplyer + "</color>";
+        float physicalAttackMultiplyer = battleController.calculatePhysicalAttackMultiplyer(),
+              magicalAttackMultiplyer = battleController.calculateMagicalAttackMultiplyer(),
+              physicalDefenseMultiplyer = battleController.calculatePhysicalDefenseMultiplyer(),
+              magicalDefenseMultiplyer = battleController.calculateMagicalDefenseMultiplyer();
+
+        for(int i=0; i<7; i++) {
+            menuAction[i] = "<color=#ffffffff>装備一覧\n";
+            if(i == 0) menuAction[i] += "▶︎";
+            menuAction[i] += "頭　" + mainPlayerStatus.playerArmourHead.armourName + "\n";
+            if(i == 1) menuAction[i] += "▶︎";
+            menuAction[i] += "体　" + mainPlayerStatus.playerArmourBody.armourName+ "\n";
+            if(i == 2) menuAction[i] += "▶︎";
+            menuAction[i] += "手　" + mainPlayerStatus.playerArmourHand.armourName + "\n";
+            if(i == 3) menuAction[i] += "▶︎";
+            menuAction[i] += "足　" + mainPlayerStatus.playerArmourFeet.armourName + "\n";
+            if(i == 4) menuAction[i] += "▶︎";
+            menuAction[i] += "装飾品　" + mainPlayerStatus.playerNecklace.armourName + "\n";
+            if(i == 5) menuAction[i] += "▶︎";
+            menuAction[i] += "装飾品　" + mainPlayerStatus.playerWristband.armourName + "\n";
+            if(i == 6) menuAction[i] += "▶︎";
+            menuAction[i] += "武器　" + mainPlayerStatus.playerWeapon.weaponName + "\n\n装備による倍率アップ合計\n物理攻撃上昇倍率" + physicalAttackMultiplyer + "\n魔法攻撃上昇倍率";
+            menuAction[i] += "</color>";
+        }
     }
 
     public void setArmourExtraText() {

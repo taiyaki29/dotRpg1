@@ -346,79 +346,39 @@ public class BattleControl : MonoBehaviour
 
     public void setChooseSkillText() {
         skillNumber = 0;
-        if(mainPlayerStatus.playerSkillCount == 0) {
-            playerActions[0] = "";
-            playerActions[1] = "";
-            playerActions[2] = "";
-            playerActions[3] = "";
-            playerActions[4] = "";
-            playerActions[5] = "";
-            playerActions[6] = "";
-        }
-        else if(mainPlayerStatus.playerSkillCount == 1) {
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "</color>";
-            playerActions[1] = "";
-            playerActions[2] = "";
-            playerActions[3] = "";
-            playerActions[4] = "";
-            playerActions[5] = "";
-            playerActions[6] = "";
-        }
-        else if(mainPlayerStatus.playerSkillCount == 2) {
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "</color>";
-            playerActions[2] = "";
-            playerActions[3] = "";
-            playerActions[4] = "";
-            playerActions[5] = "";
-            playerActions[6] = "";
-        }
-         else if(mainPlayerStatus.playerSkillCount == 3) {
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "</color>";
-            playerActions[3] = "";
-            playerActions[4] = "";
-            playerActions[6] = "";
-            playerActions[5] = "";
-        }
-        else if(mainPlayerStatus.playerSkillCount == 4) {
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName +  "\n" + mainPlayerStatus.playerSkills[3].skillName +"</color>";
-            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName +  "\n" + mainPlayerStatus.playerSkills[3].skillName +"</color>";
-            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName +"</color>";
-            playerActions[4] = "";
-            playerActions[5] = "";
-            playerActions[6] = "";
-        }
-        else if(mainPlayerStatus.playerSkillCount == 5) {
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
-            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
-            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[4].skillName + "</color>";
-            playerActions[5] = "";
-            playerActions[6] = "";
-        }
-        else if(mainPlayerStatus.playerSkillCount == 6) {
-            playerActions[0] = "<color=#ffffffff>" + "▶︎" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[1] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[2] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[3] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + "▶︎" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[4] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName  + "\n"+ "▶︎" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + mainPlayerStatus.playerSkills[5].skillName + "</color>";
-            playerActions[5] = "<color=#ffffffff>" + mainPlayerStatus.playerSkills[0].skillName + "\n" + mainPlayerStatus.playerSkills[1].skillName + "\n" + mainPlayerStatus.playerSkills[2].skillName + "\n" + mainPlayerStatus.playerSkills[3].skillName + "\n" + mainPlayerStatus.playerSkills[4].skillName +  "\n" + "▶︎" + mainPlayerStatus.playerSkills[5] .skillName+ "</color>";
-            playerActions[6] = "";
+        for(int i=0; i<7; i++) {
+            playerActions[i] = "<color=#ffffffff>";
+            if(mainPlayerStatus.playerSkillCount > 0) {
+                if(i == 0) playerActions[i] += "▶︎";
+                playerActions[i] += mainPlayerStatus.playerSkills[0].skillName + "\n";
+            }
+            if(mainPlayerStatus.playerSkillCount > 1) {
+                if(i == 1) playerActions[i] += "▶︎";
+                playerActions[i] += mainPlayerStatus.playerSkills[1].skillName + "\n";
+            }
+            if(mainPlayerStatus.playerSkillCount > 2) {
+                if(i == 2) playerActions[i] += "▶︎";
+                playerActions[i] += mainPlayerStatus.playerSkills[2].skillName + "\n";
+            }
+            if(mainPlayerStatus.playerSkillCount > 3) {
+                if(i == 3) playerActions[i] += "▶︎";
+                playerActions[i] += mainPlayerStatus.playerSkills[3].skillName + "\n";
+            }
+            if(mainPlayerStatus.playerSkillCount > 4) {
+                if(i == 4) playerActions[i] += "▶︎";
+                playerActions[i] += mainPlayerStatus.playerSkills[4].skillName + "\n";
+            }
+            if(mainPlayerStatus.playerSkillCount > 5) {
+                if(i == 5) playerActions[i] += "▶︎";
+                playerActions[i] += mainPlayerStatus.playerSkills[5].skillName + "\n";
+            }
+            playerActions[i] += "</color>";
         }
     }
 
     // Actions
     public IEnumerator playerAttackMotion(Skills usingSkill) {
         battleStatus = BattleStatus.PLAYERMOTION; 
-
-        if(usingSkill.isHeal) {
-
-        }
-
         remainingEnemyNumber = numberEnemyAlive();
 
         //choose enemy
