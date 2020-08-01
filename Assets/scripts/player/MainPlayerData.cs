@@ -80,7 +80,7 @@ public class MainPlayerData {
 
         playerWeaponNumber = mainPlayerStatus.playerWeaponNumber;
 
-        for(int i=0; i<6; i++){
+        for(int i=0; i<6; i++) {
             playerSkillsNumber[i] = mainPlayerStatus.playerSkillsNumber[i];
         }
 

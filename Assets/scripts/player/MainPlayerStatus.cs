@@ -144,7 +144,7 @@ public class MainPlayerStatus : MonoBehaviour
         // playerSkillCount++;
     }
 
-    void FixedUpdate(){
+    void FixedUpdate() {
         NameStatusText.text = "<color=#ffffffff>" + playerName + "</color>";
         HpStatusText.text = "<color=#00ff00ff>HP: " + playerCurrentHp.ToString() +"</color>";
         MpStatusText.text = "<color=#00ffffff>MP: " + playerCurrentMp.ToString() + "</color>";
@@ -155,7 +155,7 @@ public class MainPlayerStatus : MonoBehaviour
         StepsLimitText.text = "<color=#fffffff>魔王が来るまで...\n" + "<size=80>" + playerStepsLimit.ToString()+ "</size>" + "歩</color>";
     }
 
-    public bool didPlayerLevelUp(){
+    public bool didPlayerLevelUp() {
         int potentialNewLevel = experienceLevelConversion();
         if(playerLevel < experienceLevelConversion()) {
             playerStatusPoints += 10 * (potentialNewLevel - playerLevel);
@@ -165,9 +165,9 @@ public class MainPlayerStatus : MonoBehaviour
         return false;
     }
     
-    public int experienceLevelConversion(){
+    public int experienceLevelConversion() {
         int experience = 0;
-        for(int i=1; i<100000; i++){
+        for(int i=1; i<100000; i++) {
             experience += i + 30 + (int)Math.Pow((double)i, 1.25);
             if(experience > playerExperience) return i;
             Debug.Log(experience);

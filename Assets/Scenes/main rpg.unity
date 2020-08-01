@@ -17590,7 +17590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &315252704
 Transform:
   m_ObjectHideFlags: 0
@@ -19361,7 +19361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &848638041
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21445,6 +21445,8 @@ MonoBehaviour:
   mainRpgController: {fileID: 0}
   player: {fileID: 1028102684}
   mainPlayerStatus: {fileID: 0}
+  battleControlGameObject: {fileID: 1714904972}
+  battleController: {fileID: 0}
   extraInfoTextHolder: {fileID: 848638040}
   extraInfoTextGameObject: {fileID: 1273728681}
   extraInfoText: {fileID: 0}

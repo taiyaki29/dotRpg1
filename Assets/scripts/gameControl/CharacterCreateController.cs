@@ -6,13 +6,13 @@ public class CharacterCreateController : MonoBehaviour
 {
     public GameObject player;
 
-    public void SavePlayer(){
+    public void SavePlayer() {
         MainPlayerStatus mainPlayerStatus = player.GetComponent<MainPlayerStatus>();
         PlayerMovement playerPosition = player.GetComponent<PlayerMovement>();
         SaveSystem.SavePlayer(mainPlayerStatus, playerPosition);
     }
 
-    public void LoadPlayer(){
+    public void LoadPlayer() {
         MainPlayerData data = SaveSystem.LoadPlayer();
         // MainPlayerStatus player = new MainPlayerStatus();
         // PlayerMovement playerPosition = new PlayerMovement();
@@ -55,7 +55,7 @@ public class CharacterCreateController : MonoBehaviour
 
         mainPlayerStatus.playerWeaponNumber = data.playerWeaponNumber;
 
-        for(int i=0; i<6; i++){
+        for(int i=0; i<6; i++) {
             mainPlayerStatus.playerSkillsNumber[i] = data.playerSkillsNumber[i];
             mainPlayerStatus.playerSkills[i].setSkill(mainPlayerStatus.playerSkillsNumber[i]);
         }

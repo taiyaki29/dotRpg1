@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public enum MainRpgStatus { START, WALK, BATTLE, BOSS, SHOP, MENU }
@@ -23,6 +24,8 @@ public class MainRpgController : MonoBehaviour
     RpgMenuController rpgMenuController;
     MainPlayerStatus mainPlayerStatus;
 
+    Tilemap tilemap;
+
     int playerStepsLimit = 0;
     public int enemyEncounterSteps = 0;
 
@@ -30,7 +33,7 @@ public class MainRpgController : MonoBehaviour
 
     public float gameTextSpeed = 0.7f;
 
-    void Start(){
+    void Start() {
         mainRpgStatus = MainRpgStatus.WALK;
         battleScreen.SetActive(false);
         rpgMenuScreen.SetActive(false);
@@ -46,11 +49,11 @@ public class MainRpgController : MonoBehaviour
         else exclamationPoint.SetActive(false);
     }
 
-    void Update(){
+    void Update() {
         
     }
 
-    void FixedUpdate(){
+    void FixedUpdate() {
         playerStepsLimit = playerMovement.playerStepsLimit;
         if(mainRpgStatus != MainRpgStatus.BATTLE &&  enemyEncounterSteps == 9) {
             playerMovement.holdMoveUp = false;
@@ -62,31 +65,46 @@ public class MainRpgController : MonoBehaviour
             startBattle();
             enemyEncounterSteps = 0;
         }
-        if(mainRpgStatus == MainRpgStatus.WALK && !exclamationPoint.active && mainPlayerStatus.playerStatusPoints > 0){
+        if(mainRpgStatus == MainRpgStatus.WALK && !exclamationPoint.active && mainPlayerStatus.playerStatusPoints > 0) {
             exclamationPoint.SetActive(true);
         }
         else if(mainRpgStatus != MainRpgStatus.WALK) exclamationPoint.SetActive(false);
+
+        checkTile();
     }
 
-    public void startBattle(){
+    public void startBattle() {
         mainRpgStatus = MainRpgStatus.BATTLE;
         battleScreen.SetActive(true);
         battleControl.startBattle();
     }
 
-    public void endBattle(){
+    public void endBattle() {
         mainRpgStatus = MainRpgStatus.WALK;
         battleScreen.SetActive(false);
     }
 
-    public void openMenu(){
+    public void openMenu() {
         mainRpgStatus = MainRpgStatus.MENU;
         rpgMenuScreen.SetActive(true);
         rpgMenuController.openMenu();
     }
 
-    public void closeMenu(){
+    public void closeMenu() {
         mainRpgStatus = MainRpgStatus.WALK;
         rpgMenuScreen.SetActive(false);
+    }
+
+    public void openShop() {
+        mainRpgStatus = MainRpgStatus.SHOP;
+        rpgMenuScreen.SetActive(true);
+    }
+
+    public void checkTile() {
+        var tile = tilemap.GetTile<Tile>(playerMovement.playerPos);
+        if(tile.sprite == "sprites/ground_tiles/ground_grass/BrightForest-A2_130") {
+            enemyEncounterSteps = 0;
+            openShop();
+        }
     }
 }

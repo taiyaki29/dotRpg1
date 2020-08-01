@@ -17,7 +17,7 @@ public static class SaveSystem {
 
     public static MainPlayerData LoadPlayer() {
         string path = Application.persistentDataPath + "/player.continue";
-        if(File.Exists(path)){
+        if(File.Exists(path)) {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 

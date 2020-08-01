@@ -48,9 +48,9 @@ public class EnemyStatus : MonoBehaviour
         
     }
 
-    public void chooseEnemy(){
-        if(battleControl.battleStatus == BattleStatus.PLAYERTURN || battleControl.battleStatus == BattleStatus.PLAYERTURNSKILL){
-            if(battleControl.chosenEnemy == this){
+    public void chooseEnemy() {
+        if(battleControl.battleStatus == BattleStatus.PLAYERTURN || battleControl.battleStatus == BattleStatus.PLAYERTURNSKILL) {
+            if(battleControl.chosenEnemy == this) {
                 battleControl.chosenEnemy = null;
                 battleControl.chosen1.SetActive(false);
                 battleControl.chosen2.SetActive(false);
@@ -59,17 +59,17 @@ public class EnemyStatus : MonoBehaviour
             else {
                 battleControl.chosenEnemy = this;
             }
-            if(battleControl.chosenEnemy == battleControl.enemy1Status && battleControl.enemy1Status.enemyCurrentHp > 0){
+            if(battleControl.chosenEnemy == battleControl.enemy1Status && battleControl.enemy1Status.enemyCurrentHp > 0) {
                 battleControl.chosen1.SetActive(true);
                 battleControl.chosen2.SetActive(false);
                 battleControl.chosen3.SetActive(false);
             }
-            else if(battleControl.chosenEnemy == battleControl.enemy2Status && battleControl.enemy2Status.enemyCurrentHp > 0){
+            else if(battleControl.chosenEnemy == battleControl.enemy2Status && battleControl.enemy2Status.enemyCurrentHp > 0) {
                 battleControl.chosen1.SetActive(false);
                 battleControl.chosen2.SetActive(true);
                 battleControl.chosen3.SetActive(false);
             }
-            else if(battleControl.chosenEnemy == battleControl.enemy3Status && battleControl.enemy3Status.enemyCurrentHp > 0){
+            else if(battleControl.chosenEnemy == battleControl.enemy3Status && battleControl.enemy3Status.enemyCurrentHp > 0) {
                 battleControl.chosen1.SetActive(false);
                 battleControl.chosen2.SetActive(false);
                 battleControl.chosen3.SetActive(true);
@@ -77,7 +77,7 @@ public class EnemyStatus : MonoBehaviour
         }
     }
 
-    public void getSkillsReady(){
+    public void getSkillsReady() {
         enemySkills[0] = SkillsGameObject1.GetComponent<Skills>();
         enemySkills[1] = SkillsGameObject2.GetComponent<Skills>();
         enemySkills[2] = SkillsGameObject3.GetComponent<Skills>();
@@ -86,19 +86,19 @@ public class EnemyStatus : MonoBehaviour
         for(int i=0; i<4; i++) enemySkills[i].setSkill(0);
     }
 
-    public void spawnEnemy(int stageNumber){
+    public void spawnEnemy(int stageNumber) {
         int randomSpawnNumber = UnityEngine.Random.Range(1,3);
-        if(stageNumber == 1){
-            if(randomSpawnNumber == 1){
+        if(stageNumber == 1) {
+            if(randomSpawnNumber == 1) {
                 spawnSlime();
             }
-            else if(randomSpawnNumber == 2){
+            else if(randomSpawnNumber == 2) {
                 spawnJumpingSlime();
             }
         }
     }
 
-    public void spawnSlime(){
+    public void spawnSlime() {
         enemyName = "スライム";
         enemyImage = this.GetComponent<SpriteRenderer>();
         enemySprite = Resources.Load<Sprite>("sprites/enemy/mon1/mon_002");
@@ -122,7 +122,7 @@ public class EnemyStatus : MonoBehaviour
         enemySpeed = 1;
     }
 
-    public void spawnJumpingSlime(){
+    public void spawnJumpingSlime() {
         enemyName = "ジャンピングスライム";
         enemyImage = this.GetComponent<SpriteRenderer>();
         enemySprite = Resources.Load<Sprite>("sprites/enemy/mon1/mon_025");

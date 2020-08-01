@@ -25,7 +25,7 @@ public class Skills : MonoBehaviour {
 
     public void setSkillParameters(string name, int number, bool multiple, bool physical, bool attack, bool heal, int cost,
         float PAMultiplyer, float MAMultiplyer, float PDMultiplyer, float MDMultiplyer, 
-        float CCMultiplyer, float CDMultiplyer, float HMultiplyer){
+        float CCMultiplyer, float CDMultiplyer, float HMultiplyer) {
     
         skillName = name;
         skillNumber = number;
@@ -49,32 +49,32 @@ public class Skills : MonoBehaviour {
         healMultiplyer = HMultiplyer;
     }
 
-    public void setSkill(int chosenSkillNumber){
-        if(chosenSkillNumber == 0){
+    public void setSkill(int chosenSkillNumber) {
+        if(chosenSkillNumber == 0) {
             setSkillParameters("attack", chosenSkillNumber, false, true, true, false, 0, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 1){
+        else if(chosenSkillNumber == 1) {
             setSkillParameters("strong attack 1", chosenSkillNumber, false, true, true, false, 10, 1.3f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 2){
+        else if(chosenSkillNumber == 2) {
             setSkillParameters("strong attack 2", chosenSkillNumber, false, true, true, false, 10, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 3){
+        else if(chosenSkillNumber == 3) {
             setSkillParameters("all attack", chosenSkillNumber, true, true, true, false, 10, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 4){
+        else if(chosenSkillNumber == 4) {
             setSkillParameters("all attack 2", chosenSkillNumber, true, true, true, false, 10, 1.2f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 5){
+        else if(chosenSkillNumber == 5) {
             setSkillParameters("all attack 3", chosenSkillNumber, true, true, true, false, 10, 1.5f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 6){
+        else if(chosenSkillNumber == 6) {
             setSkillParameters("all attack 4", chosenSkillNumber, true, true, true, false, 10, 2f, 1f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 7){
+        else if(chosenSkillNumber == 7) {
             setSkillParameters("all attack magic", chosenSkillNumber, true, false, true, false, 10, 1f, 1.5f, 1f, 1f, 1f, 1f, 1f);
         }
-        else if(chosenSkillNumber == 8){
+        else if(chosenSkillNumber == 8) {
             setSkillParameters("recover attack", chosenSkillNumber, true, true, true, true, 10, 1f, 1.5f, 1f, 1f, 1f, 1f, 1.5f);
         }
     }

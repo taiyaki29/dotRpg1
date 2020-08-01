@@ -20,7 +20,7 @@ public class Armour : MonoBehaviour
     public float healMultiplyer = 1f;                // 10
 
     public void setArmourParameters(string name, int number, string type, float PAMulti, float MAMulti, float PDMulti,
-        float MDMulti, float CCMulti, float CDMulti, float HMulti){
+        float MDMulti, float CCMulti, float CDMulti, float HMulti) {
         
         armourName = name;
         armourNumber = number;
@@ -38,8 +38,8 @@ public class Armour : MonoBehaviour
         healMultiplyer = HMulti;
     }
 
-    public void setArmour(int chosenArmourNumber, string armourType){
-        if(chosenArmourNumber == 0){
+    public void setArmour(int chosenArmourNumber, string armourType) {
+        if(chosenArmourNumber == 0) {
             if(armourType == "head") {
                 setArmourParameters("empty head", chosenArmourNumber, armourType, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
             }
@@ -59,7 +59,7 @@ public class Armour : MonoBehaviour
                 setArmourParameters("empty wristband", chosenArmourNumber, armourType, 1f, 1f, 1f, 1f, 1f, 1f, 1f);
             }
         }
-        else if(chosenArmourNumber == 1){
+        else if(chosenArmourNumber == 1) {
             if(armourType == "head") {
                 setArmourParameters("test head", chosenArmourNumber, armourType, 1f, 1f, 1.2f, 1.2f, 1f, 1f, 1f);
             }
