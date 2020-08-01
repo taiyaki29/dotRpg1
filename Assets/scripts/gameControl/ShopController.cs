@@ -35,9 +35,10 @@ public class ShopController : MonoBehaviour
         extraInfoText = extraInfoTextGameObject.GetComponent<Text>();
         battleController = battleControlGameObject.GetComponent<BattleControl>();
         extraInfoTextHolder.SetActive(true);
+        shopControllerStatus = ShopControllerStatus.CLOSE;
     }
 
-    void Update() {
+    void FixedUpdate() {
         if(shopControllerStatus == ShopControllerStatus.OPEN) {
             shopMenuText.text = menuAction[mainActionNumber];
         }
@@ -56,12 +57,13 @@ public class ShopController : MonoBehaviour
             menuAction[i] += "\n所持品を売る";
             if(i == 4) menuAction[i] += "▶︎";
             menuAction[i] += "\n店を出る";
-            menuAction[i] = "</color>";
+            menuAction[i] += "</color>";
         }
     }
 
     public void openShop() {
         shopControllerStatus = ShopControllerStatus.OPEN;
         setShopMainText();
+        mainActionNumber = 0;
     }
 }

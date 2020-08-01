@@ -52,9 +52,10 @@ public class RpgMenuController : MonoBehaviour
         extraInfoText = extraInfoTextGameObject.GetComponent<Text>();
         battleController = battleControlGameObject.GetComponent<BattleControl>();
         extraInfoTextHolder.SetActive(false);
+        rpgMenuStatus = RpgMenuStatus.CLOSED;
     }
 
-    void Update() {
+    void FixedUpdate() {
         if(rpgMenuStatus == RpgMenuStatus.OPEN) {
             rpgMenuText.text = menuAction[mainActionNumber];
             extraInfoTextHolder.SetActive(false);
@@ -445,6 +446,7 @@ public class RpgMenuController : MonoBehaviour
     public void goBack() {
         if(rpgMenuStatus == RpgMenuStatus.OPEN) {
             mainRpgController.closeMenu();
+            rpgMenuStatus = RpgMenuStatus.CLOSED;
         }
         else {
             setMenuText();

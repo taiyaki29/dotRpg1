@@ -75,7 +75,7 @@ public class MainRpgController : MonoBehaviour
         }
         else if(mainRpgStatus != MainRpgStatus.WALK) exclamationPoint.SetActive(false);
 
-        checkTile();
+        if(mainRpgStatus == MainRpgStatus.WALK) checkTile();
     }
 
     public void startBattle() {
@@ -97,13 +97,14 @@ public class MainRpgController : MonoBehaviour
 
     public void closeMenu() {
         mainRpgStatus = MainRpgStatus.WALK;
+        rpgMenuController.rpgMenuStatus = RpgMenuStatus.CLOSED;
         rpgMenuScreen.SetActive(false);
     }
 
     public void openShop() {
         mainRpgStatus = MainRpgStatus.SHOP;
-        shopController.openShop();
         rpgMenuScreen.SetActive(true);
+        shopController.openShop();
     }
 
     public void checkTile() {
